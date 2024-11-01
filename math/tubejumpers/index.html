@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Press Redirect</title>
+
     <script>
-        document.addEventListener('keydown', function(event) {
-            // Check if the "H" key (key code 72) is pressed
-            if (event.key === 'h' || event.key === 'H') {
-                window.location.href = 'learningally.xyz'; // Change '/' to your homepage URL
-            }
-        });
-    </script>
-    
+      document.addEventListener('keydown', function(e) {
+          if (e.keyCode == 80) { 
+              location.href = "/index.html"; 
+          }
+      });
+  </script>
+  <script>
+    document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 191) { 
+            location.href = "http://classroom.google.com"; 
+        }
+    });
+</script>
+
     <title>LearningAlly Audiobooks</title>
     <link rel="icon" type="image/x-icon" href="/assets/photos/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="/assets/photos/favicon.ico" />

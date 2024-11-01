@@ -3,31 +3,20 @@
   <head>
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Press Redirect</title>
     <script>
-        document.addEventListener('keydown', function(event) {
-            // Check if the "H" key (key code 72) is pressed
-            if (event.key === 'h' || event.key === 'H') {
-                window.location.href = '/'; // Change '/' to your homepage URL
-            }
-        });
-    </script>
-
-
-    <!-- external -->
-    <script type="text/javascript">
-      window.cookieconsent_options = {
-        message: "Unsurprisingly, this website uses cookies for ads and traffic analysis.",
-        dismiss: "Got it!",
-        learnMore: "Learn more",
-        link: "//orteil.dashnet.org/cookieconsentpolicy.html",
-        target: "_blank",
-        theme: "cookieconsent.css",
-        domain: "dashnet.org",
-      };
-    </script>
+      document.addEventListener('keydown', function(e) {
+          if (e.keyCode == 80) { 
+              location.href = "/index.html"; 
+          }
+      });
+  </script>
+  <script>
+    document.addEventListener('keydown', function(e) {
+        if (e.keyCode == 191) { 
+            location.href = "http://classroom.google.com"; 
+        }
+    });
+</script>
 
 
     <script type="text/javascript" src="cookieconsent.min.js"></script>
