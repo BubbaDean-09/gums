@@ -29865,6 +29865,9 @@ Game.Launch = function () {
 
     if (Game.T % (Game.fps * 2) == 0) {
       var title = "LearningAlly Audiobooks";
+      if (Game.season == "fools") title = "Cookie Baker";
+      document.title =
+        
         title;
     }
     if (Game.T % 15 == 0) {
