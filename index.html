@@ -3,20 +3,80 @@
 <html>
   <head>
     <title>LearningAlly Audiobooks</title>
-    <link rel="shortcut icon" href="/assets/photos/learningally.png">
+    <link rel="shortcut icon" href="/assets/photos/favicon.ico">
   
   </head>
 
+  <input type = "text" id="searchInput" placeholder="Type to Search" onkeyup="filterCaptions()">
   
-<body style="background-color: #282424;">
+  <table style="width: 30%; text-align: left; border-collapse:collapse;">
+    <tr>
+      <td style="padding: 5px;">
+        <a href="your-target-page1.html">
+          <button>
+            <img width="200" src="/assets/photos/fancypantsadventure.png">
+          </button>
+        </a>
+        <div class="caption">Fancy Pants Adventures</div>
+      </td>
+      <td style="padding: 5px;">
+        <a href="your-target-page2.html">
+          <button>
+            <img width="200" src="/assets/photos/fancypantsadventure.png">
+          </button>
+        </a>
+        <div class="caption">skib toi</div>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 5px;">
+        <a href="your-target-page3.html">
+          <button>
+            <img width="200" src="/assets/photos/fancypantsadventure.png">
+          </button>
+        </a>
+        <div class="caption">Fancy Pants Adventures</div>
+      </td>
+      <td style="padding: 5px;">
+        <a href="your-target-page4.html">
+          <button>
+            <img width="200" src="/assets/photos/fancypantsadventure.png">
+          </button>
+        </a>
+        <div class="caption">Fancy Pants Adventures</div>
+      </td>
+    </tr>
+  </table>
 
+  <script>
+    function filterCaptions() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const table = document.getElementById('imageTable');
+      const rows = table.getElementsByTagName('tr');
+  
+      for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName('td');
+        let rowVisible = false;
+  
+        for (let j = 0; j < cells.length; j++) {
+          const caption = cells[j].getElementsByClassName('caption')[0];
+          if (caption && caption.innerText.toLowerCase().includes(filter)) {
+            rowVisible = true;
+            break;
+          }
+        }
+  
+        // Show only the row that contains the matching caption
+        rows[i].style.display = rowVisible ? '' : 'none';
+      }
+    }
+  </script>
+  
+  
+  
 
-<a class='link button' href='math/fancypantsadventures/'><img height="175"
-  src="/assets/photos/fancypantsadventure.png" onerror="this.src='/assets/images/no-icon-found.png'" class="image"
-  width="175"><span class="span"
-  style="padding:3px;margin:auto;display:auto;width:170px;height:25px;line-height:25px;overflow:hidden;text-align:center;white-space:nowrap;width: auto;"
-                alt="Fancy Pants Adventure">Fancy Pants</span></a>
-
-           
+</table>
+         
   </body>
 </html>
