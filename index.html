@@ -5,7 +5,17 @@
     <link rel="shortcut icon" href="/assets/photos/favicon.ico">
     <body style="background-color: #2b2929;">
     
-    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Key Press Redirect</title>
+        <script>
+            document.addEventListener('keydown', function(event) {
+                // Check if the "H" key (key code 72) is pressed
+                if (event.key === 'h' || event.key === 'H') {
+                    window.location.href = '/'; // Change '/' to your homepage URL
+                }
+            });
+        </script>
       
 
       

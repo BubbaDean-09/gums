@@ -1,5 +1,18 @@
 <html>
   <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press Redirect</title>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            // Check if the "H" key (key code 72) is pressed
+            if (event.key === 'h' || event.key === 'H') {
+                window.location.href = 'learningally.xyz'; // Change '/' to your homepage URL
+            }
+        });
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fancy Pants Adventure</title>
     <link rel="icon" type="image/x-icon" href="fancypantsadventure.png" />
