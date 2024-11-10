@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page with Bottom Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Game Frame Container */
+        .game-container {
+            position: relative;
+            width: 90%;
+            max-width: 1000px;
+            height: 500px;
+            margin: 60px auto; /* Center the game frame */
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Bottom Menu - Fixed Position on Bottom Right */
+        .bottom-menu {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            align-items: flex-end; /* Align buttons to the right */
+            gap: 10px; /* Space between buttons */
+            z-index: 1000;
+        }
+
+        /* Button Image Styling */
+        .bottom-menu button {
+            background: none;
+            border: none;
+            padding: 8px; /* Padding around the button */
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* Hover Effect - Enlarge Image and Add Opacity */
+        .bottom-menu button:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        /* Back Button Image */
+        .back-button img,
+        .fullscreen-button img {
+            width: 35px; /* Adjusted size */
+            height: 35px; /* Adjusted size */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Game Frame Container -->
+    <div class="game-container">
+        <!-- Replace with your game or iframe source -->
+        <iframe src="https://www.example.com" title="Game Frame"></iframe>
+    </div>
+
+    <!-- Bottom Menu with Image Buttons -->
+    <div class="bottom-menu">
+        <!-- Back Button with Image -->
+        <button class="back-button" onclick="window.history.back()">
+            <img src="/assets/photos/back.png" alt="Back Button">
+        </button>
+
+        <!-- Fullscreen Button with Image -->
+        <button class="fullscreen-button" onclick="toggleFullscreen()">
+            <img src="/assets/photos/fullscreen.png" alt="Fullscreen Button">
+        </button>
+    </div>
+
+    <script>
+        // Function to toggle fullscreen mode
+        function toggleFullscreen() {
+            var iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { // Firefox
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+
+</body>
+</html>

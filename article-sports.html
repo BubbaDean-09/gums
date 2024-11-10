@@ -12,7 +12,6 @@
             background-color: #f4f4f4;
         }
 
-        /* Fixed Navigation Bar */
         header {
             position: fixed;
             top: 0;
@@ -36,9 +35,8 @@
             text-decoration: underline;
         }
 
-        /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 80px 20px 20px 20px;
             margin: 30px auto;
             max-width: 800px;
             background-color: white;
@@ -97,31 +95,29 @@
             background-color: #ff4081;
         }
 
-        /* Hidden Button Styling */
         .hidden-button {
-            opacity: 0; 
-            position: absolute; 
+            opacity: 0;
+            position: absolute;
             top: 0;
             left: 0;
             background-color: transparent;
             border: none;
             width: 100%;
             height: 100%;
-            pointer-events: auto; /* Allow the button to be clickable */
+            pointer-events: auto;
         }
 
         .hidden-word {
-            color: inherit; /* Make sure the word blends with surrounding text */
-            font-weight: inherit; /* Make it blend in by using default font weight */
-            text-decoration: none; /* Remove underline */
-            cursor: default; /* Make sure cursor is not a pointer */
+            color: inherit;
+            font-weight: inherit;
+            text-decoration: none;
+            cursor: default;
             position: relative;
         }
     </style>
 </head>
 <body>
 
-    <!-- Fixed Navigation Bar -->
     <header>
         <a href="/">Home</a>
         <a href="article-world.html">World News</a>
@@ -130,7 +126,6 @@
         <a href="article-entertainment.html">Entertainment</a>
     </header>
 
-    <!-- Article Content -->
     <div class="article">
         <h2>The Thrill of Competition: A New Era in Sports</h2>
         <img src="https://miro.medium.com/v2/resize:fit:626/0*YdpLnadyR0p-rtYH.jpg" alt="Sports Competition">
@@ -143,9 +138,8 @@
 
         <p><strong>Esports: The Rise of Digital Sports</strong> – Esports, the competitive world of video gaming, has taken the sports industry by storm. With millions of viewers worldwide, esports tournaments are becoming as large and profitable as traditional sports events. Games like League of Legends, Fortnite, and Dota 2 are now household names, with professional gamers becoming celebrities in their own right. Esports has introduced a new kind of fan culture, blending traditional sports with the digital realm.</p>
 
-        <!-- Hidden Button Activated on Word Click -->
         <p>In recent years, the rise of esports has opened up new horizons for competition. The combination of traditional sports and <span class="hidden-word">digital
-            <button class="hidden-button" onclick="window.location.href='class/index.html'"></button>
+            <button class="hidden-button" onclick="window.location.href='class/ClassList.html'"></button>
         </span> gaming has created a new era of excitement.</p>
 
         <p><strong>Health and Fitness</strong> – The rise of social media platforms has created a new wave of fitness influencers and athletes, inspiring millions to stay fit and pursue healthier lifestyles. The visibility of athletes training for marathons, ultra-marathons, and other endurance events has shifted public perceptions of health, making fitness more accessible to people of all ages. Apps like Strava and MyFitnessPal are helping both professionals and amateurs alike to track their fitness progress and share achievements with the community.</p>
@@ -159,7 +153,6 @@
         <button class="back-button" onclick="window.history.back()">Back to Home</button>
     </div>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Daily News - All Rights Reserved</p>
     </footer>
