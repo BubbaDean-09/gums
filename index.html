@@ -4,7 +4,12 @@
     <title>LearningAlly Audiobooks</title>
     <link rel="shortcut icon" href="/assets/photos/favicon.ico">
     <body style="background-color: rgb(44, 44, 44);">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Type to Search" onkeyup="filterCaptions()" class="search-bar">
+        </div>
       </body>
+
+      
       <style>
 
     @font-face {
@@ -31,9 +36,33 @@
         font-size: 16px;
     }
 
-        
-    
+    .search-bar {
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px; /* Rounded corners */
+    border: 2px solid #ccc; /* Light border */
+    background-color: #2c2c2c; /* Matches background */
+    color: white;
+    font-family: caros;
+    outline: none;
+    transition: all 0.3s ease; /* Smooth transition */
+}
 
+.search-bar::placeholder {
+    color: #b0b0b0; /* Placeholder text color */
+}
+
+.search-bar:focus {
+    border-color: #00bcd4; /* Change border on focus */
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Glow effect */
+}
+    
+.search-container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically if needed */
+    margin-top: 20px; /* Optional: adds space above the search bar */
+}
 
       </style>
 
@@ -41,7 +70,7 @@
 <body>
   
 
-<input type="text" id="searchInput" placeholder="Type to Search" onkeyup="filterCaptions()" class="search-bar" >
+
 
 <table style="width: 30%; text-align: left; border-collapse: collapse;" id="imageContainer">
   <tr>
