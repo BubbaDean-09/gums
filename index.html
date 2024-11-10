@@ -1,326 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LearningAlly Audiobooks</title>
-    <link rel="shortcut icon" href="/assets/photos/favicon.ico">
-    <body style="background-color: rgb(44, 44, 44);">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Type to Search" onkeyup="filterCaptions()" class="search-bar">
-        </div>
-      </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Front Page</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-      
-      <style>
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    @font-face {
-        font-family: caros;
-        src: url(cretype\ \ Caros\ Medium.otf);
-    }
+        h1 {
+            margin: 0;
+            font-size: 48px;
+        }
 
-    .round-button {
-        width: 215px;
-        height: 215px;
-        border: none;
-        background-color: rgb(44, 44, 44);
-        padding: 0;
-        box-sizing: border-box;
-        display: inline-block;
-        margin: 0 auto;
-       
-    }
-    .caption {
-        text-align: center;
-        display: block; 
-        font-family: caros;
-        color: white; 
-        font-size: 16px;
-    }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
 
-    .search-bar {
-    width: 300px;
-    padding: 10px;
-    border-radius: 15px; /* Rounded corners */
-    border: 2px solid #ccc; /* Light border */
-    background-color: #2c2c2c; /* Matches background */
-    color: white;
-    font-family: caros;
-    outline: none;
-    transition: all 0.3s ease; /* Smooth transition */
-}
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+            font-size: 18px;
+        }
 
-.search-bar::placeholder {
-    color: #b0b0b0; /* Placeholder text color */
-}
+        .navbar a:hover {
+            background-color: #00bcd4;
+            border-radius: 5px;
+        }
 
-.search-bar:focus {
-    border-color: #00bcd4; /* Change border on focus */
-    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Glow effect */
-}
-    
-.search-container {
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically if needed */
-    margin-top: 20px; /* Optional: adds space above the search bar */
-}
+        .content {
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+            flex-wrap: wrap;
+        }
 
-      </style>
+        .news-section {
+            background-color: white;
+            width: 300px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
 
+        .news-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .news-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .news-button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .news-button:hover {
+            background-color: #ff4081;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-  
 
+    <!-- Header Section -->
+    <header>
+        <h1>Daily News</h1>
+        <p>Latest updates from the world of news and entertainment</p>
+    </header>
 
-
-<table style="width: 30%; text-align: left; border-collapse: collapse;" id="imageContainer">
-  <tr>
-
-    
-    <td style="color: white;" class="image-item" data-caption="Fancy Pants Adventures">
-        <a href="math/fancypantsadventures/">
-            
-            <button class="round-button">
-                
-                <img width="200" ;  src="/assets/photos/fancypantsadventure1.png" alt="Fancy Pants Adventures">
-            </button>
-        </a>
-        <div class="caption">Fancy Pants Adventures</div>
-    </td>  <!-- Fancy Pants -->
-
-
-
-    <td style="color: white;" class="image-item" data-caption="Cookie Clicker">
-        <a href="/math/cookieclicker/cookie-clicker/">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/cookieclicker.jpeg" alt="Cookie Clicker" >
-            </button>
-        </a>
-        <div class="caption">Cookie Clicker</div>
-    </td> <!-- Cookie Clicker -->
-
-
-
-    <td style="color: white;" class="image-item" data-caption="Tube Jumpers">
-      <a href="/math/tubejumpers/">
-          <button class="round-button">
-              <img width="200" src="/assets/photos/tubejumpers.jpg" alt="Tube Jumpers">
-          </button>
-      </a>
-      <div class="caption">Tube Jumpers</div>
-  </td> <!-- Tube Jumpers -->
-
-
-
-  <td style="color: white;" class="image-item" data-caption="Acievement Unlocked">
-        <a href="/math/achievementunlocked/">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/achievementunlocked.png" alt="Acievement Unlocked">
-            </button>
-        </a>
-        <div class="caption">Acievement Unlocked</div>
-    </td> <!-- Achievement Unlocked -->
-
-
-
-    <td style="color: white;" class="image-item" data-caption="Rooftop Snipers">
-      <a href="/math/rooftopsnipers/">
-          <button class="round-button">
-              <img width="200" src="/assets/photos/rooftopsnipers.png" alt="Rooftop Snipers">
-          </button>
-      </a>
-      <div class="caption">Rooftop Snipers</div>
-  </td> <!-- Rooftop Snipers -->
-    
-  
-    
-  
-      
-      <td style="color: white;" class="image-item" data-caption="Getaway Shootout">
-          <a href="math/GetawayShootout/">
-              <button class="round-button">
-                  <img width="200" src="/assets/photos/getawayshootout1.png" alt="Getaway Shootout">
-              </button>
-          </a>
-          <div class="caption">Getaway Shootout</div>
-      </td>  <!-- Getaway Shootout -->
-
- 
-</table>
-
-<table style="width: 30%; text-align: left; border-collapse: collapse;" id="imageContainer">
-    <tr>
-  
-      
-      <td style="color: white;" class="image-item" data-caption="Snow Rider 3D">
-          <a href="math/snowrider3d/">
-              <button class="round-button">
-                  <img width="200" src="/assets/photos/snowrider3d.png" alt="Snow Rider 3D">
-              </button>
-          </a>
-          <div class="caption">Snow Rider 3D</div>
-      </td>  <!-- Snow Rider 3D -->
-  
-  
-  
-      <td style="color: white;" class="image-item" data-caption="Basketball Stars">
-          <a href="/math/basketballstars/">
-              <button class="round-button">
-                  <img width="200" src="/assets/photos/basketballstars.png" alt="Basketball Stars">
-              </button>
-          </a>
-          <div class="caption">Basketball Stars</div>
-      </td> <!-- Basketball Stars -->
-  
-  
-  
-      <td style="color: white;" class="image-item" data-caption="Eggy Car">
-        <a href="/math/eggycar/">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/eggycar.png" alt="Eggy car">
-            </button>
-        </a>
-        <div class="caption">Eggy Car</div>
-    </td> <!-- Eggy Car -->
-  
-  
-  
-    <td style="color: white;" class="image-item" data-caption="Bitlife">
-          <a href="/math/bitlife/">
-              <button class="round-button">
-                  <img width="200" src="/assets/photos/bitlife.png" alt="Bitlife">
-              </button>
-          </a>
-          <div class="caption">Bitlife</div>
-      </td> <!-- Bitlife -->
-  
-  
-  
-      <td style="color: white;" class="image-item" data-caption="Duck Life 3">
-        <a href="/math/ducklife3/">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/ducklife3.png" alt="Duck Life 3">
-            </button>
-        </a>
-        <div class="caption">Duck Life 3</div>
-    </td> <!-- Duck Life 3 -->
-
-    <td style="color: white;" class="image-item" data-caption="Run 2">
-        <a href="/math/run2/">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/run2.png" alt="Run 2">
-            </button>
-        </a>
-        <div class="caption">Run 2</div>
-    </td> <!-- Run 2 -->
-
-</table>
-
-<table style="width: 30%; text-align: left; border-collapse: collapse;" id="imageContainer">
-    <tr>
-  
-      
-      <td style="color: white;" class="image-item" data-caption="Vex 3">
-          <a href="math/vex3/">
-              <button class="round-button">
-                  <img width="200" src="/assets/photos/vex3.png" alt="Vex 3">
-              </button>
-          </a>
-          <div class="caption">Vex 3</div>
-      </td>  <!-- Vex 3 -->
-  
-  
-  
-      <td style="color: white;" class="image-item" data-caption="Vex 4">
-          <a href="/math/vex4/">
-              <button class="round-button">
-                  <img width="200" src="/assets/photos/vex4.png" alt="Vex 4">
-              </button>
-          </a>
-          <div class="caption">Vex 4</div>
-      </td> <!-- Vex 4 -->
-  
-  
-  
-      <td style="color: white;" class="image-item" data-caption="Vex 5">
-        <a href="/math/vex5/">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/vex5.png" alt="Vex 5">
-            </button>
-        </a>
-        <div class="caption">Vex 5</div>
-    </td> <!-- Vex 5 -->
-  
-  
-  
-    <td style="color: white;" class="image-item" data-caption="Vex 6">
-          <a href="/math/vex6/">
-              <button class="round-button">
-                  <img width="200" src="/assets/photos/vex6.png" alt="Vex 6">
-              </button>
-          </a>
-          <div class="caption">Vex 6</div>
-      </td> <!-- Vex 6 -->
-  
-  
-  
-      <td style="color: white;" class="image-item" data-caption="Vex 7">
-        <a href="/math/vex7/">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/vex7.png" alt="Vex 7">
-            </button>
-        </a>
-        <div class="caption">Vex 7</div>
-    </td> <!-- Vex 7 -->
-  
-  
-  
-  
-  
-  
-  
-  
-  
-     
-  </table>
-
-
-<script>
-    function filterCaptions() {
-        const input = document.getElementById('searchInput');
-        const filter = input.value.toLowerCase();
-        const items = document.getElementsByClassName('image-item');
-
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
         
-        for (let i = 0; i < items.length; i++) {
-            const caption = items[i].getAttribute('data-caption').toLowerCase();
-            if (caption.includes(filter)) {
-                items[i].classList.remove('hidden');
-            } else {
-                items[i].classList.add('hidden');
-            }
-        }
-    }
-</script>
-<style>
-        .hidden {
-            display: none;
-        }
+    </div>
 
+    <!-- Main Content Section -->
+    <div class="content">
+        <!-- Section 1: World News -->
+        <div class="news-section">
+            <h2>Breaking World News</h2>
+            <p>Stay up to date with global events happening right now.</p>
+            <button class="news-button" onclick="window.location.href='article-world.html'">Read Article</button>
+        </div>
 
-        
-    .hidden {
-        display: none;
-    }
+        <!-- Section 2: Technology -->
+        <div class="news-section">
+            <h2>Tech Innovations</h2>
+            <p>Explore the latest in tech from gadgets to software advancements.</p>
+            <button class="news-button" onclick="window.location.href='article-tech.html'">Read Article</button>
+        </div>
 
-    img {
-        border-radius: 100px; 
-        transition: transform 0.2s; 
-    }
+        <!-- Section 3: Sports -->
+        <div class="news-section">
+            <h2>Sports Highlights</h2>
+            <p>Catch up with the latest results, scores, and player news.</p>
+            <button class="news-button" onclick="window.location.href='article-sports.html'">Read Article</button>
+        </div>
 
-    img:hover {
-        transform: scale(1.1); 
-    }
-</style>
-    </style>
+        <!-- Section 4: Entertainment -->
+        <div class="news-section">
+            <h2>Entertainment Buzz</h2>
+            <p>From movie premieres to celebrity gossip, get all the buzz.</p>
+            <button class="news-button" onclick="window.location.href='article-entertainment.html'">Read Article</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Daily News - All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
