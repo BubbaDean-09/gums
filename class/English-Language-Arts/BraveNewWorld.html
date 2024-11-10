@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningAlly Audiobooks</title>
+    <link rel="shortcut icon" href="/assets/photos/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(44, 44, 44);
+        }
+
+        .game-container {
+            position: relative;
+            width: 90%;
+            max-width: 1700px;
+            height: 900px;
+            margin: 60px auto;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .bottom-menu {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .bottom-menu button {
+            background: none;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .bottom-menu button:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .back-button img,
+        .fullscreen-button img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+        <iframe src="/class/math/motox3mwinter/" title="Game Frame"></iframe>
+    </div>
+
+    <div class="bottom-menu">
+        <button class="back-button" onclick="window.history.back()">
+            <img src="/assets/photos/back.png" alt="Back Button">
+        </button>
+
+        <button class="fullscreen-button" onclick="toggleFullscreen()">
+            <img src="/assets/photos/fullscreen.png" alt="Fullscreen Button">
+        </button>
+    </div>
+
+    <script>
+        function toggleFullscreen() {
+            var iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+
+</body>
+</html>
