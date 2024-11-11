@@ -1,21 +1,66 @@
-<!DOCTYPE html>
-<html>
 <head>
     <title>LearningAlly Audiobooks</title>
     <link rel="shortcut icon" href="/assets/photos/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body style="background-color: rgb(44, 44, 44);">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Type to Search" onkeyup="filterCaptions()" class="search-bar">
-        </div>
-      </body>
 
+        
+          
+
+        <div class="search-container">
+            <button class="home-button" onclick="window.location.href='/index.html'">
+                <img src="/assets/photos/home.png" alt="Home Button">
+            </button>
+        
+            <input type="text" id="searchInput" placeholder="Type to Search" onkeyup="filterCaptions()" class="search-bar"> 
+            
+        </div>
+
+      </body>
+      <hr style="border: 1px solid #00bcd4; margin: 20px auto; width: 80%;"> 
       
       <style>
+#loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(44, 44 ,44); /* Semi-transparent background */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            z-index: 9999; /* Ensures it's on top of all content */
+        }
 
-    @font-face {
-        font-family: Caros;
-        src: url(cretype\ \ Caros\ Medium.otf);
-    }
+        /* Optional spinner */
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Spinner animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+.button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center-aligns items in the row */
+            gap: 20px; /* Space between items */
+            margin-top: 20px;
+        }
+
 
     .round-button {
         width: 215px;
@@ -24,53 +69,73 @@
         background-color: rgb(44, 44, 44);
         padding: 0;
         box-sizing: border-box;
-        display: inline-block;
+        display: ;
         margin: 0 auto;
-       
+        flex-wrap: wrap;
     }
+
     .caption {
         text-align: center;
         display: block; 
-        font-family: caros;
+        font-family: 'Poppins', sans-serif; 
         color: white; 
         font-size: 16px;
+        font-weight: 600; 
     }
 
     .search-bar {
     width: 300px;
     padding: 10px;
-    border-radius: 15px; /* Rounded corners */
-    border: 2px solid #ccc; /* Light border */
-    background-color: #2c2c2c; /* Matches background */
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    background-color: #2c2c2c;
     color: white;
-    font-family: caros;
+    font-family: 'Poppins', sans-serif; /* Updated search bar font */
     outline: none;
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease;
 }
 
 .search-bar::placeholder {
-    color: #b0b0b0; /* Placeholder text color */
+    color: #b0b0b0;
 }
 
 .search-bar:focus {
-    border-color: #00bcd4; /* Change border on focus */
-    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5); /* Glow effect */
+    border-color: #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
 }
-    
+
 .search-container {
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically if needed */
-    margin-top: 20px; /* Optional: adds space above the search bar */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-      </style>
+.home-button {
+    position: static;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.home-button img {
+    width: 40px;
+    height: 40px;
+}
+
+</style>
+      
 
 </head>
+
 <body>
   
-
-
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
 
 <table style="width: 30%; text-align: left; border-collapse: collapse;" id="imageContainer">
   <tr>
@@ -464,23 +529,23 @@
                 <table style="width: 30%; text-align: left; border-collapse: collapse;" id="imageContainer">
                     <tr>
                         
-                        <td style="color: white;" class="image-item" data-caption="Eugene's Life">
-                        <a href="English-Language-Arts/TheRedBadgeOfCourage.html">
+                        <td style="color: white;" class="image-item" data-caption="Temple Run 2">
+                        <a href="English-Language-Arts/ThePearl.html">
                          <button class="round-button">
-                                <img width="200" src="/assets/photos/eugeneslife.png" alt="Eugenes Life">
+                                <img width="200" src="/assets/photos/templerun2.png" alt="Eugenes Life">
                             </button>
                         </a>
-                        <div class="caption">Eugene's Life</div>
-                    </td> <!-- Eugene's Life -->
+                        <div class="caption">Temple Run 2</div>
+                    </td> <!-- Temple Run 2 -->
     
-                    <td style="color: white;" class="image-item" data-caption="example2">
-                        <a href="English-Language-Arts/WutheringHeights.html">
+                    <td style="color: white;" class="image-item" data-caption="Smash Karts">
+                        <a href="English-Language-Arts/TheirEyesWereWatchingGod.html">
                          <button class="round-button">
-                                <img width="200" src="/assets/photos/fireboywatergirl1.png" alt="example2">
+                                <img width="200" src="/assets/photos/smashkarts.png" alt="Smash Karts">
                             </button>
                         </a>
-                        <div class="caption">example2</div>
-                    </td> <!-- example2 -->
+                        <div class="caption">Smash Karts</div>
+                    </td> <!-- Smash Karts -->
     
                     <td style="color: white;" class="image-item" data-caption="example3">
                         <a href="English-Language-Arts/WutheringHeights.html">
@@ -519,29 +584,54 @@
                     </td> <!-- example6 -->
 
       
-                
-  
-     
   </table>
 
+  <!-- Start of Globel Code -->
+<CENTER>
+<script language="JavaScript">
+var count = "gregsgames";          // Change Your Account?
+var type = "metabld";       // Change Your Counter Image?
+var digits = "5";          // Change The Amount of Digits on Your Counter?
+var prog = "unique";          // Change to Either hit/unique?
+var statslink = "no";    // provide statistical link in counter yes/no?
+var sitelink = "yes";     // provide link back to our site;~) yes/no?
+var cntvisible = "yes"; // do you want counter visible yes/no?
+</script>
+<!-- START DO NOT TAMPER WITH ANYTHING ELSE BELOW THIS LINE FOR YOUR WEBTV & UNIX VISITORS -->
+<script language="JavaScript" src="http://006.freecounters.co.uk/count-133.js">
+</script>
+<noscript>
+<a href="http://www.freecounters.co.uk" target="_blank">
+<img  src="http://006.freecounters.co.uk/count-133.pl?count=gregsgames&cntvisible=no&mode=noscript" alt="Free Counters" title="Free Counters" border="0">
+</a>The following text will not be seen after you upload your website,
+please keep it in order to retain your counter functionality 
+<br><a href="http://www.freecounters.co.uk" target="_blank">Free Trackers</a><br> <a href="http://www.freecounters.co.uk" target="_blank">Help</a><br>
 
-<script>
+</noscript>
+<!-- END DO NOT TAMPER WITH ANYTHING ELSE ABOVE THIS LINE FOR YOUR WEBTV & UNIX VISITORS -->
+</CENTER>        
+<!-- End of Globel Code -->
+
+
+
+
+    <script>
     function filterCaptions() {
-        const input = document.getElementById('searchInput');
-        const filter = input.value.toLowerCase();
+        const input = document.getElementById('searchInput').value.toLowerCase();
         const items = document.getElementsByClassName('image-item');
-
-        
         for (let i = 0; i < items.length; i++) {
             const caption = items[i].getAttribute('data-caption').toLowerCase();
-            if (caption.includes(filter)) {
-                items[i].classList.remove('hidden');
-            } else {
-                items[i].classList.add('hidden');
-            }
+            items[i].style.display = caption.includes(input) ? '' : 'none';
         }
     }
-</script>
+
+
+    /
+
+    </script>
+
+    
+    </script>
 <style>
         .hidden {
             display: none;
@@ -554,14 +644,35 @@
     }
 
     img {
-        border-radius: 100px; 
+        border-radius: 30px; 
         transition: transform 0.2s; 
     }
 
     img:hover {
         transform: scale(1.1); 
     }
+
+    
+
 </style>
     </style>
+
+   
+
+    <!-- Your content goes here -->
+    <div>
+        <h1>Welcome to my website</h1>
+        <p>Content of the page...</p>
+    </div>
+
+    <script>
+        // Wait until everything (images, etc.) is fully loaded
+        window.addEventListener('load', function() {
+            // Hide the loading screen
+            document.getElementById('loading-screen').style.display = 'none';
+        });
+    </script>
+   
+
 </body>
 </html>
