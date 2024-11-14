@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>BobTheRobber4</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-78960661-1', 'auto');
+   ga('create', 'UA-78960661-49', 'auto', 'tracker_49');
+   ga('send', 'pageview');
+   ga('tracker_49.send', 'pageview');
+   ga('send', 'event', 'game', 'game_start', '');
+   ga('tracker_49.send', 'event', 'game', 'game_start', '');
+   
+   </script>
+
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script type="text/javascript">
+
+    function initGDApi(){ // invoke this function to initialize api
+      var initialized = false;
+      console.log("gd api init called");
+
+   if(!initialized){ // Api will be initialized once, so preroll is shown once either
+
+        var settings = {
+             gameId: "268e2d230a4c4ee58c52bc9ddff62838",
+             userId: "FB2B5D8E-9E6E-40E0-9909-634EBA5E5F8F-s1",
+             resumeGame: resumeGame,
+             pauseGame: pauseGame,
+             onInit: function (data) {
+          initialized = true;
+          console.log("Init:"+data);
+             },
+             onError: function (data) {
+                console.log("Error:"+data);
+             }
+       };
+       (function(i,s,o,g,r,a,m){
+         i['GameDistribution']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)};i[r].l=1*new Date();a=s.createElement(o);m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a, m);
+       })(window, document, 'script', '//html5.api.gamedistribution.com/main.min.js', 'gdApi');
+
+       gdApi(settings);
+
+       function resumeGame() {
+         console.log("GD-HTML5 Resume game");
+       }
+
+       function pauseGame() {
+         console.log("GD-HTML5 Pause game");
+       }
+
+      }
+
+    }
+
+    initGDApi();
+
+    function playGame() {
+      gdApi.play();
+    }
+
+    function showBanner() {
+      gdApi.showBanner();
+    }
+
+    </script>
+
+  </head>
+  <body class="template">
+    <p class="header">BobTheRobber4</p>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="800px"></canvas>
+      <br>
+      <div id="loadingBox">
+        <div id="bgBar"></div>
+          <div id="progressBar"></div>
+            <p id="loadingInfo">Loading...</p>
+            </div>
+    </div>
+
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 536870912,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "https://btr42.gregsrump/web.datagz",
+    codeUrl: "Release/web.jsgz",
+    memUrl: "Release/web.memgz",
+
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBeYMfJGvjOqShunKeznZEVcDgKILoyJPc",
+    authDomain: "bob-the-robber-4.firebaseapp.com",
+    databaseURL: "https://bob-the-robber-4.firebaseio.com",
+    projectId: "bob-the-robber-4",
+    storageBucket: "bob-the-robber-4.appspot.com",
+    messagingSenderId: "1020033231749"
+  };
+  firebase.initializeApp(config);
+
+  var gadgets = [0, 0, 0, 0, 0, 0];
+  var trophySlot = [0, 0];
+  var franceCostumesPrice = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  var franceLevelsLoot = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  var franceLevelsTime = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  var lockpick = firebase.database().ref('web_gadgetsPrice/lockpick');
+  lockpick.on('value', snap => gadgets[1] = snap.val());
+
+  var photo = firebase.database().ref('web_gadgetsPrice/photo');
+  photo.on('value', snap => gadgets[2] = snap.val());
+
+  var box = firebase.database().ref('web_gadgetsPrice/box');
+  box.on('value', snap => gadgets[3] = snap.val());
+
+  var shocker = firebase.database().ref('web_gadgetsPrice/shocker');
+  shocker.on('value', snap => gadgets[4] = snap.val());
+
+  var gadgetSlot2 = firebase.database().ref('web_gadgetsPrice/advanced_belt');
+  gadgetSlot2.on('value', snap => gadgets[0] = snap.val());
+
+  var gadgetSlot3 = firebase.database().ref('web_gadgetsPrice/special_belt');
+  gadgetSlot3.on('value', snap => gadgets[5] = snap.val());
+
+  // --------------------------------------------------------------------
+  var trophySlot2 = firebase.database().ref('web_trophies/trophySlot2');
+  trophySlot2.on('value', snap => trophySlot[0] = snap.val());
+
+  var trophySlot3 = firebase.database().ref('web_trophies/trophySlot3');
+  trophySlot3.on('value', snap => trophySlot[1] = snap.val());
+
+  // --------------------------------------------------------------------
+
+  var franceCostumesPrice1 = firebase.database().ref('web_franceCostumes/costume1');
+  franceCostumesPrice1.on('value', snap => franceCostumesPrice[0] = snap.val());
+
+  var franceCostumesPrice2 = firebase.database().ref('web_franceCostumes/costume2');
+  franceCostumesPrice2.on('value', snap => franceCostumesPrice[1] = snap.val());
+
+  var franceCostumesPrice3 = firebase.database().ref('web_franceCostumes/costume3');
+  franceCostumesPrice3.on('value', snap => franceCostumesPrice[2] = snap.val());
+
+  var franceCostumesPrice4 = firebase.database().ref('web_franceCostumes/costume4');
+  franceCostumesPrice4.on('value', snap => franceCostumesPrice[3] = snap.val());
+
+  var franceCostumesPrice5 = firebase.database().ref('web_franceCostumes/costume5');
+  franceCostumesPrice5.on('value', snap => franceCostumesPrice[4] = snap.val());
+
+  var franceCostumesPrice6 = firebase.database().ref('web_franceCostumes/costume6');
+  franceCostumesPrice6.on('value', snap => franceCostumesPrice[5] = snap.val());
+
+  var franceCostumesPrice7 = firebase.database().ref('web_franceCostumes/costume7');
+  franceCostumesPrice7.on('value', snap => franceCostumesPrice[6] = snap.val());
+
+  var franceCostumesPrice8 = firebase.database().ref('web_franceCostumes/costume8');
+  franceCostumesPrice8.on('value', snap => franceCostumesPrice[7] = snap.val());
+
+  var franceCostumesPrice9 = firebase.database().ref('web_franceCostumes/costume9');
+  franceCostumesPrice9.on('value', snap => franceCostumesPrice[8] = snap.val());
+
+  var franceCostumesPrice10 = firebase.database().ref('web_franceCostumes/costume10');
+  franceCostumesPrice10.on('value', snap => franceCostumesPrice[9] = snap.val());
+
+  // --------------------------------------------------------------------
+
+  var franceLevelsLoot = firebase.database().ref('web_franceLevelsMoney/level0');
+  franceLevelsLoot.on('value', snap => franceLevelsLoot[0] = snap.val());
+
+  var franceLevelsLoot1 = firebase.database().ref('web_franceLevelsMoney/level1');
+  franceLevelsLoot1.on('value', snap => franceLevelsLoot[1] = snap.val());
+
+  var franceLevelsLoot2 = firebase.database().ref('web_franceLevelsMoney/level2');
+  franceLevelsLoot2.on('value', snap => franceLevelsLoot[2] = snap.val());
+
+  var franceLevelsLoot3 = firebase.database().ref('web_franceLevelsMoney/level3');
+  franceLevelsLoot3.on('value', snap => franceLevelsLoot[3] = snap.val());
+
+  var franceLevelsLoot4 = firebase.database().ref('web_franceLevelsMoney/level4');
+  franceLevelsLoot4.on('value', snap => franceLevelsLoot[4] = snap.val());
+
+  var franceLevelsLoot5 = firebase.database().ref('web_franceLevelsMoney/level5');
+  franceLevelsLoot5.on('value', snap => franceLevelsLoot[5] = snap.val());
+
+  var franceLevelsLoot6 = firebase.database().ref('web_franceLevelsMoney/level6');
+  franceLevelsLoot6.on('value', snap => franceLevelsLoot[6] = snap.val());
+
+  var franceLevelsLoot7 = firebase.database().ref('web_franceLevelsMoney/level7');
+  franceLevelsLoot7.on('value', snap => franceLevelsLoot[7] = snap.val());
+
+  var franceLevelsLoot8 = firebase.database().ref('web_franceLevelsMoney/level8');
+  franceLevelsLoot8.on('value', snap => franceLevelsLoot[8] = snap.val());
+
+  var franceLevelsLoot9 = firebase.database().ref('web_franceLevelsMoney/level9');
+  franceLevelsLoot9.on('value', snap => franceLevelsLoot[9] = snap.val());
+
+  var franceLevelsLoot10 = firebase.database().ref('web_franceLevelsMoney/level10');
+  franceLevelsLoot10.on('value', snap => franceLevelsLoot[10] = snap.val());
+
+  var franceLevelsLoot11 = firebase.database().ref('web_franceLevelsMoney/level11');
+  franceLevelsLoot11.on('value', snap => franceLevelsLoot[11] = snap.val());
+
+  var franceLevelsLoot12 = firebase.database().ref('web_franceLevelsMoney/level12');
+  franceLevelsLoot12.on('value', snap => franceLevelsLoot[12] = snap.val());
+
+  var franceLevelsLoot13 = firebase.database().ref('web_franceLevelsMoney/level13');
+  franceLevelsLoot13.on('value', snap => franceLevelsLoot[13] = snap.val());
+
+  // --------------------------------------------------------------------
+
+  var franceLevelTime1 = firebase.database().ref('web_levelTime/level1');
+  franceLevelTime1.on('value', snap => franceLevelsTime[0] = snap.val());
+
+  var franceLevelTime2 = firebase.database().ref('web_levelTime/level2');
+  franceLevelTime2.on('value', snap => franceLevelsTime[1] = snap.val());
+
+  var franceLevelTime3 = firebase.database().ref('web_levelTime/level3');
+  franceLevelTime3.on('value', snap => franceLevelsTime[2] = snap.val());
+
+  var franceLevelTime4 = firebase.database().ref('web_levelTime/level4');
+  franceLevelTime4.on('value', snap => franceLevelsTime[3] = snap.val());
+
+  var franceLevelTime5 = firebase.database().ref('web_levelTime/level5');
+  franceLevelTime5.on('value', snap => franceLevelsTime[4] = snap.val());
+
+  var franceLevelTime6 = firebase.database().ref('web_levelTime/level6');
+  franceLevelTime6.on('value', snap => franceLevelsTime[5] = snap.val());
+
+  var franceLevelTime7 = firebase.database().ref('web_levelTime/level7');
+  franceLevelTime7.on('value', snap => franceLevelsTime[6] = snap.val());
+
+  var franceLevelTime8 = firebase.database().ref('web_levelTime/level8');
+  franceLevelTime8.on('value', snap => franceLevelsTime[7] = snap.val());
+
+  var franceLevelTime9 = firebase.database().ref('web_levelTime/level9');
+  franceLevelTime9.on('value', snap => franceLevelsTime[8] = snap.val());
+
+  var franceLevelTime10 = firebase.database().ref('web_levelTime/level10');
+  franceLevelTime10.on('value', snap => franceLevelsTime[9] = snap.val());
+
+  var franceLevelTime11 = firebase.database().ref('web_levelTime/level11');
+  franceLevelTime11.on('value', snap => franceLevelsTime[10] = snap.val());
+
+  var franceLevelTime12 = firebase.database().ref('web_levelTime/level12');
+  franceLevelTime12.on('value', snap => franceLevelsTime[11] = snap.val());
+
+  var franceLevelTime13 = firebase.database().ref('web_levelTime/level13');
+  franceLevelTime13.on('value', snap => franceLevelsTime[12] = snap.val());
+
+  // --------------------------------------------------------------------
+
+  function getGadgetPrice(gadgetIndex) {
+    SendMessage("Menuelements", "setGadgetPrice" + gadgetIndex, gadgets[gadgetIndex]);
+  }
+
+  function getTrophyPrice(trophyIndex) {
+    SendMessage("Menuelements", "setTrophyPrice" + trophyIndex, trophySlot[trophyIndex]);
+  }
+
+  function getCostumePrice(costumeIndex) {
+    SendMessage("Menuelements", "setCostumePrice" + costumeIndex, franceCostumesPrice[costumeIndex]);
+  }
+
+  function getLevelsLoot(LevelsLootIndex) {
+    SendMessage("Menuelements", "setLevelsLoot" + LevelsLootIndex, franceLevelsLoot[LevelsLootIndex]);
+  }
+
+  function getLevelsTime(LevelsTimeIndex) {
+    SendMessage("Menuelements", "setLevelsTime" + LevelsTimeIndex, franceLevelsTime[LevelsTimeIndex]);
+  }
+
+  function gaCustomEvent(eventCategory, eventAction, eventLabel, eventValue) {
+    ga('send', 'event', eventCategory, eventAction, eventLabel, eventValue);
+    ga('tracker_49.send', 'event', eventCategory, eventAction, eventLabel, eventValue);
+  }
+
+</script>
+
+  </body>
+</html>
