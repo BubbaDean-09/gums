@@ -1,858 +1,330 @@
+        <!DOCTYPE html>
+        <html lang="en">
         <head>
-        <title>LearningAlly Audiobooks</title>
-        <link rel="shortcut icon" href="/assets/photos/favicon.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <body style="background-color: rgb(44, 44, 44);">
+            <title>Game Library</title>
+            <link rel="shortcut icon" href="/assets/photos/favicon.ico">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                :root {
+                    --primary-bg: #2c2c2c;
+                    --accent-color: #00bcd4;
+                    --text-color: #ffffff;
+                }
 
+                body {
+                    background-color: var(--primary-bg);
+                    margin: 0;
+                    font-family: 'Poppins', sans-serif;
+                    color: var(--text-color);
+                }
 
+                .game-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 0));
+                    gap: 20px;
+                    padding: 1rem;
+                    max-width: 1400px;
+                    margin: 0 auto;
+                }
 
+                .game-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    transition: transform 0.3s ease;
+                }
 
-        <div class="search-container">
-        <input
-        id="searchInput"
-        class="search-bar"
-        type="text"
-        placeholder="Search..."
-        oninput="filterCaptions()"
-        />
+                .game-card:hover {
+                    transform: translateY(-5px);
+                }
 
-        </body>
-        <hr style="border: 1px solid #00bcd4; margin: 20px auto; width: 80%;"> 
+                .game-button {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    padding: 0;
+                    width: 200px;
+                    height: 200px;
+                }
 
-        <style>
-        #loading-screen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(44, 44 ,44); /* Semi-transparent background */
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2em;
-        z-index: 9999; /* Ensures it's on top of all content */
-        }
+                .game-image {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    object-fit: cover;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                }
 
-        /* Optional spinner */
-        .spinner {
-        border: 4px solid rgba(255, 255, 255, 0.3);
-        border-top: 4px solid #fff;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        animation: spin 1s linear infinite;
-        }
+                .game-title {
+                    margin-top: 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    text-align: center;
+                }
 
-        /* Spinner animation */
-        @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-        }
+                .search-container {
+                    position: sticky;
+                    top: 0;
+                    background-color: var(--primary-bg);
+                    padding: 1rem;
+                    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+                    z-index: 100;
+                    text-align: center;
+                }
 
+                .search-bar {
+                    width: 300px;
+                    padding: 0.8rem 1.2rem;
+                    border-radius: 25px;
+                    border: 2px solid var(--accent-color);
+                    background-color: var(--primary-bg);
+                    color: var(--text-color);
+                    font-family: inherit;
+                    font-size: 1rem;
+                    transition: all 0.3s ease;
+                }
 
-        .button-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Center-aligns items in the row */
-        gap: 20px; /* Space between items */
-        margin-top: 20px;
-        }
+                .search-bar:focus {
+                    outline: none;
+                    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+                    width: 350px;
+                }
 
+                .search-bar::placeholder {
+                    color: #888;
+                }
 
-        .round-button {
-        width: 215px;
-        height: 215px;
-        border: none;
-        background-color: rgb(44, 44, 44);
-        padding: 0;
-        box-sizing: border-box;
-        display: ;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        }
+                #loading-screen {
+                    position: fixed;
+                    inset: 0;
+                    background-color: var(--primary-bg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 9999;
+                }
 
-        .caption {
-        text-align: center;
-        display: block; 
-        font-family: 'Poppins', sans-serif; 
-        color: white; 
-        font-size: 16px;
-        font-weight: 600; 
-        }
+                .spinner {
+                    width: 50px;
+                    height: 50px;
+                    border: 4px solid rgba(255,255,255,0.3);
+                    border-top-color: var(--text-color);
+                    border-radius: 50%;
+                    animation: spin 1s linear infinite;
+                }
 
-        .search-bar {
-        width: 300px;
-        padding: 10px;
-        border-radius: 15px;
-        border: 2px solid #ccc;
-        background-color: #2c2c2c;
-        color: white;
-        font-family: 'Poppins', sans-serif; 
-        outline: none;
-        transition: all 0.3s ease;
-        }
-
-        .search-bar::placeholder {
-        color: #b0b0b0;
-        }
-
-        .search-bar:focus {
-        border-color: #00bcd4;
-        box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
-        }
-
-        .search-container {
-        position: sticky; 
-        top: 0;
-        background-color: #2c2c2c;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-        text-align: center;
-        }
-
-        .home-button {
-        position: static;
-        top: 10px;
-        left: 10px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        }
-
-        .home-button img {
-        width: 40px;
-        height: 40px;
-        }
-
-
-
-
-
-        </style>
-
-
+                @keyframes spin {
+                    to { transform: rotate(360deg); }
+                }
+            </style>
         </head>
-
         <body>
-
-        <div id="loading-screen">
-        <div class="spinner"></div>
-        </div>
-
-        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-
-        <td style="color: white;" class="image-item" data-caption="Fancy Pants Adventures">
-        <a href="English-Language-Arts/toKillaMockingbird.html">
-
-        <button class="round-button">
-
-        <img width="200" ;  src="/assets/photos/fancypantsadventure1.png" alt="Fancy Pants Adventures">
-        </button>
-        </a>
-        <div class="caption">Fancy Pants Adventures</div>
-        </td>  <!-- Fancy Pants -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Cookie Clicker">
-        <a href="English-Language-Arts/LordOftheFlies.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/cookieclicker.jpeg" alt="Cookie Clicker" >
-        </button>
-        </a>
-        <div class="caption">Cookie Clicker</div>
-        </td> <!-- Cookie Clicker -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Tube Jumpers">
-        <a href="English-Language-Arts/CatcherInTheRye.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/tubejumpers.jpg" alt="Tube Jumpers">
-        </button>
-        </a>
-        <div class="caption">Tube Jumpers</div>
-        </td> <!-- Tube Jumpers -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Achievement Unlocked">
-        <a href="English-Language-Arts/Frankenstein.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/achievementunlocked.png" alt="Achievement Unlocked">
-        </button>
-        </a>
-        <div class="caption">Achievement Unlocked</div>
-        </td> <!-- Achievement Unlocked -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Rooftop Snipers">
-        <a href="English-Language-Arts/OfMiceAndMen.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/rooftopsnipers.png" alt="Rooftop Snipers">
-        </button>
-        </a>
-        <div class="caption">Rooftop Snipers</div>
-        </td> <!-- Rooftop Snipers -->
-
-
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Getaway Shootout">
-        <a href="English-Language-Arts/RomeoAndJuliet.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/getawayshootout1.png" alt="Getaway Shootout">
-        </button>
-        </a>
-        <div class="caption">Getaway Shootout</div>
-        </td>  <!-- Getaway Shootout -->
-
-
-        </table>
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-
-        <td style="color: white;" class="image-item" data-caption="Snow Rider 3D">
-        <a href="English-Language-Arts/TheCrucible.html"> <button class="round-button">
-        <img width="200" src="/assets/photos/snowrider3d.png" alt="Snow Rider 3D">
-        </button>
-        </a>
-        <div class="caption">Snow Rider 3D</div>
-        </td>  <!-- Snow Rider 3D -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Basketball Stars">
-        <a href="English-Language-Arts/TheGreatGatsby.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/basketballstars.png" alt="Basketball Stars">
-        </button>
-        </a>
-        <div class="caption">Basketball Stars</div>
-        </td> <!-- Basketball Stars -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Eggy Car">
-        <a href="English-Language-Arts/TheOutsiders.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/eggycar.png" alt="Eggy car">
-        </button>
-        </a>
-        <div class="caption">Eggy Car</div>
-        </td> <!-- Eggy Car -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Bitlife">
-        <a href="English-Language-Arts/TheGiver.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/bitlife.png" alt="Bitlife">
-        </button>
-        </a>
-        <div class="caption">Bitlife</div>
-        </td> <!-- Bitlife -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Duck Life 3">
-        <a href="English-Language-Arts/Fahrenheit451.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/ducklife3.png" alt="Duck Life 3">
-        </button>
-        </a>
-        <div class="caption">Duck Life 3</div>
-        </td> <!-- Duck Life 3 -->
-
-        <td style="color: white;" class="image-item" data-caption="Run 2">
-        <a href="English-Language-Arts/TheCanterburyTales.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/run2.png" alt="Run 2">
-        </button>
-        </a>
-        <div class="caption">Run 2</div>
-        </td> <!-- Run 2 -->
-
-
-        <tr>
-
-
-
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-
-        <td style="color: white;" class="image-item" data-caption="Vex 3">
-        <a href="English-Language-Arts/1984.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/vex3.png" alt="Vex 3">
-        </button>
-        </a>
-        <div class="caption">Vex 3</div>
-        </td>  <!-- Vex 3 -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Vex 4">
-        <a href="English-Language-Arts/AWrinkleInTime.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/vex4.png" alt="Vex 4">
-        </button>
-        </a>
-        <div class="caption">Vex 4</div>
-        </td> <!-- Vex 4 -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Vex 5">
-        <a href="English-Language-Arts/TouchingSpiritBear.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/vex5.png" alt="Vex 5">
-        </button>
-        </a>
-        <div class="caption">Vex 5</div>
-        </td> <!-- Vex 5 -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Vex 6">
-        <a href="English-Language-Arts/TheBellJar.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/vex6.png" alt="Vex 6">
-        </button>
-        </a>
-        <div class="caption">Vex 6</div>
-        </td> <!-- Vex 6 -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Vex 7">
-        <a href="English-Language-Arts/Hamlet.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/vex7.png" alt="Vex 7">
-        </button>
-        </a>
-        <div class="caption">Vex 7</div>
-        </td> <!-- Vex 7 -->
-
-        <td style="color: white;" class="image-item" data-caption="Moto X3M">
-        <a href="English-Language-Arts/TheAdventuresOfHuckleberryFinn.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/motox3m.png" alt="Moto X3M">
-        </button>
-        </a>
-        <div class="caption">Moto X3M</div>
-        </td> <!-- Moto X3M -->
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-
-        <td style="color: white;" class="image-item" data-caption="Moto X3M 2">
-        <a href="English-Language-Arts/TheDiaryOfAYoungGirl.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/motox3m2.png" alt="Moto X3M 2">
-        </button>
-        </a>
-        <div class="caption">Moto X3M 2</div>
-        </td>  <!-- Moto X3M 2 -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Moto X3M Pool Party">
-        <a href="English-Language-Arts/TheOdyssey.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/motox3mpoolparty.png" alt="Moto X3M Pool Party">
-        </button>
-        </a>
-        <div class="caption">Moto X3M Pool Party</div>
-        </td> <!-- Moto X3M Pool Party -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Moto X3M Spooky Land">
-        <a href="English-Language-Arts/PrideAndPrejudice.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/motox3mspookyland.png" alt="Moto X3M Spooky Land">
-        </button>
-        </a>
-        <div class="caption">Moto X3M Spooky Land</div>
-        </td> <!-- Moto X3M Spooky Land -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="Moto X3M Winter">
-        <a href="English-Language-Arts/BraveNewWorld.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/motox3mwinter.png" alt="Moto X3M Winter">
-        </button>
-        </a>
-        <div class="caption">Moto X3M Winter</div>
-        </td> <!-- Moto X3M Winter -->
-
-
-
-        <td style="color: white;" class="image-item" data-caption="House of Hazards">
-        <a href="English-Language-Arts/TheGrapesOfWrath.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/houseofhazards.png" alt="House of Hazards">
-        </button>
-        </a>
-        <div class="caption">House of Hazards</div>
-        </td> <!-- House of Hazards -->
-
-        <td style="color: white;" class="image-item" data-caption="Drift Boss">
-        <a href="English-Language-Arts/TheScarletLetter.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/driftboss.png" alt="Drift Boss">
-        </button>
-        </a>
-        <div class="caption">Drift Boss</div>
-        </td> <!-- Drift Boss -->
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-
-        <td style="color: white;" class="image-item" data-caption="Fireboy and Watergirl 1">
-        <a href="English-Language-Arts/WutheringHeights.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/fireboywatergirl1.png" alt="Fireboy and Watergirl 1">
-        </button>
-        </a>
-        <div class="caption">Fireboy and Watergirl 1</div>
-        </td> <!-- Fireboy and Watergirl 1 -->
-
-        <td style="color: white;" class="image-item" data-caption="Fireboy and Watergirl 2 ">
-        <a href="English-Language-Arts/Beowulf.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/fireboywatergirl2.png" alt="Fireboy and Watergirl 2 ">
-        </button>
-        </a>
-        <div class="caption">Fireboy and Watergirl 2 </div>
-        </td> <!-- Fireboy and Watergirl 2  -->
-
-        <td style="color: white;" class="image-item" data-caption="Fireboy and Watergirl 3">
-        <a href="English-Language-Arts/ATaleOfTwoCities.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/fireboywatergirl3.png" alt="Fireboy and Watergirl 3">
-        </button>
-        </a>
-        <div class="caption">Fireboy and Watergirl 3</div>
-        </td> <!-- Fireboy and Watergirl 3 -->
-
-        <td style="color: white;" class="image-item" data-caption="Fireboy and Watergirl 4">
-        <a href="English-Language-Arts/TheLittlePrince.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/fireboywatergirl4.png" alt="Fireboy and Watergirl 4">
-        </button>
-        </a>
-        <div class="caption">Fireboy and Watergirl 4</div>
-        </td> <!-- Fireboy and Watergirl 4 -->
-
-        <td style="color: white;" class="image-item" data-caption="Fireboy and Watergirl 5">
-        <a href="English-Language-Arts/Othello.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/fireboywatergirl5.png" alt="Fireboy and Watergirl 5">
-        </button>
-        </a>
-        <div class="caption">Fireboy and Watergirl 5</div>
-        </td> <!-- Fireboy and Watergirl 5 -->
-
-        <td style="color: white;" class="image-item" data-caption="Fireboy and Watergirl 6">
-        <a href="English-Language-Arts/TheOldManAndTheSea.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/fireboywatergirl6.png" alt="Fireboy and Watergirl 6">
-        </button>
-        </a>
-        <div class="caption">Fireboy and Watergirl 6</div>
-        </td> <!-- Fireboy and Watergirl 6 -->
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-        <td style="color: white;" class="image-item" data-caption="Tag">
-        <a href="English-Language-Arts/FlowersForAlgernon.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/tag.png" alt="Tag">
-        </button>
-        </a>
-        <div class="caption">Tag</div>
-        </td> <!-- Tag -->
-
-        <td style="color: white;" class="image-item" data-caption="Basket Swooshes">
-        <a href="English-Language-Arts/DeathOfASalesman.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/basketswooshes.png" alt="Basket Swooshes">
-        </button>
-        </a>
-        <div class="caption">Basket Swooshes</div>
-        </td> <!-- Basket Swooshes -->
-
-        <td style="color: white;" class="image-item" data-caption="12 Mini Battles">
-        <a href="English-Language-Arts/CrimeAndPunishment.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/12minibattles.png" alt="12 Mini Battles">
-        </button>
-        </a>
-        <div class="caption">12 Mini Battles</div>
-        </td> <!-- 12 Mini Battles -->
-
-        <td style="color: white;" class="image-item" data-caption="Drive Mad">
-        <a href="English-Language-Arts/ASeperatePlace.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/drivemad.png" alt="Drive Mad">
-        </button>
-        </a>
-        <div class="caption">Drive Mad</div>
-        </td> <!-- Drive Mad -->
-
-        <td style="color: white;" class="image-item" data-caption="Fancy Pants Adventures 2">
-        <a href="English-Language-Arts/TheAdventuresOfTomSawyer.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/fancypantsadventures2.png" alt="Fancy Pants Adventures 2">
-        </button>
-        </a>
-        <div class="caption">Fancy Pants Adventures 2</div>
-        </td> <!-- Fancy Pants Adventures 2 -->
-
-        <td style="color: white;" class="image-item" data-caption="The Impossible Quiz">
-        <a href="English-Language-Arts/TheTamingOfTheShrew.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/theimpossiblequiz.png" alt="The Impossible Quiz">
-        </button>
-        </a>
-        <div class="caption">The Impossible Quiz</div>
-        </td> <!-- The Impossible Quiz -->
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-        <td style="color: white;" class="image-item" data-caption="Temple Run 2">
-        <a href="English-Language-Arts/ThePearl.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/templerun2.png" alt="Eugenes Life">
-        </button>
-        </a>
-        <div class="caption">Temple Run 2</div>
-        </td> <!-- Temple Run 2 -->
-
-        <td style="color: white;" class="image-item" data-caption="Smash Karts">
-        <a href="English-Language-Arts/TheirEyesWereWatchingGod.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/smashkarts.png" alt="Smash Karts">
-        </button>
-        </a>
-        <div class="caption">Smash Karts</div>
-        </td> <!-- Smash Karts -->
-
-        <td style="color: white;" class="image-item" data-caption="Basket And Ball">
-        <a href="English-Language-Arts/WordsOfRadiance.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/basketandball.png" alt="Basket And Ball">
-        </button>
-        </a>
-        <div class="caption">Basket And Ball</div>
-        </td> <!-- Basket And Ball -->
-
-        <td style="color: white;" class="image-item" data-caption="Sausage Flip">
-        <a href="English-Language-Arts/CrookedKingdom.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/sausageflip.png" alt="Sausage Flip">
-        </button>
-        </a>
-        <div class="caption">Sausage Flip</div>
-        </td> <!-- Sausage Flip -->
-
-        <td style="color: white;" class="image-item" data-caption="Jetpack Joyride">
-        <a href="English-Language-Arts/FourthWing.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/jetpackjoyride.png" alt="Jetpack Joyride">
-        </button>
-        </a>
-        <div class="caption">Jetpack Joyride</div>
-        </td> <!-- Jetpack Joyride -->
-
-        <td style="color: white;" class="image-item" data-caption="Basket Random">
-        <a href="English-Language-Arts/TheReturnOfTheKing.html">
-        <button class="round-button">
-        <img width="200" src="/assets/photos/basketrandom.png" alt="Basket Random">
-        </button>
-        </a>
-        <div class="caption">Basket Random</div>
-        </td> <!-- Basket Random -->
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-        <td style="color: white;" class="image-item" data-caption="Super Mario Bros">
-        <a href="English-Language-Arts/TheHouseOfHades.html">
-        <button class="round-button">
-            <img width="200" src="/assets/photos/supermariobros.png" alt="Super Mario Bros">
-        </button>
-        </a>
-        <div class="caption">Super Mario Bros</div>
-        </td> <!-- Super Mario Bros -->
-
-        <td style="color: white;" class="image-item" data-caption="Raft Wars">
-        <a href="English-Language-Arts/TheNightingale.html">
-        <button class="round-button">
-            <img width="200" src="/assets/photos/raftwars.png" alt="Raft Wars">
-        </button>
-        </a>
-        <div class="caption">Raft Wars</div>
-        </td> <!-- Raft Wars -->
-
-        <td style="color: white;" class="image-item" data-caption="Raft Wars 2">
-        <a href="English-Language-Arts/TheKingdomOfAsh.html">
-        <button class="round-button">
-            <img width="200" src="/assets/photos/raftwars2.png" alt="Raft Wars 2">
-        </button>
-        </a>
-        <div class="caption">Raft Wars 2</div>
-        </td> <!-- Raft Wars 2 -->
-
-        <td style="color: white;" class="image-item" data-caption="Adventure Drivers">
-        <a href="English-Language-Arts/TheCompleteMaus.html">
-        <button class="round-button">
-            <img width="200" src="/assets/photos/adventuredrivers.png" alt="Adventure Drivers">
-        </button>
-        </a>
-        <div class="caption">Adventure Drivers</div>
-        </td> <!-- Adventure Drivers -->
-
-        <td style="color: white;" class="image-item" data-caption="Bumper Cars Soccer">
-        <a href="English-Language-Arts/KnowMyName.html">
-        <button class="round-button">
-            <img width="200" src="/assets/photos/bumpercarssoccer.png" alt="Bumper Cars Soccer">
-        </button>
-        </a>
-        <div class="caption">Bumper Cars Soccer</div>
-        </td> <!-- Bumper Cars Soccer -->
-
-        <td style="color: white;" class="image-item" data-caption="Stickman Hook">
-        <a href="English-Language-Arts/ClockworkPrincess.html">
-        <button class="round-button">
-            <img width="200" src="/assets/photos/stickmanhook.png" alt="Stickman Hook">
-        </button>
-        </a>
-        <div class="caption">Stickman Hook</div>
-        </td> <!-- Stickman Hook -->
-
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <tr>
-
-        <td style="color: white;" class="image-item" data-caption="Bearsus">
-        <a href="English-Language-Arts/LightBringer.html">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/bearsus.png" alt="Bearsus">
-            </button>
-        </a>
-        <div class="caption">Bearsus</div>
-        </td> <!-- Bearsus -->
-
-        <td style="color: white;" class="image-item" data-caption="Paper.io 2">
-        <a href="English-Language-Arts/JustMercy.html">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/paperio2.png" alt="Paper.io 2">
-            </button>
-        </a>
-        <div class="caption">Paper.io 2</div>
-        </td> <!-- Paper.io 2 -->
-
-        <td style="color: white;" class="image-item" data-caption="2048">
-        <a href="English-Language-Arts/Mythology.html">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/2048.png" alt="2048">
-            </button>
-        </a>
-        <div class="caption">2048</div>
-        </td> <!-- 2048 -->
-
-        <td style="color: white;" class="image-item" data-caption="8 Ball Pool">
-        <a href="English-Language-Arts/ARaisinInTheSun.html">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/8ballpool.png" alt="8 Ball Pool">
-            </button>
-        </a>
-        <div class="caption">8 Ball Pool</div>
-        </td> <!-- 8 Ball Pool -->
-
-        <td style="color: white;" class="image-item" data-caption="Bacon May Die">
-        <a href="English-Language-Arts/TheBookThief.html">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/baconmaydie.png" alt="Bacon May Die">
-            </button>
-        </a>
-        <div class="caption">Bacon May Die</div>
-        </td> <!-- Bacon May Die -->
-
-        <td style="color: white;" class="image-item" data-caption="Bouncy Basketball">
-        <a href="English-Language-Arts/AndThenThereWereNone.html">
-            <button class="round-button">
-                <img width="200" src="/assets/photos/bouncybasketball.png" alt="Bouncy Basketball">
-            </button>
-        </a>
-        <div class="caption">Bouncy Basketball</div>
-        </td> <!-- Bouncy Basketball -->
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-
-        <td style="color: white;" class="image-item" data-caption="Bob the Robber 1">
-            <a href="English-Language-Arts/Inferno.html">
-                <button class="round-button">
-                    <img width="200" src="/assets/photos/bobtherobber1.png" alt="Bob the Robber 1">
-                </button>
-            </a>
-            <div class="caption">Bob the Robber 1</div>
-        </td> <!-- Bob the Robber 1 -->
-
-            
-
-        <td style="color: white;" class="image-item" data-caption="Bob the Robber 2">
-            <a href="English-Language-Arts/TheHouseOnMangoStreet.html">
-                <button class="round-button">
-                    <img width="200" src="/assets/photos/bobtherobber2.jpeg" alt="Bob the Robber 2">
-                </button>
-            </a>
-            <div class="caption">Bob the Robber 2</div>
-        </td> <!-- Bob the Robber 2 -->
-
-        <td style="color: white;" class="image-item" data-caption="Bob the Robber 3">
-            <a href="English-Language-Arts/TheThingsTheyCarried.html">
-                <button class="round-button">
-                    <img width="200" src="/assets/photos/bobtherobber3.png" alt="Bob the Robber 3">
-                </button>
-            </a>
-            <div class="caption">Bob the Robber 3</div>
-        </td> <!-- Bob the Robber 3 -->
-
-        <td style="color: white;" class="image-item" data-caption="Bob the Robber 4">
-            <a href="English-Language-Arts/TheAwakening.html">
-                <button class="round-button">
-                    <img width="200" src="/assets/photos/bobtherobber4.png" alt="Bob the Robber 4">
-                </button>
-            </a>
-            <div class="caption">Bob the Robber 4:1 France</div>
-        </td> <!-- Bob the Robber 4:1 Paris-->
-
-        <td style="color: white;" class="image-item" data-caption="Bob the Robber 4:2 Russia">
-            <a href="English-Language-Arts/TheAwakening.html">
-                <button class="round-button">
-                    <img width="200" src="/assets/photos/bobtherobber42.png" alt="Bob the Robber 4:2 Russia">
-                </button>
-            </a>
-            <div class="caption">Bob the Robber 4:2 Russia</div>
-        </td> <!-- Bob the Robber 4:2 Russia-->
-
-        <td style="color: white;" class="image-item" data-caption="Bob the Robber 4:3 Japan">
-            <a href="English-Language-Arts/TheSeaSpeaksHisName.html">
-                <button class="round-button">
-                    <img width="200" src="/assets/photos/bobtherobber43.png" alt="Bob the Robber 4:3 Japan">
-                </button>
-            </a>
-            <div class="caption">Bob the Robber 4:3 Japan</div>
-        </td> <!-- Bob the Robber 4:3 Japan -->
-
-        <table style="width: 30%; text-align: center; border-collapse: collapse;" id="imageContainer">
-        <td style="color: white;" class="image-item" data-caption="1v1.lol">
-        <a href="English-Language-Arts/TheSeaSpeaksHisName.html">
-        <button class="round-button">
-            <img width="200" src="/assets/photos/lol.png" alt="1v1.lol">
-        </button>
-        </a>
-        <div class="caption">1v1.lol</div>
-        </td> <!-- 1v1.lol -->
-
-
-
-
-
-        </table>
-        </div>
-
-
-
-
-
-    <script>
-    function filterCaptions() {
-        const input = document.getElementById('searchInput').value.toLowerCase();
-        const items = document.getElementsByClassName('image-item');
-        for (let i = 0; i < items.length; i++) {
-            const caption = items[i].getAttribute('data-caption').toLowerCase();
-            items[i].style.display = caption.includes(input) ? '' : 'none';
-        }
-    }
-
-
-    
-
-          </script>
-
-
-        </script>
-        <style>
-        .hidden {
-        display: none;
-        }
-
-
-
-        .hidden {
-        display: none;
-        }
-
-        img {
-        border-radius: 30px; 
-        transition: transform 0.2s; 
-        }
-
-        img:hover {
-        transform: scale(1.1); 
-        }
-
-        .centered {
-  margin: 0 auto;
-}
-
-        </style>
-        </style>
-
-
-
-
-
-        <script>
-
-        window.addEventListener('load', function() {
-
-        document.getElementById('loading-screen').style.display = 'none';
-        });
-        </script>
-
-        <script>
-        // Check if the flag exists in sessionStorage as soon as the page loads
-        window.onload = function() {
-        if (sessionStorage.getItem("canAccessClassList") !== "true") {
-        // If the flag isn't set, redirect to the homepage or any other page
-        window.location.href = "/cornball.html";
-        }
-        };
-        </script>
-
+            <div id="loading-screen">
+                <div class="spinner"></div>
+            </div>
+
+            <div class="search-container">
+                <input
+                    id="searchInput"
+                    class="search-bar"
+                    type="text"
+                    placeholder="Search games..."
+                    oninput="filterGames()"
+                >
+            </div>
+
+            <div class="game-grid" id="gameContainer">
+                <!-- Games will be dynamically inserted here -->
+            </div>
+
+            <script>
+                // Game data structure
+                const games = [
+                    {
+                        title: "Fancy Pants Adventures",
+                        image: "/assets/photos/fancypantsadventure1.png",
+                        link: "English-Language-Arts/toKillaMockingbird.html"
+                    },
+                    {
+                        title: "Cookie Clicker",
+                        image: "/assets/photos/cookieclicker.jpeg",
+                        link: "English-Language-Arts/LordOftheFlies.html"
+                    },
+                    {
+                        title: "Tube Jumpers",
+                        image: "/assets/photos/tubejumpers.jpg",
+                        link: "English-Language-Arts/CatcherInTheRye.html"
+                    },
+                    {
+                        title: "Achievement Unlocked",
+                        image: "/assets/photos/achievementunlocked.png",
+                        link: "English-Language-Arts/Frankenstein.html"
+                    }, {
+                        title: "Rooftop Snipers",
+                        image: "/assets/photos/rooftopsnipers.png",
+                        link: "English-Language-Arts/OfMiceAndMen.html"
+                    },
+                    {
+                        title: "Getaway Shootout",
+                        image: "/assets/photos/getawayshootout1.png",
+                        link: "English-Language-Arts/RomeoAndJuliet.html"
+                    }, {
+                        title: "Snow Rider 3D",
+                        image: "/assets/photos/snowrider3d.png",
+                        link: "English-Language-Arts/TheCrucible.html"
+                    },
+                    {
+                        title: "Basketball Stars",
+                        image: "/assets/photos/basketballstars.png",
+                        link: "English-Language-Arts/TheGreatGatsby.html"
+                    }, {
+                        title: "Eggy Car",
+                        image: "/assets/photos/eggycar.png",
+                        link: "English-Language-Arts/TheOutsiders.html"
+                    },
+                    {
+                        title: "Bitlife",
+                        image: "/assets/photos/bitlife.png",
+                        link: "English-Language-Arts/TheGiver.html"
+                    },
+                    {
+                        title: "Duck Life 3",
+                        image: "/assets/photos/ducklife3.png",
+                        link: "English-Language-Arts/Fahrenheit451.html"
+                    },
+                    {
+                        title: "Run 2",
+                        image: "/assets/photos/run2.png",
+                        link: "English-Language-Arts/TheCanterburyTales.html"
+                    },
+                    {
+                        title: "Vex 3",
+                        image: "/assets/photos/vex3.png",
+                        link: "English-Language-Arts/1984.html"
+                    },
+                    {
+                        title: "Vex 4",
+                        image: "/assets/photos/vex4.png",
+                        link: "English-Language-Arts/AWrinkleInTime.html"
+                    },
+                    {
+                        title: "Vex 5",
+                        image: "/assets/photos/vex5.png",
+                        link: "English-Language-Arts/TouchingSpiritBear.html"
+                    },
+                    {
+                        title: "Vex 6",
+                        image: "/assets/photos/vex6.png",
+                        link: "English-Language-Arts/TheBellJar.html"
+                    },
+                    {
+                        title: "Vex 7",
+                        image: "/assets/photos/vex7.png",
+                        link: "English-Language-Arts/Hamlet.html"
+                    },
+                    {
+                        title: "Moto X3M",
+                        image: "/assets/photos/motox3m.png",
+                        link: "English-Language-Arts/TheScarletLetter.html"
+                    },
+                    {
+                        title: "Moto X3M 2",
+                        image: "/assets/photos/motox3m2.png",
+                        link: "English-Language-Arts/TheDiaryofaYoungGirl.html"
+                    },
+                    {
+                        title: "Moto X3M Pool Party",
+                        image: "/assets/photos/motox3mpoolparty.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Moto X3M Spooky Land",
+                        image: "/assets/photos/motox3mspookyland.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Moto X3M Winter",
+                        image: "/assets/photos/motox3mwinter.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "House of Hazards",
+                        image: "/assets/photos/houseofhazards.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Drift Boss",
+                        image: "/assets/photos/driftboss.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Fireboy and Watergirl 1",
+                        image: "/assets/photos/fireboywatergirl1.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Fireboy and Watergirl 2",
+                        image: "/assets/photos/fireboywatergirl2.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Fireboy and Watergirl 3",
+                        image: "/assets/photos/fireboywatergirl3.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Fireboy and Watergirl 4",
+                        image: "/assets/photos/fireboywatergirl4.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Fireboy and Watergirl 5",
+                        image: "/assets/photos/fireboywatergirl5.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    },
+                    {
+                        title: "Fireboy and Watergirl 6",
+                        image: "/assets/photos/fireboywatergirl6.png",
+                        link: "English-Language-Arts/TheOldManAndTheSea.html"
+                    }
+                ];
+                // Generate game cards
+                function renderGames() {
+                    const container = document.getElementById('gameContainer');
+                    container.innerHTML = games.map(game => `
+                        <div class="game-card" data-title="${game.title.toLowerCase()}">
+                            <a href="${game.link}">
+                                <button class="game-button">
+                                    <img class="game-image" src="${game.image}" alt="${game.title}">
+                                </button>
+                            </a>
+                            <div class="game-title">${game.title}</div>
+                        </div>
+                    `).join('');
+                }
+
+                // Filter games based on search
+                function filterGames() {
+                    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+                    const gameCards = document.getElementsByClassName('game-card');
+                    
+                    Array.from(gameCards).forEach(card => {
+                        const title = card.dataset.title;
+                        card.style.display = title.includes(searchTerm) ? 'flex' : 'none';
+                    });
+                }
+
+                // Initialize
+                window.addEventListener('load', () => {
+                    renderGames();
+                    document.getElementById('loading-screen').style.display = 'none';
+                });
+
+                // Security check
+                if (sessionStorage.getItem("canAccessClassList") !== "true") {
+                    window.location.href = "/cornball.html";
+                }
+            </script>
         </body>
-
         </html>
