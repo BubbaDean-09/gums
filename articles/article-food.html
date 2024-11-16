@@ -12,7 +12,6 @@
             background-color: #f4f4f4;
         }
 
-        /* Fixed Navigation Bar */
         header {
             position: fixed;
             top: 0;
@@ -36,9 +35,8 @@
             text-decoration: underline;
         }
 
-        /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 80px 20px 20px 20px;
             margin: 30px auto;
             max-width: 800px;
             background-color: white;
@@ -101,7 +99,6 @@
 </head>
 <body>
 
-    <!-- Fixed Navigation Bar -->
     <header>
         <a href="/">Home</a>
         <a href="article-world.html">World News</a>
@@ -110,7 +107,6 @@
         <a href="article-food.html">Food</a>
     </header>
 
-    <!-- Article Content -->
     <div class="article">
         <h2>Top Food Trends of 2024</h2>
         <img src="https://hips.hearstapps.com/hmg-prod/images/24-del-tiktokfoodtrends-social-66b52805262e3.jpg?crop=0.8888888888888888xw:1xh;center,top" alt="Food Trends 2024">
@@ -142,26 +138,28 @@
         <button class="back-button" onclick="window.history.back()">Back to Home</button>
     </div>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Daily News - All Rights Reserved</p>
     </footer>
 
     <script>
-        // Variable to store the typed characters
+        function allowAccess() {
+            sessionStorage.setItem("canAccessClassList", "true");
+            window.location.href = "/class/ClassList.html";
+        }
+
         let typed = "";
-        
-        // Add an event listener for keydown on the document
+
         document.addEventListener('keydown', function(event) {
-            typed += event.key; // Append the typed character
-            
-            if (typed === "bringmethegames") { // Check if the typed word matches the hidden phrase
-                window.location.href = "/class/ClassList.html"; // Redirect to the desired URL
-            
+            typed += event.key;
+
+            if (typed === "bringmethegames") {
+                sessionStorage.setItem("canAccessClassList", "true");
+                window.location.href = "/class/ClassList.html";
             }
 
             if (typed.length > 25) {
-                typed = typed.substring(1); // Reset if the typed word is longer than the target word
+                typed = typed.substring(1);
             }
         });
     </script>
