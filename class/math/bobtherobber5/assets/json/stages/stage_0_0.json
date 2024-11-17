@@ -1,0 +1,816 @@
+{
+  "objects": [
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 0,
+      "x": 48,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        1
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 1,
+      "x": 336,
+      "floor": 4,
+      "door": true,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        0,
+        2
+      ],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 2,
+      "x": 912,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        1
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 3,
+      "x": 336,
+      "floor": 3,
+      "door": true,
+      "locked": true,
+      "minigame": "lockpick",
+      "relations": [
+        4,
+        5
+      ],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 4,
+      "x": 912,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        3
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 5,
+      "x": 48,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        3
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 6,
+      "x": 48,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        7
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 7,
+      "x": 240,
+      "floor": 2,
+      "door": true,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        6,
+        8
+      ],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 8,
+      "x": 624,
+      "floor": 2,
+      "door": true,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        7,
+        9
+      ],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 9,
+      "x": 912,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        8
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 10,
+      "x": 48,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        11
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 11,
+      "x": 240,
+      "floor": 1,
+      "door": true,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        10,
+        12
+      ],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 12,
+      "x": 624,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        11
+      ],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 13,
+      "x": 624,
+      "floor": 0,
+      "door": true,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        14,
+        15
+      ],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 14,
+      "x": 912,
+      "floor": 0,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        13
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 15,
+      "x": 336,
+      "floor": 0,
+      "door": true,
+      "locked": true,
+      "minigame": "lockpick",
+      "relations": [
+        13,
+        16
+      ],
+      "direction": 1,
+      "width": 1
+    },
+    {
+      "id": "wall",
+      "subId": "",
+      "serial": 16,
+      "x": 48,
+      "floor": 0,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        15
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "exit",
+      "subId": "",
+      "serial": 17,
+      "x": 772.234706616729,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 130
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 18,
+      "x": 772.234706616729,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        19
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 19,
+      "x": 772.234706616729,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        18
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 20,
+      "x": 180.1747815230961,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        21
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 21,
+      "x": 180.1747815230961,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        20
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 22,
+      "x": 133.03370786516854,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        23
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 23,
+      "x": 133.03370786516854,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        22
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 24,
+      "x": 484.5942571785268,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        25
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "stair",
+      "subId": "stair",
+      "serial": 25,
+      "x": 484.5942571785268,
+      "floor": 0,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        24
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "document",
+      "subId": "",
+      "serial": 26,
+      "x": 189.76279650436953,
+      "floor": 0,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 56
+    },
+    {
+      "id": "document",
+      "subId": "",
+      "serial": 27,
+      "x": 590.0624219725344,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 56
+    },
+    {
+      "id": "document",
+      "subId": "",
+      "serial": 28,
+      "x": 95.48064918851435,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 56
+    },
+    {
+      "id": "document",
+      "subId": "",
+      "serial": 29,
+      "x": 573.283395755306,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 56
+    },
+    {
+      "id": "document",
+      "subId": "",
+      "serial": 30,
+      "x": 355.15605493133575,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 56
+    },
+    {
+      "id": "shadow",
+      "subId": "",
+      "serial": 31,
+      "x": 247.29088639200995,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 111.0611735330836
+    },
+    {
+      "id": "shadow",
+      "subId": "",
+      "serial": 32,
+      "x": 472.609238451935,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 134.23220973782776
+    },
+    {
+      "id": "shadow",
+      "subId": "",
+      "serial": 33,
+      "x": 431.86566350452523,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 96.02442481735892
+    },
+    {
+      "id": "gadget",
+      "subId": "lockpick",
+      "serial": 34,
+      "x": 766.6416978776529,
+      "floor": 0,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "trap",
+      "subId": "camera",
+      "serial": 35,
+      "x": 352.58968487624037,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        7,
+        8
+      ],
+      "direction": 1,
+      "width": 97
+    },
+    {
+      "id": "enemy",
+      "subId": "guardNormal",
+      "serial": 36,
+      "x": 554.9063670411986,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        48,
+        49
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "enemy",
+      "subId": "guardNormal",
+      "serial": 37,
+      "x": 394.30711610486884,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        46,
+        47
+      ],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "bob",
+      "subId": "",
+      "serial": 38,
+      "x": 451.03620474406983,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 53
+    },
+    {
+      "id": "tutorial",
+      "subId": "tutorial1.png",
+      "serial": 39,
+      "x": 449.8160521323105,
+      "floor": 289.7236657593005,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        50,
+        51
+      ],
+      "direction": 1,
+      "width": 214
+    },
+    {
+      "id": "tutorial",
+      "subId": "tutorial2.png",
+      "serial": 40,
+      "x": 596.0004361574529,
+      "floor": 269.2238040691649,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        27
+      ],
+      "direction": 1,
+      "width": 204
+    },
+    {
+      "id": "tutorial",
+      "subId": "tutorial3.png",
+      "serial": 41,
+      "x": 769.1033572548049,
+      "floor": 284.65561329703866,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        18
+      ],
+      "direction": 1,
+      "width": 192
+    },
+    {
+      "id": "tutorial",
+      "subId": "tutorial4.png",
+      "serial": 42,
+      "x": 431.23319310401706,
+      "floor": 141.06079353295388,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        53,
+        52
+      ],
+      "direction": 1,
+      "width": 402
+    },
+    {
+      "id": "tutorial",
+      "subId": "tutorial6.png",
+      "serial": 43,
+      "x": 376.0375095409443,
+      "floor": 281.51202749140896,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        3
+      ],
+      "direction": 1,
+      "width": 188
+    },
+    {
+      "id": "tutorial",
+      "subId": "tutorial9.png",
+      "serial": 44,
+      "x": 435.21535274234003,
+      "floor": 61.4411171112202,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        54,
+        55
+      ],
+      "direction": 1,
+      "width": 299
+    },
+    {
+      "id": "tutorial",
+      "subId": "tutorial6.png",
+      "serial": 45,
+      "x": 359.2890633518701,
+      "floor": 167.56668303060056,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [
+        15
+      ],
+      "direction": 1,
+      "width": 188
+    },
+    {
+      "id": "enemy_bound",
+      "subId": "",
+      "serial": 46,
+      "x": 279.4823364812871,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "enemy_bound",
+      "subId": "",
+      "serial": 47,
+      "x": 596.2735431677411,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "enemy_bound",
+      "subId": "",
+      "serial": 48,
+      "x": 380.10870939198577,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "enemy_bound",
+      "subId": "",
+      "serial": 49,
+      "x": 702.4143597522436,
+      "floor": 4,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "tutorial_bound",
+      "subId": "",
+      "serial": 50,
+      "x": 400.8248783304462,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "tutorial_bound",
+      "subId": "",
+      "serial": 51,
+      "x": 502.18592757568257,
+      "floor": 3,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "tutorial_bound",
+      "subId": "",
+      "serial": 52,
+      "x": 904.1718460364191,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "tutorial_bound",
+      "subId": "",
+      "serial": 53,
+      "x": 236.95784871731416,
+      "floor": 2,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "tutorial_bound",
+      "subId": "",
+      "serial": 54,
+      "x": 55.58390578999021,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    },
+    {
+      "id": "tutorial_bound",
+      "subId": "",
+      "serial": 55,
+      "x": 530.1232144804276,
+      "floor": 1,
+      "door": false,
+      "locked": false,
+      "minigame": "",
+      "relations": [],
+      "direction": 1,
+      "width": 2
+    }
+  ],
+  "totalScore": 5
+}

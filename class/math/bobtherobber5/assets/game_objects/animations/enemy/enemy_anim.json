@@ -1,0 +1,129 @@
+{
+    "name": "enemy_anim",
+    "speed": 1,
+    "mode": "normal",
+    "data": {
+        "enemy": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -68,
+                        175.8
+                    ]
+                },
+                {
+                    "frame": 767,
+                    "value": [
+                        -68,
+                        175.8
+                    ]
+                },
+                {
+                    "frame": 900,
+                    "value": [
+                        20.7,
+                        172.7
+                    ]
+                },
+                {
+                    "frame": 1000,
+                    "value": [
+                        30,
+                        174.7
+                    ]
+                },
+                {
+                    "frame": 2667,
+                    "value": [
+                        26,
+                        175.6
+                    ]
+                },
+                {
+                    "frame": 4733,
+                    "value": [
+                        30,
+                        174.7
+                    ]
+                },
+                {
+                    "frame": 4733,
+                    "value": [
+                        30,
+                        174.7
+                    ]
+                },
+                {
+                    "frame": 4833,
+                    "value": [
+                        15.2,
+                        171.4
+                    ]
+                },
+                {
+                    "frame": 5067,
+                    "value": [
+                        -68,
+                        176.4
+                    ]
+                },
+                {
+                    "frame": 7000,
+                    "value": [
+                        -68,
+                        176.4
+                    ]
+                }
+            ],
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": -17
+                },
+                {
+                    "frame": 767,
+                    "value": -17
+                },
+                {
+                    "frame": 900,
+                    "value": 5
+                },
+                {
+                    "frame": 1000,
+                    "value": 0
+                },
+                {
+                    "frame": 2667,
+                    "value": 3
+                },
+                {
+                    "frame": 4733,
+                    "value": 0
+                },
+                {
+                    "frame": 4733,
+                    "value": 0
+                },
+                {
+                    "frame": 4833,
+                    "value": 5
+                },
+                {
+                    "frame": 5067,
+                    "value": -17
+                },
+                {
+                    "frame": 7000,
+                    "value": -17
+                }
+            ]
+        }
+    },
+    "events": [
+        {
+            "frame": 767,
+            "name": "visible"
+        }
+    ]
+}

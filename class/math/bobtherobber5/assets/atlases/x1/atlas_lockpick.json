@@ -1,0 +1,108 @@
+{"frames": [
+
+{
+	"filename": "base.png",
+	"frame": {"x":2,"y":2,"w":342,"h":333},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":342,"h":333},
+	"sourceSize": {"w":342,"h":333}
+},
+{
+	"filename": "bottom1.png",
+	"frame": {"x":641,"y":225,"w":66,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":66,"h":96},
+	"sourceSize": {"w":66,"h":98}
+},
+{
+	"filename": "bottom2.png",
+	"frame": {"x":768,"y":174,"w":66,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":66,"h":96},
+	"sourceSize": {"w":66,"h":98}
+},
+{
+	"filename": "button_close.png",
+	"frame": {"x":787,"y":2,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "button_close_press.png",
+	"frame": {"x":754,"y":88,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "lock.png",
+	"frame": {"x":638,"y":2,"w":147,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":147,"h":77},
+	"sourceSize": {"w":201,"h":77}
+},
+{
+	"filename": "top.png",
+	"frame": {"x":346,"y":2,"w":290,"h":234},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":290,"h":234},
+	"sourceSize": {"w":291,"h":235}
+},
+{
+	"filename": "tube1.png",
+	"frame": {"x":709,"y":174,"w":57,"h":123},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":57,"h":123},
+	"sourceSize": {"w":57,"h":123}
+},
+{
+	"filename": "tube2.png",
+	"frame": {"x":638,"y":158,"w":58,"h":65},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":65},
+	"sourceSize": {"w":59,"h":65}
+},
+{
+	"filename": "tube3.png",
+	"frame": {"x":840,"y":88,"w":26,"h":238},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":238},
+	"sourceSize": {"w":27,"h":239}
+},
+{
+	"filename": "unlock.png",
+	"frame": {"x":638,"y":81,"w":114,"h":75},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":87,"y":0,"w":114,"h":75},
+	"sourceSize": {"w":201,"h":77}
+},
+{
+	"filename": "wall.png",
+	"frame": {"x":346,"y":238,"w":293,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":64},
+	"sourceSize": {"w":293,"h":64}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_lockpick.png",
+	"format": "RGBA8888",
+	"size": {"w":873,"h":337},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3ca939363c30f326862a37790e4ea22b:cbcdc844410125ec1edd1484044809eb:09e415d35209a2e9a09716a8659550d9$"
+}
+}

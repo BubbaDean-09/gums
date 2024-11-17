@@ -1,0 +1,209 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "tutorials",
+                "children": [
+                    {
+                        "name": "tutorial1"
+                    },
+                    {
+                        "name": "tutorial2"
+                    },
+                    {
+                        "name": "tutorial3"
+                    },
+                    {
+                        "name": "tutorial4"
+                    },
+                    {
+                        "name": "tutorial5"
+                    },
+                    {
+                        "name": "tutorial6"
+                    },
+                    {
+                        "name": "tutorial7"
+                    },
+                    {
+                        "name": "tutorial8"
+                    },
+                    {
+                        "name": "tutorial9"
+                    },
+                    {
+                        "name": "tutorial10"
+                    },
+                    {
+                        "name": "tutorial11"
+                    },
+                    {
+                        "name": "tutorial12"
+                    },
+                    {
+                        "name": "tutorial13"
+                    },
+                    {
+                        "name": "tutorial14"
+                    },
+                    {
+                        "name": "tutorial15"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "tutorials": {
+            "file": "pattern.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER"
+            }
+        },
+        "tutorials/tutorial1": {
+            "file": "tutorial1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 33.6,
+                "y": -100.7
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial2": {
+            "file": "tutorial2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 186.6,
+                "y": -101.7
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial3": {
+            "file": "tutorial3.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 326,
+                "y": -112.9
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial4": {
+            "file": "tutorial4.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -198,
+                "y": 57
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial5": {
+            "file": "tutorial6.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -143,
+                "y": 134
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial6": {
+            "file": "tutorial7.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -296,
+                "y": 257
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial7": {
+            "file": "tutorial8.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -296,
+                "y": 257
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial8": {
+            "file": "tutorial9.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 254,
+                "y": 19
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial9": {
+            "file": "tutorial10.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 202.1,
+                "y": 19
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial10": {
+            "file": "tutorial11.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 221,
+                "y": 19
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial11": {
+            "file": "tutorial12.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 43.9,
+                "y": -102.2
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial12": {
+            "file": "tutorial12.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 43.9,
+                "y": -102.2
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial13": {
+            "file": "tutorial13.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 138.7,
+                "y": 133.9
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial14": {
+            "file": "tutorial14.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -301.9,
+                "y": 259.4
+            },
+            "type": "sprite"
+        },
+        "tutorials/tutorial15": {
+            "file": "tutorial15.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -276.8,
+                "y": 255.7
+            },
+            "type": "sprite"
+        }
+    }
+}

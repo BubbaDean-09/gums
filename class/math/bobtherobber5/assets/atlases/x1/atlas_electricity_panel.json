@@ -1,0 +1,148 @@
+{"frames": [
+
+{
+	"filename": "bad.png",
+	"frame": {"x":372,"y":383,"w":38,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+	"sourceSize": {"w":38,"h":38}
+},
+{
+	"filename": "bg.png",
+	"frame": {"x":2,"y":2,"w":368,"h":437},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":368,"h":437},
+	"sourceSize": {"w":370,"h":437}
+},
+{
+	"filename": "blue.png",
+	"frame": {"x":452,"y":414,"w":26,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":26,"h":50},
+	"sourceSize": {"w":45,"h":50}
+},
+{
+	"filename": "blue2.png",
+	"frame": {"x":458,"y":258,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":45,"h":50}
+},
+{
+	"filename": "button_close.png",
+	"frame": {"x":372,"y":211,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "button_close_press.png",
+	"frame": {"x":372,"y":297,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "cut1.png",
+	"frame": {"x":372,"y":2,"w":138,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":138,"h":112},
+	"sourceSize": {"w":138,"h":112}
+},
+{
+	"filename": "cut2.png",
+	"frame": {"x":372,"y":116,"w":130,"h":93},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":7,"w":130,"h":93},
+	"sourceSize": {"w":138,"h":112}
+},
+{
+	"filename": "good.png",
+	"frame": {"x":412,"y":383,"w":38,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+	"sourceSize": {"w":38,"h":38}
+},
+{
+	"filename": "green.png",
+	"frame": {"x":480,"y":414,"w":26,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":26,"h":50},
+	"sourceSize": {"w":45,"h":50}
+},
+{
+	"filename": "green2.png",
+	"frame": {"x":458,"y":310,"w":35,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":0,"w":35,"h":50},
+	"sourceSize": {"w":45,"h":50}
+},
+{
+	"filename": "orange.png",
+	"frame": {"x":372,"y":423,"w":26,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":26,"h":50},
+	"sourceSize": {"w":45,"h":50}
+},
+{
+	"filename": "orange2.png",
+	"frame": {"x":458,"y":362,"w":34,"h":50},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":34,"h":50},
+	"sourceSize": {"w":45,"h":50}
+},
+{
+	"filename": "tile1.png",
+	"frame": {"x":458,"y":211,"w":45,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":45,"h":45},
+	"sourceSize": {"w":45,"h":45}
+},
+{
+	"filename": "tile2.png",
+	"frame": {"x":400,"y":423,"w":26,"h":45},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":26,"h":45},
+	"sourceSize": {"w":45,"h":45}
+},
+{
+	"filename": "tile3.png",
+	"frame": {"x":2,"y":441,"w":35,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":0,"w":35,"h":35},
+	"sourceSize": {"w":45,"h":45}
+},
+{
+	"filename": "tile4.png",
+	"frame": {"x":39,"y":441,"w":35,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":10,"w":35,"h":35},
+	"sourceSize": {"w":45,"h":45}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_electricity_panel.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":478},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2e3ce5a94d11b1c8289d400ae2b7db18:e9378900f729d01bc17216cfbea4a7af:5ab4ec1d8d6f831b9cee5a18e250c73c$"
+}
+}

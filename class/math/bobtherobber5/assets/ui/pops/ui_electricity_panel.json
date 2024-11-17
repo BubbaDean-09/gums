@@ -1,0 +1,79 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "base",
+                "children": [
+                    {
+                        "name": "close"
+                    },
+                    {
+                        "name": "time"
+                    },
+                    {
+                        "name": "scissors"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "base": {
+            "file": "bg.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 480,
+                "y": 320
+            },
+            "type": "sprite"
+        },
+        "base/close": {
+            "file": "button_close.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button_close.png",
+                "pressed": "button_close_press.png",
+                "hover": "button_close.png"
+            },
+            "position": {
+                "x": 180,
+                "y": -211
+            },
+            "type": "button"
+        },
+        "base/time": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 40
+            },
+            "text": "18:84",
+            "align": "center",
+            "stroke": "#3f3601",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -218
+            },
+            "color": "#ff2919",
+            "type": "text"
+        },
+        "base/scissors": {
+            "file": "cut1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 22.8,
+                "y": 180.1
+            },
+            "type": "sprite"
+        }
+    }
+}

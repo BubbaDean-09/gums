@@ -1,0 +1,91 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "fx"
+            },
+            {
+                "name": "sound"
+            },
+            {
+                "name": "enemy_pivot"
+            },
+            {
+                "name": "logo"
+            },
+            {
+                "name": "play"
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "fx": {
+            "file": "fx_on_button.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "TOP_RIGHT",
+                "offset": {
+                    "x": -80.6,
+                    "y": -4.5
+                }
+            }
+        },
+        "sound": {
+            "file": "sound_on_button.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "TOP_RIGHT",
+                "offset": {
+                    "x": -16.5,
+                    "y": -5.6
+                }
+            }
+        },
+        "enemy_pivot": {
+            "file": "gem_shine1.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "LEFT_CENTER",
+                "offset": {
+                    "x": 79,
+                    "y": 0
+                }
+            }
+        },
+        "logo": {
+            "file": "logo.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -15
+                }
+            }
+        },
+        "play": {
+            "file": "button_play.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": 44
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "gem_shine_mm",
+    "speed": 1,
+    "mode": "normal",
+    "data": {
+        "shine": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 3983,
+                    "value": 360
+                }
+            ]
+        }
+    }
+}

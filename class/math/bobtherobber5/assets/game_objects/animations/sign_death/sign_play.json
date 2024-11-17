@@ -1,0 +1,407 @@
+{
+    "name": "sign_play",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -5.6,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 160,
+                    "value": [
+                        3.4,
+                        -58.8
+                    ]
+                },
+                {
+                    "frame": 320,
+                    "value": [
+                        11,
+                        -70.7
+                    ]
+                },
+                {
+                    "frame": 480,
+                    "value": [
+                        14.5,
+                        -79.8
+                    ]
+                },
+                {
+                    "frame": 640,
+                    "value": [
+                        15.5,
+                        -89.9
+                    ]
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 320,
+                    "value": 1
+                },
+                {
+                    "frame": 640,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 320,
+                    "value": 1
+                },
+                {
+                    "frame": 640,
+                    "value": 1.2
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 320,
+                    "value": 1
+                },
+                {
+                    "frame": 640,
+                    "value": 1.2
+                }
+            ]
+        },
+        "base4": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -5.6,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 960,
+                    "value": [
+                        -5.6,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 1120,
+                    "value": [
+                        3.4,
+                        -58.8
+                    ]
+                },
+                {
+                    "frame": 1280,
+                    "value": [
+                        11.3,
+                        -70.8
+                    ]
+                },
+                {
+                    "frame": 1440,
+                    "value": [
+                        14.5,
+                        -79.8
+                    ]
+                },
+                {
+                    "frame": 1600,
+                    "value": [
+                        15.5,
+                        -89.9
+                    ]
+                },
+                {
+                    "frame": 2000,
+                    "value": [
+                        15.5,
+                        -89.9
+                    ]
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 960,
+                    "value": 0
+                },
+                {
+                    "frame": 1280,
+                    "value": 1
+                },
+                {
+                    "frame": 1600,
+                    "value": 0
+                },
+                {
+                    "frame": 2000,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 960,
+                    "value": 0
+                },
+                {
+                    "frame": 1280,
+                    "value": 1
+                },
+                {
+                    "frame": 1600,
+                    "value": 1.2
+                },
+                {
+                    "frame": 2000,
+                    "value": 1.2
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 960,
+                    "value": 0
+                },
+                {
+                    "frame": 1280,
+                    "value": 1
+                },
+                {
+                    "frame": 1600,
+                    "value": 1.2
+                },
+                {
+                    "frame": 2000,
+                    "value": 1.2
+                }
+            ]
+        },
+        "base3": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -5.6,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 640,
+                    "value": [
+                        -5.6,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 800,
+                    "value": [
+                        3.4,
+                        -58.8
+                    ]
+                },
+                {
+                    "frame": 960,
+                    "value": [
+                        10.8,
+                        -70.6
+                    ]
+                },
+                {
+                    "frame": 1120,
+                    "value": [
+                        14.5,
+                        -79.8
+                    ]
+                },
+                {
+                    "frame": 1280,
+                    "value": [
+                        15.5,
+                        -89.9
+                    ]
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 640,
+                    "value": 0
+                },
+                {
+                    "frame": 960,
+                    "value": 1
+                },
+                {
+                    "frame": 1280,
+                    "value": 0
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 640,
+                    "value": 0
+                },
+                {
+                    "frame": 960,
+                    "value": 1
+                },
+                {
+                    "frame": 1280,
+                    "value": 1.2
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 640,
+                    "value": 0
+                },
+                {
+                    "frame": 960,
+                    "value": 1
+                },
+                {
+                    "frame": 1280,
+                    "value": 1.2
+                }
+            ]
+        },
+        "base2": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        -5.6,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 320,
+                    "value": [
+                        -5.6,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 480,
+                    "value": [
+                        3.4,
+                        -58.8
+                    ]
+                },
+                {
+                    "frame": 640,
+                    "value": [
+                        10.6,
+                        -70.6
+                    ]
+                },
+                {
+                    "frame": 800,
+                    "value": [
+                        14.1,
+                        -79.6
+                    ]
+                },
+                {
+                    "frame": 960,
+                    "value": [
+                        15.5,
+                        -89.9
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 320,
+                    "value": 0
+                },
+                {
+                    "frame": 640,
+                    "value": 1
+                },
+                {
+                    "frame": 960,
+                    "value": 1.2
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 320,
+                    "value": 0
+                },
+                {
+                    "frame": 640,
+                    "value": 1
+                },
+                {
+                    "frame": 960,
+                    "value": 1.2
+                }
+            ],
+            "alpha": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 320,
+                    "value": 0
+                },
+                {
+                    "frame": 640,
+                    "value": 1
+                },
+                {
+                    "frame": 960,
+                    "value": 0
+                }
+            ]
+        }
+    }
+}

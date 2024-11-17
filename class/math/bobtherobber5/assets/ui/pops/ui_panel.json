@@ -1,0 +1,84 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "base",
+                "children": [
+                    {
+                        "name": "close"
+                    },
+                    {
+                        "name": "tile1"
+                    },
+                    {
+                        "name": "triangle"
+                    },
+                    {
+                        "name": "target"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "base": {
+            "file": "0.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 480,
+                "y": 320
+            },
+            "type": "sprite"
+        },
+        "base/close": {
+            "file": "button_close.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button_close.png",
+                "pressed": "button_close_press.png",
+                "hover": "button_close.png"
+            },
+            "position": {
+                "x": 198,
+                "y": -263
+            },
+            "type": "button"
+        },
+        "base/tile1": {
+            "file": "1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -152.5,
+                "y": -221.3
+            },
+            "type": "sprite"
+        },
+        "base/triangle": {
+            "file": "4.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -152.5,
+                "y": -221.3
+            },
+            "type": "sprite"
+        },
+        "base/target": {
+            "file": "3.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -152.5,
+                "y": -221.3
+            },
+            "type": "sprite"
+        }
+    }
+}

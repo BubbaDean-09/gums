@@ -1,0 +1,22 @@
+{
+  "Settings": {
+    "TimeToHide": 50,
+    "GetGadgetScreenDuration": 2000,
+    "PlayerSpeed": 0.15,
+    "PlayerSandalsSpeed": 0.29,
+    "BoulderSpeed": 0.28,
+    "GuardSleepTime": 4000,
+    "GuardAwakeTime": 4000,
+    "CamFlipTime": 1800,
+    "EnemySpeed": 0.1,
+    "EnemyRunningSpeed": 0.25,
+    "EnemySpottingTime": 1500,
+    "EnemyMobileSpottingTime": 3000,
+    "EnemyCooldownTime": 1500,
+    "CamSpottingTime": 1500,
+    "CamCooldownTime": 1500,
+    "StatueSpottingTime": 1500,
+    "StatueCooldownTime": 1500,
+    "StagesPairTimes": [60000, 60000, 60000, 60000, 650000, 100000, 85000, 100000, 120000, 120000]
+  }
+}

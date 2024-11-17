@@ -1,0 +1,60 @@
+{
+    "hierarchy": {
+        "name": "arrow_yellow",
+        "children": [
+            {
+                "name": "a1"
+            },
+            {
+                "name": "a2"
+            },
+            {
+                "name": "a3"
+            },
+            {
+                "name": "a4"
+            }
+        ],
+        "animations": [
+            "arrow_stand"
+        ]
+    },
+    "properties": {
+        "a1": {
+            "file": "arrow1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "a2": {
+            "file": "arrow2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "a3": {
+            "file": "arrow3.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "a4": {
+            "file": "arrow4.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        }
+    }
+}

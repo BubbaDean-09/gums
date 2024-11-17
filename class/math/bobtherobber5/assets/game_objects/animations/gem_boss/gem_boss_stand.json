@@ -1,0 +1,108 @@
+{
+    "name": "gem_boss_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "gem": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        1.7,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 1000,
+                    "value": [
+                        1.7,
+                        -45.2
+                    ]
+                },
+                {
+                    "frame": 2000,
+                    "value": [
+                        1.7,
+                        -48.9
+                    ]
+                },
+                {
+                    "frame": 3000,
+                    "value": [
+                        1.7,
+                        -47.1
+                    ]
+                },
+                {
+                    "frame": 4000,
+                    "value": [
+                        1.7,
+                        -45.2
+                    ]
+                },
+                {
+                    "frame": 5000,
+                    "value": [
+                        1.7,
+                        -48.9
+                    ]
+                },
+                {
+                    "frame": 6000,
+                    "value": [
+                        1.7,
+                        -47.1
+                    ]
+                }
+            ]
+        },
+        "gem_shine": {
+            "frameName": [
+                {
+                    "frame": 2917,
+                    "value": "gem_shine1.png"
+                },
+                {
+                    "frame": 3000,
+                    "value": "gem_shine2.png"
+                },
+                {
+                    "frame": 3083,
+                    "value": "gem_shine3.png"
+                },
+                {
+                    "frame": 3167,
+                    "value": "gem_shine4.png"
+                },
+                {
+                    "frame": 3250,
+                    "value": "gem_shine5.png"
+                },
+                {
+                    "frame": 3333,
+                    "value": "gem_shine6.png"
+                },
+                {
+                    "frame": 3417,
+                    "value": "gem_shine7.png"
+                },
+                {
+                    "frame": 3500,
+                    "value": "gem_shine8.png"
+                }
+            ]
+        },
+        "circle": {
+            "angle": [
+                {
+                    "frame": 0,
+                    "value": 0
+                },
+                {
+                    "frame": 6017,
+                    "value": 360
+                }
+            ]
+        }
+    }
+}

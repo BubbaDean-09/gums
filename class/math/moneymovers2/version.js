@@ -1,0 +1,2 @@
+var _azerionIntegration={"tcVersion":"tc-172","timeStamp":1726495937262,"gameBuildVersion":"2.1.4","h":"74a8e9a5d428a4c39ab623505957cf7d0d55d855"}
+libs=["https://cdn.jsdelivr.net/npm/@azerion/phaser-cachebuster@2.0/build/phaser-cachebuster.min.js","https://cdn.jsdelivr.net/npm/@azerion/phaser-i18next@1.0/build/phaser-i18next.min.js","https://cdn.jsdelivr.net/npm/@azerion/phaser-spine@3.0/build/phaser-spine.min.js","https://cdn.jsdelivr.net/npm/@azerion/phaser-super-storage@1.0/build/phaser-super-storage.min.js"];

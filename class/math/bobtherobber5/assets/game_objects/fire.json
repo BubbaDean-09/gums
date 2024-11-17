@@ -1,0 +1,24 @@
+{
+    "hierarchy": {
+        "name": "fire",
+        "children": [
+            {
+                "name": "base"
+            }
+        ],
+        "animations": [
+            "fire_loop"
+        ]
+    },
+    "properties": {
+        "base": {
+            "file": "fire1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -18.6
+            },
+            "type": "sprite"
+        }
+    }
+}

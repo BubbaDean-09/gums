@@ -1,0 +1,1411 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "fx"
+            },
+            {
+                "name": "sound"
+            },
+            {
+                "name": "levels_1",
+                "children": [
+                    {
+                        "name": "level1",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level2",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level3",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level4",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level5",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level6",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level7",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "levels_2",
+                "children": [
+                    {
+                        "name": "level8",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level9",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "level10",
+                        "children": [
+                            {
+                                "name": "stage_container",
+                                "children": [
+                                    {
+                                        "name": "stage"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star1",
+                                "children": [
+                                    {
+                                        "name": "star1"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star2",
+                                "children": [
+                                    {
+                                        "name": "star2"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "empty_star3",
+                                "children": [
+                                    {
+                                        "name": "star3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "documents_container",
+                "children": [
+                    {
+                        "name": "documents"
+                    }
+                ]
+            },
+            {
+                "name": "home"
+            },
+            {
+                "name": "right"
+            },
+            {
+                "name": "left"
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "fx": {
+            "file": "fx_on_button.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "TOP_RIGHT",
+                "offset": {
+                    "x": -80.6,
+                    "y": -4.5
+                }
+            }
+        },
+        "sound": {
+            "file": "sound_on_button.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "TOP_RIGHT",
+                "offset": {
+                    "x": -16.5,
+                    "y": -5.6
+                }
+            }
+        },
+        "levels_1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -23
+                }
+            }
+        },
+        "levels_1/level1": {
+            "file": "1_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -230.4,
+                "y": -95.5
+            },
+            "type": "sprite"
+        },
+        "levels_1/level1/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -90.5,
+                "y": -72.2
+            },
+            "type": "sprite"
+        },
+        "levels_1/level1/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "1",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_1/level1/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -121,
+                "y": -40.2
+            },
+            "type": "sprite"
+        },
+        "levels_1/level1/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level1/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -91.5,
+                "y": -29
+            },
+            "type": "sprite"
+        },
+        "levels_1/level1/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level1/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -62,
+                "y": -40
+            },
+            "type": "sprite"
+        },
+        "levels_1/level1/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2": {
+            "file": "2_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -11.6,
+                "y": -84.9
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -33.3,
+                "y": -78.4
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "2",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_1/level2/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -63,
+                "y": -45.5
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -34.4,
+                "y": -34.3
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -4.6,
+                "y": -44.7
+            },
+            "type": "sprite"
+        },
+        "levels_1/level2/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3": {
+            "file": "3_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 238.6,
+                "y": -91.6
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -61.1,
+                "y": -89
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "3",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_1/level3/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -91.3,
+                "y": -56.2
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -62.6,
+                "y": -44.6
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -33.4,
+                "y": -55.9
+            },
+            "type": "sprite"
+        },
+        "levels_1/level3/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4": {
+            "file": "4_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -265,
+                "y": 152.8
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -35.9,
+                "y": -87.9
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "4",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_1/level4/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -65.2,
+                "y": -54.7
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -36.9,
+                "y": -43.8
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -7.3,
+                "y": -55
+            },
+            "type": "sprite"
+        },
+        "levels_1/level4/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5": {
+            "file": "5_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -101.1,
+                "y": 172.3
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 15.8,
+                "y": -99.7
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "5",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_1/level5/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -15,
+                "y": -67.5
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 13.9,
+                "y": -55.8
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 43.9,
+                "y": -67.7
+            },
+            "type": "sprite"
+        },
+        "levels_1/level5/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6": {
+            "file": "6_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 104.1,
+                "y": 175.2
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -6.3,
+                "y": -107.4
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "6",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_1/level6/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -36.7,
+                "y": -74.5
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -7.2,
+                "y": -63.3
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 23,
+                "y": -74.5
+            },
+            "type": "sprite"
+        },
+        "levels_1/level6/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7": {
+            "file": "7_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 280.5,
+                "y": 170.3
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.6,
+                "y": -110.8
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "7",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_1/level7/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -29.5,
+                "y": -78.8
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -0.3,
+                "y": -66.8
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 29.4,
+                "y": -78.2
+            },
+            "type": "sprite"
+        },
+        "levels_1/level7/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": 38
+                }
+            }
+        },
+        "levels_2/level8": {
+            "file": "8_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -152,
+                "y": -148.5
+            },
+            "type": "sprite"
+        },
+        "levels_2/level8/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -76.5,
+                "y": -99.3
+            },
+            "type": "sprite"
+        },
+        "levels_2/level8/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "8",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_2/level8/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -106.4,
+                "y": -66.6
+            },
+            "type": "sprite"
+        },
+        "levels_2/level8/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level8/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -76.9,
+                "y": -55.5
+            },
+            "type": "sprite"
+        },
+        "levels_2/level8/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level8/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -46.9,
+                "y": -66.9
+            },
+            "type": "sprite"
+        },
+        "levels_2/level8/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9": {
+            "file": "9_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 138.5,
+                "y": -163.1
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 101,
+                "y": -101.8
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "9",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_2/level9/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 70.7,
+                "y": -69.6
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 99.6,
+                "y": -57.7
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 129.9,
+                "y": -69.1
+            },
+            "type": "sprite"
+        },
+        "levels_2/level9/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10": {
+            "file": "10_normal.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.4,
+                "y": 96.4
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10/stage_container": {
+            "file": "stage_number.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -227.8,
+                "y": -92.6
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10/stage_container/stage": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "10",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 5.6,
+            "position": {
+                "x": 0,
+                "y": 2.9
+            },
+            "type": "text"
+        },
+        "levels_2/level10/empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -258.3,
+                "y": -59.2
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10/empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10/empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -229.2,
+                "y": -48.7
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10/empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10/empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -199.9,
+                "y": -59.6
+            },
+            "type": "sprite"
+        },
+        "levels_2/level10/empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "documents_container": {
+            "file": "documents_container.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 0,
+                "bottom": 0,
+                "left": 72,
+                "right": 38
+            },
+            "size": {
+                "width": 148.4,
+                "height": 53
+            },
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_LEFT",
+                "offset": {
+                    "x": -30.3,
+                    "y": -23
+                }
+            }
+        },
+        "documents_container/documents": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 20
+            },
+            "text": "00",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 17.9,
+                "y": -0.1
+            },
+            "color": "#f4ee00",
+            "type": "text"
+        },
+        "home": {
+            "file": "nose.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_LEFT",
+                "offset": {
+                    "x": -31.1,
+                    "y": -17.5
+                }
+            }
+        },
+        "right": {
+            "file": "right_button.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_RIGHT",
+                "offset": {
+                    "x": -29,
+                    "y": -291
+                }
+            }
+        },
+        "left": {
+            "file": "left_button.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_LEFT",
+                "offset": {
+                    "x": -30.3,
+                    "y": -291
+                }
+            }
+        }
+    }
+}

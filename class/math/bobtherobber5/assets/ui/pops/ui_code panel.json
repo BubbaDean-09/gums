@@ -1,0 +1,576 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "base",
+                "children": [
+                    {
+                        "name": "number1"
+                    },
+                    {
+                        "name": "number2"
+                    },
+                    {
+                        "name": "number3"
+                    },
+                    {
+                        "name": "number4"
+                    },
+                    {
+                        "name": "button1",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button2",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button3",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button4",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button5",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button6",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button7",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button8",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button9",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button10",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button11",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "button12",
+                        "children": [
+                            {
+                                "name": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "close"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "base": {
+            "file": "base.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 480,
+                "y": 320
+            },
+            "type": "sprite"
+        },
+        "base/number1": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 50
+            },
+            "text": "0",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 6,
+            "position": {
+                "x": -70.6,
+                "y": -144.6
+            },
+            "type": "text"
+        },
+        "base/number2": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 50
+            },
+            "text": "0",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 6,
+            "position": {
+                "x": -23.6,
+                "y": -144.6
+            },
+            "type": "text"
+        },
+        "base/number3": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 50
+            },
+            "text": "0",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 6,
+            "position": {
+                "x": 23.4,
+                "y": -144.6
+            },
+            "type": "text"
+        },
+        "base/number4": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 50
+            },
+            "text": "0",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 6,
+            "position": {
+                "x": 70.9,
+                "y": -144.6
+            },
+            "type": "text"
+        },
+        "base/button1": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": -63,
+                "y": -33.4
+            },
+            "type": "button"
+        },
+        "base/button1/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "1",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button2": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 2.7,
+                "y": -33.4
+            },
+            "type": "button"
+        },
+        "base/button2/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "2",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button3": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 68.5,
+                "y": -33.4
+            },
+            "type": "button"
+        },
+        "base/button3/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "3",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button4": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": -63,
+                "y": 28.7
+            },
+            "type": "button"
+        },
+        "base/button4/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "4",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button5": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 2.7,
+                "y": 28.7
+            },
+            "type": "button"
+        },
+        "base/button5/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "5",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button6": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 68.5,
+                "y": 28.7
+            },
+            "type": "button"
+        },
+        "base/button6/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "6",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button7": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": -63,
+                "y": 90.7
+            },
+            "type": "button"
+        },
+        "base/button7/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "7",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button8": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 2.7,
+                "y": 90.7
+            },
+            "type": "button"
+        },
+        "base/button8/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "8",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button9": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 68.5,
+                "y": 90.7
+            },
+            "type": "button"
+        },
+        "base/button9/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "9",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button10": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": -63,
+                "y": 152.8
+            },
+            "type": "button"
+        },
+        "base/button10/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "*",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button11": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 2.7,
+                "y": 152.8
+            },
+            "type": "button"
+        },
+        "base/button11/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "0",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/button12": {
+            "file": "button.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button.png",
+                "pressed": "button_press.png",
+                "hover": "button.png"
+            },
+            "position": {
+                "x": 68.5,
+                "y": 152.8
+            },
+            "type": "button"
+        },
+        "base/button12/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 30
+            },
+            "text": "#",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": -3.3
+            },
+            "type": "text"
+        },
+        "base/close": {
+            "file": "button_close.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button_close.png",
+                "pressed": "button_close_press.png",
+                "hover": "button_close.png"
+            },
+            "position": {
+                "x": 171,
+                "y": -215
+            },
+            "type": "button"
+        }
+    }
+}
