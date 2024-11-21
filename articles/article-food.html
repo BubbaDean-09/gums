@@ -142,27 +142,6 @@
         <p>&copy; 2024 Daily News - All Rights Reserved</p>
     </footer>
 
-    <script>
-        function allowAccess() {
-            sessionStorage.setItem("canAccessClassList", "true");
-            window.location.href = "/class/ClassList.html";
-        }
-
-        let typed = "";
-
-        document.addEventListener('keydown', function(event) {
-            typed += event.key;
-
-            if (typed === "bringmethegames") {
-                sessionStorage.setItem("canAccessClassList", "true");
-                window.location.href = "/class/ClassList.html";
-            }
-
-            if (typed.length > 25) {
-                typed = typed.substring(1);
-            }
-        });
-    </script>
-
+    
 </body>
 </html>
