@@ -1,0 +1,24 @@
+{
+    "hierarchy": {
+        "name": "sign_attention",
+        "children": [
+            {
+                "name": "base"
+            }
+        ],
+        "animations": [
+            "sign_stand"
+        ]
+    },
+    "properties": {
+        "base": {
+            "file": "sign_attention.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.6,
+                "y": -88.8
+            },
+            "type": "sprite"
+        }
+    }
+}

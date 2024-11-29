@@ -1,0 +1,100 @@
+{"frames": [
+
+{
+	"filename": "bg_decor.png",
+	"frame": {"x":2,"y":2,"w":435,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":0,"w":435,"h":224},
+	"sourceSize": {"w":437,"h":224}
+},
+{
+	"filename": "box.png",
+	"frame": {"x":334,"y":285,"w":183,"h":135},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":183,"h":135},
+	"sourceSize": {"w":183,"h":135}
+},
+{
+	"filename": "fx.png",
+	"frame": {"x":2,"y":228,"w":330,"h":128},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":330,"h":128},
+	"sourceSize": {"w":330,"h":128}
+},
+{
+	"filename": "gadget1.png",
+	"frame": {"x":716,"y":294,"w":135,"h":164},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":135,"h":164},
+	"sourceSize": {"w":135,"h":164}
+},
+{
+	"filename": "gadget2.png",
+	"frame": {"x":2,"y":358,"w":166,"h":108},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":166,"h":108},
+	"sourceSize": {"w":166,"h":108}
+},
+{
+	"filename": "gadget3.png",
+	"frame": {"x":787,"y":146,"w":185,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":185,"h":146},
+	"sourceSize": {"w":185,"h":146}
+},
+{
+	"filename": "gadget4.png",
+	"frame": {"x":853,"y":294,"w":126,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":126,"h":131},
+	"sourceSize": {"w":126,"h":131}
+},
+{
+	"filename": "gadget5.png",
+	"frame": {"x":787,"y":2,"w":204,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":204,"h":142},
+	"sourceSize": {"w":204,"h":142}
+},
+{
+	"filename": "gadget6.png",
+	"frame": {"x":519,"y":285,"w":195,"h":116},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":195,"h":116},
+	"sourceSize": {"w":195,"h":116}
+},
+{
+	"filename": "shadow.png",
+	"frame": {"x":519,"y":403,"w":187,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":187,"h":54},
+	"sourceSize": {"w":187,"h":54}
+},
+{
+	"filename": "title.png",
+	"frame": {"x":439,"y":2,"w":346,"h":281},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":346,"h":281},
+	"sourceSize": {"w":346,"h":281}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_ui_new_gadget.png",
+	"format": "RGBA8888",
+	"size": {"w":993,"h":468},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:040145a6e6f4a545c7201fd40c979447:2b9f656ec37e543cce378dcb06f75da4:49574a7650b317f6eab33136ba0d0cdb$"
+}
+}

@@ -1,0 +1,60 @@
+{
+    "hierarchy": {
+        "name": "gem_boss",
+        "children": [
+            {
+                "name": "circle"
+            },
+            {
+                "name": "gem"
+            },
+            {
+                "name": "gem_shine"
+            }
+        ],
+        "animations": [
+            "gem_boss_stand"
+        ]
+    },
+    "properties": {
+        "circle": {
+            "file": "gem_light.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 2,
+                "y": -56.3
+            },
+            "scale": {
+                "x": 0.6,
+                "y": 0.6
+            },
+            "type": "sprite"
+        },
+        "gem": {
+            "file": "gem.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.7,
+                "y": -47.1
+            },
+            "scale": {
+                "x": 0.6,
+                "y": 0.6
+            },
+            "type": "sprite"
+        },
+        "gem_shine": {
+            "file": "gem_shine1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 2.2,
+                "y": -45.8
+            },
+            "scale": {
+                "x": 0.59,
+                "y": 0.59
+            },
+            "type": "sprite"
+        }
+    }
+}

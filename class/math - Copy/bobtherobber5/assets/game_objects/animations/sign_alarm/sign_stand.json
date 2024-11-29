@@ -1,0 +1,54 @@
+{
+    "name": "sign_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "base": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        1.6,
+                        -88.8
+                    ]
+                }
+            ],
+            "scaleX": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 100,
+                    "value": 1.2
+                },
+                {
+                    "frame": 225,
+                    "value": 0.8
+                },
+                {
+                    "frame": 375,
+                    "value": 1
+                }
+            ],
+            "scaleY": [
+                {
+                    "frame": 0,
+                    "value": 1
+                },
+                {
+                    "frame": 100,
+                    "value": 0.8
+                },
+                {
+                    "frame": 225,
+                    "value": 1.2
+                },
+                {
+                    "frame": 375,
+                    "value": 1
+                }
+            ]
+        }
+    }
+}

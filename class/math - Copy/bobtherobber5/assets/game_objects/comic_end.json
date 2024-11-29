@@ -1,0 +1,72 @@
+{
+    "hierarchy": {
+        "name": "comic_end",
+        "children": [
+            {
+                "name": "v1"
+            },
+            {
+                "name": "v3"
+            },
+            {
+                "name": "v5"
+            },
+            {
+                "name": "v4"
+            },
+            {
+                "name": "v2"
+            }
+        ],
+        "animations": [
+            "comic_end_play"
+        ]
+    },
+    "properties": {
+        "v1": {
+            "file": "comic2_1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -327,
+                "y": -159
+            },
+            "type": "sprite"
+        },
+        "v3": {
+            "file": "comic2_3.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 206,
+                "y": -161.5
+            },
+            "type": "sprite"
+        },
+        "v5": {
+            "file": "comic2_5.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 209,
+                "y": 142
+            },
+            "type": "sprite"
+        },
+        "v4": {
+            "file": "comic2_4.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -235,
+                "y": 142
+            },
+            "type": "sprite"
+        },
+        "v2": {
+            "file": "comic2_2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -87,
+                "y": -189
+            },
+            "type": "sprite"
+        }
+    }
+}

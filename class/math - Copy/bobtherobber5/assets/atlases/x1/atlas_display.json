@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "button_close.png",
+	"frame": {"x":582,"y":2,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "button_close_press.png",
+	"frame": {"x":582,"y":88,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "monitor.png",
+	"frame": {"x":2,"y":2,"w":578,"h":492},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":578,"h":492},
+	"sourceSize": {"w":578,"h":492}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_display.png",
+	"format": "RGBA8888",
+	"size": {"w":668,"h":496},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ed8614efd3a5c34791183edb4ffa1bde:ad11b433354b16e4bf32d343c8e840a3:a1f431786c9fd8f75803d4bd80a47d35$"
+}
+}

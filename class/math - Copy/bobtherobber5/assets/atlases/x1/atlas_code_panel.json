@@ -1,0 +1,52 @@
+{"frames": [
+
+{
+	"filename": "base.png",
+	"frame": {"x":2,"y":2,"w":336,"h":445},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":336,"h":445},
+	"sourceSize": {"w":336,"h":445}
+},
+{
+	"filename": "button.png",
+	"frame": {"x":340,"y":174,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+},
+{
+	"filename": "button_close.png",
+	"frame": {"x":340,"y":2,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "button_close_press.png",
+	"frame": {"x":340,"y":88,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "button_press.png",
+	"frame": {"x":340,"y":230,"w":54,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":54},
+	"sourceSize": {"w":54,"h":54}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_code_panel.png",
+	"format": "RGBA8888",
+	"size": {"w":426,"h":449},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b9d9a42259c4ea184dcb85cc47842d5e:40414a03b069be24ec76b428e4b4b8a9:9a0ea1195f6764d4f7870808c4438a9c$"
+}
+}

@@ -1,0 +1,65 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "container",
+                "children": [
+                    {
+                        "name": "text"
+                    },
+                    {
+                        "name": "close"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "container": {
+            "file": "sheet.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 480,
+                "y": 320
+            },
+            "type": "sprite"
+        },
+        "container/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 35
+            },
+            "text": "Door code:\n0840",
+            "align": "center",
+            "position": {
+                "x": 0.6,
+                "y": -82.9
+            },
+            "color": "#000000",
+            "type": "text"
+        },
+        "container/close": {
+            "file": "button_close.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button_close.png",
+                "pressed": "button_close_press.png",
+                "hover": "button_close.png"
+            },
+            "position": {
+                "x": 171,
+                "y": -215
+            },
+            "type": "button"
+        }
+    }
+}

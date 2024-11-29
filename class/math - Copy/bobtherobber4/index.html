@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Bob The Robber4</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/web.json", {onProgress: UnityProgress});
+    </script>
+
+    <script>
+
+     ga('create', 'UA-78960661-1', 'auto');
+     ga('create', 'UA-78960661-45', 'auto', 'tracker_45');
+     ga('send', 'pageview');
+     ga('tracker_45.send', 'pageview');
+     ga('send', 'event', 'game', 'game_start', '');
+     ga('tracker_45.send', 'event', 'game', 'game_start', '');
+
+    // --------------------------------------------------------------------
+    function getGadgetPrice(gadgetIndex) {
+      SendMessage("Menuelements", "setGadgetPrice" + gadgetIndex, gadgets[gadgetIndex]);
+    }
+
+    function getTrophyPrice(trophyIndex) {
+      SendMessage("Menuelements", "setTrophyPrice" + trophyIndex, trophySlot[trophyIndex]);
+    }
+
+    function getCostumePrice(costumeIndex) {
+      SendMessage("Menuelements", "setCostumePrice" + costumeIndex, franceCostumesPrice[costumeIndex]);
+    }
+
+    function getLevelsLoot(LevelsLootIndex) {
+      SendMessage("Menuelements", "setLevelsLoot" + LevelsLootIndex, franceLevelsLoot[LevelsLootIndex]);
+    }
+
+    function getLevelsTime(LevelsTimeIndex) {
+      SendMessage("Menuelements", "setLevelsTime" + LevelsTimeIndex, franceLevelsTime[LevelsTimeIndex]);
+    }
+
+    function gaCustomEvent(eventCategory, eventAction, eventLabel, eventValue) {
+      ga('send', 'event', eventCategory, eventAction, eventLabel, eventValue);
+      ga('tracker_45.send', 'event', eventCategory, eventAction, eventLabel, eventValue);
+    }
+    </script>
+
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 800px; height: 600px"></div>
+
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>

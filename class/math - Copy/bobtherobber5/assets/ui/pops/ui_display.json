@@ -1,0 +1,96 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "base",
+                "children": [
+                    {
+                        "name": "remainder"
+                    },
+                    {
+                        "name": "description"
+                    },
+                    {
+                        "name": "code"
+                    },
+                    {
+                        "name": "close"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "base": {
+            "file": "monitor.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 480,
+                "y": 359
+            },
+            "type": "sprite"
+        },
+        "base/remainder": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 34
+            },
+            "text": "reminder",
+            "align": "center",
+            "position": {
+                "x": -93.3,
+                "y": -116.3
+            },
+            "type": "text"
+        },
+        "base/description": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 50
+            },
+            "text": "DOOR\nCODE",
+            "align": "center",
+            "position": {
+                "x": 114.4,
+                "y": -78.3
+            },
+            "type": "text"
+        },
+        "base/code": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 55
+            },
+            "text": "0760",
+            "align": "center",
+            "position": {
+                "x": 121,
+                "y": 34.1
+            },
+            "type": "text"
+        },
+        "base/close": {
+            "file": "button_close.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button_close.png",
+                "pressed": "button_close_press.png",
+                "hover": "button_close.png"
+            },
+            "position": {
+                "x": 271,
+                "y": -233
+            },
+            "type": "button"
+        }
+    }
+}

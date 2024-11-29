@@ -1,0 +1,80 @@
+{
+    "hierarchy": {
+        "name": "sign_death",
+        "children": [
+            {
+                "name": "base"
+            },
+            {
+                "name": "base2"
+            },
+            {
+                "name": "base3"
+            },
+            {
+                "name": "base4"
+            }
+        ],
+        "animations": [
+            "sign_play"
+        ]
+    },
+    "properties": {
+        "base": {
+            "file": "sign_death.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.6,
+                "y": -88.8
+            },
+            "scale": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0,
+            "type": "sprite"
+        },
+        "base2": {
+            "file": "sign_death.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.6,
+                "y": -88.8
+            },
+            "scale": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0,
+            "type": "sprite"
+        },
+        "base3": {
+            "file": "sign_death.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.6,
+                "y": -88.8
+            },
+            "scale": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0,
+            "type": "sprite"
+        },
+        "base4": {
+            "file": "sign_death.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.6,
+                "y": -88.8
+            },
+            "scale": {
+                "x": 0,
+                "y": 0
+            },
+            "alpha": 0,
+            "type": "sprite"
+        }
+    }
+}

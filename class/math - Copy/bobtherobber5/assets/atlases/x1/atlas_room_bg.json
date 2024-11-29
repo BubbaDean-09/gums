@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "left_wall.png",
+	"frame": {"x":0,"y":0,"w":40,"h":140},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":140},
+	"sourceSize": {"w":40,"h":140}
+},
+{
+	"filename": "right_wall.png",
+	"frame": {"x":100,"y":0,"w":40,"h":140},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":140},
+	"sourceSize": {"w":40,"h":140}
+},
+{
+	"filename": "hallway.png",
+	"frame": {"x":40,"y":0,"w":60,"h":140},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":140},
+	"sourceSize": {"w":60,"h":140}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "roombg.png",
+	"format": "RGBA8888",
+	"size": {"w":140,"h":140},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6117f65d9f4aa7e57f4326b83039c774:4c841efd4db76af3f9672c387046c4aa:2de73da2ceb98e8affc8e745ae8d4856$"
+}
+}
