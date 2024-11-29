@@ -1,0 +1,24 @@
+{
+    "hierarchy": {
+        "name": "sign_alarm",
+        "children": [
+            {
+                "name": "base"
+            }
+        ],
+        "animations": [
+            "sign_stand"
+        ]
+    },
+    "properties": {
+        "base": {
+            "file": "sign_alarm.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.6,
+                "y": -88.8
+            },
+            "type": "sprite"
+        }
+    }
+}

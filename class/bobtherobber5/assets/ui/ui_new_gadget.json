@@ -1,0 +1,84 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "title"
+            },
+            {
+                "name": "base",
+                "children": [
+                    {
+                        "name": "fx"
+                    },
+                    {
+                        "name": "shadow"
+                    },
+                    {
+                        "name": "box"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "title": {
+            "file": "title.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -40.5
+                }
+            }
+        },
+        "base": {
+            "file": "bg_decor.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -57.3
+                }
+            }
+        },
+        "base/fx": {
+            "file": "fx.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": -30.7
+            },
+            "type": "sprite"
+        },
+        "base/shadow": {
+            "file": "shadow.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 53.3
+            },
+            "type": "sprite"
+        },
+        "base/box": {
+            "file": "box.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 2.7
+            },
+            "type": "sprite"
+        }
+    }
+}

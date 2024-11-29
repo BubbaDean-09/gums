@@ -1,0 +1,188 @@
+
+scientist.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ScientistBodyC
+  rotate: false
+  xy: 744, 84
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+ScientistEyeBrowRight
+  rotate: false
+  xy: 868, 90
+  size: 21, 10
+  orig: 21, 10
+  offset: 0, 0
+  index: -1
+ScientistEyeD
+  rotate: false
+  xy: 125, 12
+  size: 33, 12
+  orig: 33, 12
+  offset: 0, 0
+  index: -1
+ScientistEyesB
+  rotate: false
+  xy: 2, 2
+  size: 33, 4
+  orig: 33, 4
+  offset: 0, 0
+  index: -1
+ScientistEyesFront
+  rotate: false
+  xy: 527, 33
+  size: 35, 10
+  orig: 35, 10
+  offset: 0, 0
+  index: -1
+ScientistFootFrontRight
+  rotate: true
+  xy: 613, 54
+  size: 22, 17
+  orig: 22, 17
+  offset: 0, 0
+  index: -1
+ScientistFootFrontRight2
+  rotate: false
+  xy: 577, 78
+  size: 57, 44
+  orig: 57, 44
+  offset: 0, 0
+  index: -1
+ScientistFootSide
+  rotate: false
+  xy: 970, 105
+  size: 27, 17
+  orig: 27, 17
+  offset: 0, 0
+  index: -1
+ScientistHandFrontRight
+  rotate: true
+  xy: 577, 55
+  size: 21, 34
+  orig: 21, 34
+  offset: 0, 0
+  index: -1
+ScientistHandFrontRight2
+  rotate: false
+  xy: 527, 45
+  size: 48, 77
+  orig: 48, 77
+  offset: 0, 0
+  index: -1
+ScientistHandFrontRightA
+  rotate: false
+  xy: 845, 88
+  size: 21, 34
+  orig: 21, 34
+  offset: 0, 0
+  index: -1
+ScientistHandFrontRightB
+  rotate: true
+  xy: 999, 105
+  size: 17, 23
+  orig: 17, 23
+  offset: 0, 0
+  index: -1
+ScientistHeadB
+  rotate: false
+  xy: 229, 26
+  size: 99, 96
+  orig: 99, 96
+  offset: 0, 0
+  index: -1
+ScientistHeadC
+  rotate: false
+  xy: 330, 26
+  size: 99, 96
+  orig: 99, 96
+  offset: 0, 0
+  index: -1
+ScientistHeadFront
+  rotate: false
+  xy: 125, 26
+  size: 102, 96
+  orig: 102, 96
+  offset: 0, 0
+  index: -1
+ScientistHeadFront2
+  rotate: false
+  xy: 2, 8
+  size: 121, 114
+  orig: 121, 114
+  offset: 0, 0
+  index: -1
+ScientistHeadRear
+  rotate: false
+  xy: 431, 27
+  size: 94, 95
+  orig: 94, 95
+  offset: 0, 0
+  index: -1
+ScientistMouth
+  rotate: true
+  xy: 564, 34
+  size: 9, 11
+  orig: 9, 11
+  offset: 0, 0
+  index: -1
+ScientistMouthC
+  rotate: false
+  xy: 160, 17
+  size: 18, 7
+  orig: 18, 7
+  offset: 0, 0
+  index: -1
+ScientistNoseA
+  rotate: false
+  xy: 868, 102
+  size: 34, 20
+  orig: 34, 20
+  offset: 0, 0
+  index: -1
+ScientistNoseB
+  rotate: false
+  xy: 904, 102
+  size: 31, 20
+  orig: 31, 20
+  offset: 0, 0
+  index: -1
+ScientistNoseC
+  rotate: false
+  xy: 937, 102
+  size: 31, 20
+  orig: 31, 20
+  offset: 0, 0
+  index: -1
+ScientistRetinasFront
+  rotate: false
+  xy: 690, 78
+  size: 25, 4
+  orig: 25, 4
+  offset: 0, 0
+  index: -1
+ScientistSuitRear
+  rotate: false
+  xy: 636, 76
+  size: 52, 46
+  orig: 52, 46
+  offset: 0, 0
+  index: -1
+ScientistSuiteFront
+  rotate: false
+  xy: 690, 84
+  size: 52, 38
+  orig: 52, 38
+  offset: 0, 0
+  index: -1
+_SplashBlueA
+  rotate: false
+  xy: 796, 82
+  size: 47, 40
+  orig: 47, 40
+  offset: 0, 0
+  index: -1

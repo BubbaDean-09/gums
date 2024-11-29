@@ -1,0 +1,308 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "title"
+            },
+            {
+                "name": "level_container",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            {
+                "name": "empty_star1",
+                "children": [
+                    {
+                        "name": "star1"
+                    }
+                ]
+            },
+            {
+                "name": "empty_star2",
+                "children": [
+                    {
+                        "name": "star2"
+                    }
+                ]
+            },
+            {
+                "name": "empty_star3",
+                "children": [
+                    {
+                        "name": "star3"
+                    }
+                ]
+            },
+            {
+                "name": "play"
+            },
+            {
+                "name": "retry"
+            },
+            {
+                "name": "home"
+            },
+            {
+                "name": "back_go"
+            },
+            {
+                "name": "retry_go"
+            },
+            {
+                "name": "walkthrough_go",
+                "children": [
+                    {
+                        "name": "text"
+                    }
+                ]
+            },
+            {
+                "name": "documents_container",
+                "children": [
+                    {
+                        "name": "documents"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "title": {
+            "file": "title.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -59.5
+                }
+            }
+        },
+        "level_container": {
+            "file": "level_container.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -15
+                }
+            }
+        },
+        "level_container/text": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 20
+            },
+            "text": "Level 01",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "color": "#f4ee00",
+            "type": "text"
+        },
+        "empty_star1": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": -92.4,
+                    "y": 159
+                }
+            }
+        },
+        "empty_star1/star1": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "empty_star2": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": 159
+                }
+            }
+        },
+        "empty_star2/star2": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "empty_star3": {
+            "file": "empty_star.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 92.4,
+                    "y": 159
+                }
+            }
+        },
+        "empty_star3/star3": {
+            "file": "star.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        },
+        "play": {
+            "file": "play.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -8
+                }
+            }
+        },
+        "retry": {
+            "file": "retry.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_RIGHT",
+                "offset": {
+                    "x": -299.5,
+                    "y": -27
+                }
+            }
+        },
+        "home": {
+            "file": "nose.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_LEFT",
+                "offset": {
+                    "x": -299.5,
+                    "y": -27
+                }
+            }
+        },
+        "back_go": {
+            "file": "nose.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_LEFT",
+                "offset": {
+                    "x": -29,
+                    "y": -27
+                }
+            }
+        },
+        "retry_go": {
+            "file": "retry_go.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": 143
+                }
+            }
+        },
+        "walkthrough_go": {
+            "file": "walkthrough_container.png",
+            "image": "SIMPLE",
+            "type": "button",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -33.5
+                }
+            }
+        },
+        "walkthrough_go/text": {
+            "file": "walkthrough.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "scale": {
+                "x": 0.9,
+                "y": 0.9
+            },
+            "type": "sprite"
+        },
+        "documents_container": {
+            "file": "documents_container.png",
+            "image": "SLICED",
+            "slice": {
+                "top": 1,
+                "bottom": 0,
+                "left": 50,
+                "right": 15
+            },
+            "size": {
+                "width": 162,
+                "height": 53
+            },
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": -1,
+                    "y": -233.9
+                }
+            }
+        },
+        "documents_container/documents": {
+            "font": {
+                "name": "titan_oneregular",
+                "fontSize": 20
+            },
+            "text": "1/10",
+            "align": "center",
+            "stroke": "#000000",
+            "strokeThickness": 4,
+            "position": {
+                "x": 19.3,
+                "y": -1.3
+            },
+            "color": "#f4ee00",
+            "type": "text"
+        }
+    }
+}

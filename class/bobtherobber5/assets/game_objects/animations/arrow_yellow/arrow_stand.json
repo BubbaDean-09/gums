@@ -1,0 +1,107 @@
+{
+    "name": "arrow_stand",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "a1": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "frame": 417,
+                    "value": [
+                        5.2,
+                        5.1
+                    ]
+                },
+                {
+                    "frame": 667,
+                    "value": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        "a2": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "frame": 417,
+                    "value": [
+                        5.1,
+                        -5.5
+                    ]
+                },
+                {
+                    "frame": 667,
+                    "value": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        "a3": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "frame": 417,
+                    "value": [
+                        -5.2,
+                        -5
+                    ]
+                },
+                {
+                    "frame": 667,
+                    "value": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        },
+        "a4": {
+            "position": [
+                {
+                    "frame": 0,
+                    "value": [
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "frame": 417,
+                    "value": [
+                        -4.9,
+                        5
+                    ]
+                },
+                {
+                    "frame": 667,
+                    "value": [
+                        0,
+                        0
+                    ]
+                }
+            ]
+        }
+    }
+}

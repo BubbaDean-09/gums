@@ -1,0 +1,24 @@
+{
+    "hierarchy": {
+        "name": "empty_star",
+        "children": [
+            {
+                "name": "base"
+            }
+        ],
+        "animations": [
+            "empty_star_shine"
+        ]
+    },
+    "properties": {
+        "base": {
+            "file": "empty_star3.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "type": "sprite"
+        }
+    }
+}

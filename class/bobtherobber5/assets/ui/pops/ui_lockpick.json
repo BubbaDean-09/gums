@@ -1,0 +1,154 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "body",
+                "children": [
+                    {
+                        "name": "close"
+                    },
+                    {
+                        "name": "shackle"
+                    },
+                    {
+                        "name": "body"
+                    },
+                    {
+                        "name": "top"
+                    },
+                    {
+                        "name": "security_screw"
+                    },
+                    {
+                        "name": "big_pin"
+                    },
+                    {
+                        "name": "tube"
+                    },
+                    {
+                        "name": "tumbler"
+                    },
+                    {
+                        "name": "small_pin_top"
+                    },
+                    {
+                        "name": "small_pin_bottom"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "body": {
+            "position": {
+                "x": 480,
+                "y": 320
+            },
+            "type": "container"
+        },
+        "body/close": {
+            "file": "button_close.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "button_close.png",
+                "pressed": "button_close_press.png",
+                "hover": "button_close.png"
+            },
+            "position": {
+                "x": 171,
+                "y": -215
+            },
+            "type": "button"
+        },
+        "body/shackle": {
+            "file": "top.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1,
+                "y": -118
+            },
+            "type": "sprite"
+        },
+        "body/body": {
+            "file": "base.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -1.4,
+                "y": 60.5
+            },
+            "type": "sprite"
+        },
+        "body/top": {
+            "file": "wall.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -1.7,
+                "y": 51.7
+            },
+            "type": "sprite"
+        },
+        "body/security_screw": {
+            "file": "bottom1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 113.2,
+                "y": -36.2
+            },
+            "type": "sprite"
+        },
+        "body/big_pin": {
+            "file": "tube1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 60.9,
+                "y": 81.1
+            },
+            "type": "sprite"
+        },
+        "body/tube": {
+            "file": "tube3.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -1,
+                "y": 99
+            },
+            "type": "sprite"
+        },
+        "body/tumbler": {
+            "file": "lock.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -19.6,
+                "y": -22.3
+            },
+            "type": "sprite"
+        },
+        "body/small_pin_top": {
+            "file": "tube2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -110.4,
+                "y": 51.7
+            },
+            "type": "sprite"
+        },
+        "body/small_pin_bottom": {
+            "file": "tube2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -110.4,
+                "y": 109.7
+            },
+            "type": "sprite"
+        }
+    }
+}

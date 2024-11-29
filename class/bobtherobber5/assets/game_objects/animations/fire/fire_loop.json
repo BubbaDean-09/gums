@@ -1,0 +1,35 @@
+{
+    "name": "fire_loop",
+    "speed": 1,
+    "mode": "loop",
+    "data": {
+        "base": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "fire1.png"
+                },
+                {
+                    "frame": 80,
+                    "value": "fire2.png"
+                },
+                {
+                    "frame": 160,
+                    "value": "fire3.png"
+                },
+                {
+                    "frame": 240,
+                    "value": "fire4.png"
+                },
+                {
+                    "frame": 320,
+                    "value": "fire5.png"
+                },
+                {
+                    "frame": 400,
+                    "value": "fire1.png"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{"frames": [
+
+{
+	"filename": "comic1_1.png",
+	"frame": {"x":592,"y":277,"w":228,"h":273},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":273},
+	"sourceSize": {"w":228,"h":273}
+},
+{
+	"filename": "comic1_2.png",
+	"frame": {"x":2,"y":278,"w":357,"h":273},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":357,"h":273},
+	"sourceSize": {"w":357,"h":273}
+},
+{
+	"filename": "comic1_3.png",
+	"frame": {"x":361,"y":278,"w":229,"h":273},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":229,"h":273},
+	"sourceSize": {"w":229,"h":273}
+},
+{
+	"filename": "comic1_4.png",
+	"frame": {"x":2,"y":2,"w":431,"h":274},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":431,"h":274},
+	"sourceSize": {"w":431,"h":274}
+},
+{
+	"filename": "comic1_5.png",
+	"frame": {"x":435,"y":2,"w":431,"h":273},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":431,"h":273},
+	"sourceSize": {"w":431,"h":273}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_comic_intro.png",
+	"format": "RGBA8888",
+	"size": {"w":868,"h":553},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:46c5792b1cbed979d6a5a706c0a19363:992d69f780fb0ee86a4da9c90d89f23b:47a2ec88ce599c12319ab4fb47aa0ff2$"
+}
+}

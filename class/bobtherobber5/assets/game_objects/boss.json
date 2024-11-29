@@ -1,0 +1,118 @@
+{
+    "hierarchy": {
+        "name": "boss",
+        "children": [
+            {
+                "name": "body",
+                "children": [
+                    {
+                        "name": "arm_l"
+                    },
+                    {
+                        "name": "arm_r"
+                    },
+                    {
+                        "name": "head",
+                        "children": [
+                            {
+                                "name": "mouth"
+                            },
+                            {
+                                "name": "glass_shine"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "top"
+            }
+        ],
+        "animations": [
+            "boss_in2",
+            "boss_stand"
+        ]
+    },
+    "properties": {
+        "body": {
+            "file": "body.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -244.4,
+                "y": 2.4
+            },
+            "anchor": {
+                "x": 0.45,
+                "y": 0.3
+            },
+            "alpha": 0,
+            "type": "sprite"
+        },
+        "body/arm_l": {
+            "file": "arm_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 13.2,
+                "y": -16.3
+            },
+            "anchor": {
+                "x": 0.1,
+                "y": 0.1
+            },
+            "type": "sprite"
+        },
+        "body/arm_r": {
+            "file": "arm_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -7.8,
+                "y": -10.7
+            },
+            "anchor": {
+                "x": 0.9,
+                "y": 0.5
+            },
+            "type": "sprite"
+        },
+        "body/head": {
+            "file": "head.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 1.8,
+                "y": -12.4
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.8
+            },
+            "type": "sprite"
+        },
+        "body/head/mouth": {
+            "file": "mouth2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.6,
+                "y": -8.9
+            },
+            "type": "sprite"
+        },
+        "body/head/glass_shine": {
+            "file": "glass_shine2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 0.3,
+                "y": -19.48
+            },
+            "type": "sprite"
+        },
+        "top": {
+            "file": "bg_top.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -250.3,
+                "y": -1
+            },
+            "type": "sprite"
+        }
+    }
+}

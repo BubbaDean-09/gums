@@ -1,0 +1,31 @@
+{
+    "name": "empty_star_shine",
+    "speed": 1,
+    "mode": "normal",
+    "data": {
+        "base": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "empty_star3.png"
+                },
+                {
+                    "frame": 57,
+                    "value": "empty_star0.png"
+                },
+                {
+                    "frame": 114,
+                    "value": "empty_star1.png"
+                },
+                {
+                    "frame": 171,
+                    "value": "empty_star2.png"
+                },
+                {
+                    "frame": 229,
+                    "value": "empty_star3.png"
+                }
+            ]
+        }
+    }
+}

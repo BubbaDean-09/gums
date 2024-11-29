@@ -1,0 +1,279 @@
+
+bob.png
+size: 2048,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BobBodyBackCenter
+  rotate: false
+  xy: 44, 9
+  size: 39, 27
+  orig: 39, 27
+  offset: 0, 0
+  index: -1
+BobBodyFront
+  rotate: false
+  xy: 85, 9
+  size: 39, 27
+  orig: 39, 27
+  offset: 0, 0
+  index: -1
+BobBodyFrontLeft
+  rotate: false
+  xy: 2, 8
+  size: 40, 28
+  orig: 40, 28
+  offset: 0, 0
+  index: -1
+BobEmoSmile
+  rotate: false
+  xy: 287, 24
+  size: 42, 12
+  orig: 42, 12
+  offset: 0, 0
+  index: -1
+BobEyesA
+  rotate: false
+  xy: 2, 3
+  size: 28, 3
+  orig: 28, 3
+  offset: 0, 0
+  index: -1
+BobFootLeft
+  rotate: false
+  xy: 307, 3
+  size: 18, 19
+  orig: 18, 19
+  offset: 0, 0
+  index: -1
+BobFootLeftA
+  rotate: true
+  xy: 331, 14
+  size: 22, 21
+  orig: 22, 21
+  offset: 0, 0
+  index: -1
+BobFootRight
+  rotate: false
+  xy: 287, 2
+  size: 18, 20
+  orig: 18, 20
+  offset: 0, 0
+  index: -1
+BobGlassFrontBack
+  rotate: false
+  xy: 1384, 64
+  size: 98, 62
+  orig: 98, 62
+  offset: 0, 0
+  index: -1
+BobGlassFrontBack_a
+  rotate: false
+  xy: 1484, 64
+  size: 98, 62
+  orig: 98, 62
+  offset: 0, 0
+  index: -1
+BobGlassFrontCenter
+  rotate: false
+  xy: 1775, 78
+  size: 98, 48
+  orig: 98, 48
+  offset: 0, 0
+  index: -1
+BobGlassFrontCenter_a
+  rotate: false
+  xy: 1584, 64
+  size: 98, 62
+  orig: 98, 62
+  offset: 0, 0
+  index: -1
+BobGlassFrontLeft
+  rotate: false
+  xy: 1409, 7
+  size: 99, 55
+  orig: 99, 55
+  offset: 0, 0
+  index: -1
+BobGlassFrontLeft_a
+  rotate: true
+  xy: 1231, 27
+  size: 99, 72
+  orig: 99, 72
+  offset: 0, 0
+  index: -1
+BobGlassFrontRig_a
+  rotate: false
+  xy: 1510, 7
+  size: 99, 55
+  orig: 99, 55
+  offset: 0, 0
+  index: -1
+BobGlassFrontRight
+  rotate: false
+  xy: 1611, 7
+  size: 99, 55
+  orig: 99, 55
+  offset: 0, 0
+  index: -1
+BobHandLeft
+  rotate: false
+  xy: 216, 10
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+BobHandRight
+  rotate: false
+  xy: 239, 10
+  size: 21, 26
+  orig: 21, 26
+  offset: 0, 0
+  index: -1
+BobHandRightA
+  rotate: false
+  xy: 193, 8
+  size: 21, 28
+  orig: 21, 28
+  offset: 0, 0
+  index: -1
+BobHandRightB
+  rotate: true
+  xy: 126, 14
+  size: 22, 42
+  orig: 22, 42
+  offset: 0, 0
+  index: -1
+BobHeadBackCenter
+  rotate: false
+  xy: 1305, 46
+  size: 77, 80
+  orig: 77, 80
+  offset: 0, 0
+  index: -1
+BobHeadFrontCenterNormal
+  rotate: false
+  xy: 1712, 4
+  size: 78, 61
+  orig: 78, 61
+  offset: 0, 0
+  index: -1
+BobHeadFrontCenterSad
+  rotate: false
+  xy: 1792, 15
+  size: 78, 61
+  orig: 78, 61
+  offset: 0, 0
+  index: -1
+BobHeadFrontLeft
+  rotate: true
+  xy: 1872, 3
+  size: 73, 60
+  orig: 73, 60
+  offset: 0, 0
+  index: -1
+BobHeadFrontRight
+  rotate: false
+  xy: 1934, 66
+  size: 73, 60
+  orig: 73, 60
+  offset: 0, 0
+  index: -1
+BobKickSplash
+  rotate: false
+  xy: 170, 5
+  size: 21, 31
+  orig: 21, 31
+  offset: 0, 0
+  index: -1
+BobSplashBlue
+  rotate: false
+  xy: 1305, 2
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+BobSplashRed
+  rotate: false
+  xy: 1357, 2
+  size: 50, 42
+  orig: 50, 42
+  offset: 0, 0
+  index: -1
+box
+  rotate: false
+  xy: 1684, 67
+  size: 89, 59
+  orig: 89, 59
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 262, 13
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+stone1
+  rotate: false
+  xy: 1031, 27
+  size: 98, 99
+  orig: 98, 99
+  offset: 0, 0
+  index: -1
+stone2
+  rotate: false
+  xy: 1131, 27
+  size: 98, 99
+  orig: 98, 99
+  offset: 0, 0
+  index: -1
+whip1
+  rotate: false
+  xy: 2, 38
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+whip2
+  rotate: false
+  xy: 149, 38
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+whip3
+  rotate: false
+  xy: 296, 38
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+whip4
+  rotate: false
+  xy: 443, 38
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+whip5
+  rotate: false
+  xy: 590, 38
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+whip6
+  rotate: false
+  xy: 737, 38
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1
+whip7
+  rotate: false
+  xy: 884, 38
+  size: 145, 88
+  orig: 145, 88
+  offset: 0, 0
+  index: -1

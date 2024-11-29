@@ -1,0 +1,591 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "level1_fire1"
+            },
+            {
+                "name": "level1_fire2"
+            },
+            {
+                "name": "level1_fire3"
+            },
+            {
+                "name": "level1_fire4"
+            },
+            {
+                "name": "level2_fire1"
+            },
+            {
+                "name": "level2_fire2"
+            },
+            {
+                "name": "level2_fire3"
+            },
+            {
+                "name": "level2_fire4"
+            },
+            {
+                "name": "level2_fire5"
+            },
+            {
+                "name": "level3_fire1"
+            },
+            {
+                "name": "level3_fire2"
+            },
+            {
+                "name": "level3_fire3"
+            },
+            {
+                "name": "level3_fire4"
+            },
+            {
+                "name": "level3_fire5"
+            },
+            {
+                "name": "level4_fire1"
+            },
+            {
+                "name": "level4_fire2"
+            },
+            {
+                "name": "level4_fire3"
+            },
+            {
+                "name": "level4_fire4"
+            },
+            {
+                "name": "level5_fire1"
+            },
+            {
+                "name": "level5_fire2"
+            },
+            {
+                "name": "level5_fire3"
+            },
+            {
+                "name": "level6a_fire1"
+            },
+            {
+                "name": "level6b_fire1"
+            },
+            {
+                "name": "level6b_fire2"
+            },
+            {
+                "name": "level6b_fire3"
+            },
+            {
+                "name": "level7a_fire1"
+            },
+            {
+                "name": "level7a_fire2"
+            },
+            {
+                "name": "level7a_fire3"
+            },
+            {
+                "name": "level7a_fire4"
+            },
+            {
+                "name": "level7b_fire1"
+            },
+            {
+                "name": "level7b_fire2"
+            },
+            {
+                "name": "level7b_fire3"
+            },
+            {
+                "name": "level8a_fire1"
+            },
+            {
+                "name": "level8a_fire2"
+            },
+            {
+                "name": "level8a_fire3"
+            },
+            {
+                "name": "level8a_fire4"
+            },
+            {
+                "name": "level8b_fire1"
+            },
+            {
+                "name": "level8b_fire2"
+            },
+            {
+                "name": "level8b_fire3"
+            },
+            {
+                "name": "level8b_fire4"
+            },
+            {
+                "name": "level8b_fire5"
+            },
+            {
+                "name": "level8b_fire6"
+            },
+            {
+                "name": "level9a_fire1"
+            },
+            {
+                "name": "level9a_fire2"
+            },
+            {
+                "name": "level9a_fire3"
+            },
+            {
+                "name": "level9a_fire4"
+            },
+            {
+                "name": "level9a_fire5"
+            },
+            {
+                "name": "level9b_fire1"
+            },
+            {
+                "name": "level9b_fire2"
+            },
+            {
+                "name": "level9b_fire3"
+            },
+            {
+                "name": "level9b_fire4"
+            },
+            {
+                "name": "level9b_fire5"
+            },
+            {
+                "name": "level10a_fire1"
+            },
+            {
+                "name": "level10a_fire2"
+            },
+            {
+                "name": "level10b_fire2"
+            },
+            {
+                "name": "level10b_fire3"
+            },
+            {
+                "name": "level10b_fire5"
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "level1_fire1": {
+            "position": {
+                "x": 678,
+                "y": 71.8
+            },
+            "type": "container"
+        },
+        "level1_fire2": {
+            "position": {
+                "x": 862.6,
+                "y": 305.7
+            },
+            "type": "container"
+        },
+        "level1_fire3": {
+            "position": {
+                "x": 479.1,
+                "y": 425.8
+            },
+            "type": "container"
+        },
+        "level1_fire4": {
+            "position": {
+                "x": 267.7,
+                "y": 426.8
+            },
+            "type": "container"
+        },
+        "level2_fire1": {
+            "position": {
+                "x": 597,
+                "y": 68.6
+            },
+            "type": "container"
+        },
+        "level2_fire2": {
+            "position": {
+                "x": 863.3,
+                "y": 68.5
+            },
+            "type": "container"
+        },
+        "level2_fire3": {
+            "position": {
+                "x": 470.6,
+                "y": 190.6
+            },
+            "type": "container"
+        },
+        "level2_fire4": {
+            "position": {
+                "x": 851.9,
+                "y": 433
+            },
+            "type": "container"
+        },
+        "level2_fire5": {
+            "position": {
+                "x": 302.1,
+                "y": 537.8
+            },
+            "type": "container"
+        },
+        "level3_fire1": {
+            "position": {
+                "x": 314.9,
+                "y": 73.2
+            },
+            "type": "container"
+        },
+        "level3_fire2": {
+            "position": {
+                "x": 739.7,
+                "y": 74.9
+            },
+            "type": "container"
+        },
+        "level3_fire3": {
+            "position": {
+                "x": 725.3,
+                "y": 190.9
+            },
+            "type": "container"
+        },
+        "level3_fire4": {
+            "position": {
+                "x": 813.9,
+                "y": 419.8
+            },
+            "type": "container"
+        },
+        "level3_fire5": {
+            "position": {
+                "x": 400,
+                "y": 543.8
+            },
+            "type": "container"
+        },
+        "level4_fire1": {
+            "position": {
+                "x": 94.9,
+                "y": 66.4
+            },
+            "type": "container"
+        },
+        "level4_fire2": {
+            "position": {
+                "x": 366,
+                "y": 192.2
+            },
+            "type": "container"
+        },
+        "level4_fire3": {
+            "position": {
+                "x": 711.8,
+                "y": 426.4
+            },
+            "type": "container"
+        },
+        "level4_fire4": {
+            "position": {
+                "x": 853.9,
+                "y": 545.1
+            },
+            "type": "container"
+        },
+        "level5_fire1": {
+            "position": {
+                "x": 167.5,
+                "y": 76.8
+            },
+            "type": "container"
+        },
+        "level5_fire2": {
+            "position": {
+                "x": 428.7,
+                "y": 300.6
+            },
+            "type": "container"
+        },
+        "level5_fire3": {
+            "position": {
+                "x": 752.1,
+                "y": 423
+            },
+            "type": "container"
+        },
+        "level6a_fire1": {
+            "position": {
+                "x": 375.4,
+                "y": 190.6
+            },
+            "type": "container"
+        },
+        "level6b_fire1": {
+            "position": {
+                "x": 691.1,
+                "y": 71.7
+            },
+            "type": "container"
+        },
+        "level6b_fire2": {
+            "position": {
+                "x": 371.9,
+                "y": 426.4
+            },
+            "type": "container"
+        },
+        "level6b_fire3": {
+            "position": {
+                "x": 99.9,
+                "y": 426.8
+            },
+            "type": "container"
+        },
+        "level7a_fire1": {
+            "position": {
+                "x": 396.6,
+                "y": 71
+            },
+            "type": "container"
+        },
+        "level7a_fire2": {
+            "position": {
+                "x": 748.4,
+                "y": 303.8
+            },
+            "type": "container"
+        },
+        "level7a_fire3": {
+            "position": {
+                "x": 622.9,
+                "y": 424.8
+            },
+            "type": "container"
+        },
+        "level7a_fire4": {
+            "position": {
+                "x": 341.7,
+                "y": 538.5
+            },
+            "type": "container"
+        },
+        "level7b_fire1": {
+            "position": {
+                "x": 239.6,
+                "y": 300.1
+            },
+            "type": "container"
+        },
+        "level7b_fire2": {
+            "position": {
+                "x": 675.8,
+                "y": 303.4
+            },
+            "type": "container"
+        },
+        "level7b_fire3": {
+            "position": {
+                "x": 745.3,
+                "y": 425.9
+            },
+            "type": "container"
+        },
+        "level8a_fire1": {
+            "position": {
+                "x": 701.9,
+                "y": 70.6
+            },
+            "type": "container"
+        },
+        "level8a_fire2": {
+            "position": {
+                "x": 98,
+                "y": 423.3
+            },
+            "type": "container"
+        },
+        "level8a_fire3": {
+            "position": {
+                "x": 409.8,
+                "y": 538.8
+            },
+            "type": "container"
+        },
+        "level8a_fire4": {
+            "position": {
+                "x": 658.4,
+                "y": 539.1
+            },
+            "type": "container"
+        },
+        "level8b_fire1": {
+            "position": {
+                "x": 401.6,
+                "y": 70.3
+            },
+            "type": "container"
+        },
+        "level8b_fire2": {
+            "position": {
+                "x": 712.7,
+                "y": 75.5
+            },
+            "type": "container"
+        },
+        "level8b_fire3": {
+            "position": {
+                "x": 655.2,
+                "y": 194.3
+            },
+            "type": "container"
+        },
+        "level8b_fire4": {
+            "position": {
+                "x": 100.6,
+                "y": 311.1
+            },
+            "type": "container"
+        },
+        "level8b_fire5": {
+            "position": {
+                "x": 250.1,
+                "y": 418.9
+            },
+            "type": "container"
+        },
+        "level8b_fire6": {
+            "position": {
+                "x": 699.6,
+                "y": 423.2
+            },
+            "type": "container"
+        },
+        "level9a_fire1": {
+            "position": {
+                "x": 618.4,
+                "y": 78.3
+            },
+            "type": "container"
+        },
+        "level9a_fire2": {
+            "position": {
+                "x": 482,
+                "y": 184.4
+            },
+            "type": "container"
+        },
+        "level9a_fire3": {
+            "position": {
+                "x": 525.8,
+                "y": 303.5
+            },
+            "type": "container"
+        },
+        "level9a_fire4": {
+            "position": {
+                "x": 706.9,
+                "y": 417.9
+            },
+            "type": "container"
+        },
+        "level9a_fire5": {
+            "position": {
+                "x": 719.3,
+                "y": 536.4
+            },
+            "type": "container"
+        },
+        "level9b_fire1": {
+            "position": {
+                "x": 662.6,
+                "y": 71.2
+            },
+            "type": "container"
+        },
+        "level9b_fire2": {
+            "position": {
+                "x": 768.7,
+                "y": 186.9
+            },
+            "type": "container"
+        },
+        "level9b_fire3": {
+            "position": {
+                "x": 88.9,
+                "y": 188.4
+            },
+            "type": "container"
+        },
+        "level9b_fire4": {
+            "position": {
+                "x": 506,
+                "y": 419.6
+            },
+            "type": "container"
+        },
+        "level9b_fire5": {
+            "position": {
+                "x": 772.2,
+                "y": 540.9
+            },
+            "type": "container"
+        },
+        "level10a_fire1": {
+            "position": {
+                "x": 292.6,
+                "y": 187.3
+            },
+            "type": "container"
+        },
+        "level10a_fire2": {
+            "position": {
+                "x": 476.9,
+                "y": 306.5
+            },
+            "type": "container"
+        },
+        "level10b_fire2": {
+            "position": {
+                "x": 741,
+                "y": 421.5
+            },
+            "type": "container"
+        },
+        "level10b_fire3": {
+            "position": {
+                "x": 188.6,
+                "y": 420.7
+            },
+            "type": "container"
+        },
+        "level10b_fire5": {
+            "position": {
+                "x": 138.3,
+                "y": 210.5
+            },
+            "angle": 23,
+            "scale": {
+                "x": 0.9,
+                "y": 0.9
+            },
+            "type": "container"
+        }
+    }
+}

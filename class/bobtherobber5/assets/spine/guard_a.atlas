@@ -1,0 +1,216 @@
+
+guard_a.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuardABodyFront
+  rotate: false
+  xy: 356, 72
+  size: 61, 54
+  orig: 61, 54
+  offset: 0, 0
+  index: -1
+GuardABodySiddeB
+  rotate: false
+  xy: 419, 72
+  size: 61, 54
+  orig: 61, 54
+  offset: 0, 0
+  index: -1
+GuardABodySide
+  rotate: false
+  xy: 214, 27
+  size: 53, 34
+  orig: 53, 34
+  offset: 0, 0
+  index: -1
+GuardAEmoA
+  rotate: true
+  xy: 482, 87
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+GuardAEmoB
+  rotate: false
+  xy: 374, 38
+  size: 35, 32
+  orig: 35, 32
+  offset: 0, 0
+  index: -1
+GuardAEyeFront
+  rotate: false
+  xy: 245, 2
+  size: 32, 7
+  orig: 32, 7
+  offset: 0, 0
+  index: -1
+GuardAEyebrow
+  rotate: false
+  xy: 374, 29
+  size: 17, 7
+  orig: 17, 7
+  offset: 0, 0
+  index: -1
+GuardAEyesSideB
+  rotate: false
+  xy: 158, 13
+  size: 29, 11
+  orig: 29, 11
+  offset: 0, 0
+  index: -1
+GuardAFootFront
+  rotate: false
+  xy: 79, 7
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+GuardAFootFront2
+  rotate: false
+  xy: 322, 11
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+GuardAFootSide
+  rotate: false
+  xy: 214, 2
+  size: 29, 23
+  orig: 29, 23
+  offset: 0, 0
+  index: -1
+GuardAGunSideA
+  rotate: false
+  xy: 103, 12
+  size: 53, 31
+  orig: 53, 31
+  offset: 0, 0
+  index: -1
+GuardAHAndSideB
+  rotate: true
+  xy: 48, 2
+  size: 27, 29
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+GuardAHandFront
+  rotate: true
+  xy: 2, 2
+  size: 27, 44
+  orig: 27, 44
+  offset: 0, 0
+  index: -1
+GuardAHeadFront
+  rotate: false
+  xy: 158, 63
+  size: 66, 63
+  orig: 66, 63
+  offset: 0, 0
+  index: -1
+GuardAHeadFront2
+  rotate: false
+  xy: 2, 31
+  size: 99, 95
+  orig: 99, 95
+  offset: 0, 0
+  index: -1
+GuardAHeadSide
+  rotate: false
+  xy: 226, 63
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+GuardAHeadSide2
+  rotate: false
+  xy: 291, 63
+  size: 63, 63
+  orig: 63, 63
+  offset: 0, 0
+  index: -1
+GuardALeftHandA
+  rotate: true
+  xy: 269, 25
+  size: 36, 51
+  orig: 36, 51
+  offset: 0, 0
+  index: -1
+GuardALeftHandB
+  rotate: true
+  xy: 411, 44
+  size: 26, 37
+  orig: 26, 37
+  offset: 0, 0
+  index: -1
+GuardALeftHandC
+  rotate: true
+  xy: 158, 26
+  size: 35, 54
+  orig: 35, 54
+  offset: 0, 0
+  index: -1
+GuardALeftHandC2
+  rotate: false
+  xy: 103, 45
+  size: 53, 81
+  orig: 53, 81
+  offset: 0, 0
+  index: -1
+GuardAMouth
+  rotate: false
+  xy: 482, 83
+  size: 24, 2
+  orig: 24, 2
+  offset: 0, 0
+  index: -1
+GuardAMouth3
+  rotate: false
+  xy: 103, 2
+  size: 24, 8
+  orig: 24, 8
+  offset: 0, 0
+  index: -1
+GuardAMouthSideB
+  rotate: false
+  xy: 411, 38
+  size: 7, 4
+  orig: 7, 4
+  offset: 0, 0
+  index: -1
+GuardAMouthSideB2
+  rotate: false
+  xy: 450, 66
+  size: 7, 4
+  orig: 7, 4
+  offset: 0, 0
+  index: -1
+GuardANose
+  rotate: false
+  xy: 356, 64
+  size: 13, 6
+  orig: 13, 6
+  offset: 0, 0
+  index: -1
+GuardANoseSide
+  rotate: false
+  xy: 158, 2
+  size: 12, 9
+  orig: 12, 9
+  offset: 0, 0
+  index: -1
+GuardANoseSide2
+  rotate: false
+  xy: 172, 2
+  size: 12, 9
+  orig: 12, 9
+  offset: 0, 0
+  index: -1
+GuardARestina
+  rotate: false
+  xy: 189, 20
+  size: 23, 4
+  orig: 23, 4
+  offset: 0, 0
+  index: -1

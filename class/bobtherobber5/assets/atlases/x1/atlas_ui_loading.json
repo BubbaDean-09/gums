@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "bar.png",
+	"frame": {"x":2,"y":2,"w":915,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":915,"h":50},
+	"sourceSize": {"w":915,"h":50}
+},
+{
+	"filename": "bar_bg.png",
+	"frame": {"x":2,"y":54,"w":915,"h":50},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":915,"h":50},
+	"sourceSize": {"w":915,"h":50}
+},
+{
+	"filename": "logo.png",
+	"frame": {"x":2,"y":106,"w":354,"h":262},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":354,"h":262},
+	"sourceSize": {"w":354,"h":262}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_ui_loading.png",
+	"format": "RGBA8888",
+	"size": {"w":919,"h":370},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:63a1891c040b68fd636f9026444a2108:eb5fcf661db9e62f4354679d005ec3d5:97810c40a3f699dc244ac52d098acb5a$"
+}
+}

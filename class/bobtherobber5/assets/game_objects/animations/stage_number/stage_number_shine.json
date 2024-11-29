@@ -1,0 +1,47 @@
+{
+    "name": "stage_number_shine",
+    "speed": 1,
+    "mode": "normal",
+    "data": {
+        "base": {
+            "frameName": [
+                {
+                    "frame": 0,
+                    "value": "stage_number7.png"
+                },
+                {
+                    "frame": 50,
+                    "value": "stage_number0.png"
+                },
+                {
+                    "frame": 100,
+                    "value": "stage_number1.png"
+                },
+                {
+                    "frame": 150,
+                    "value": "stage_number2.png"
+                },
+                {
+                    "frame": 200,
+                    "value": "stage_number3.png"
+                },
+                {
+                    "frame": 250,
+                    "value": "stage_number4.png"
+                },
+                {
+                    "frame": 300,
+                    "value": "stage_number5.png"
+                },
+                {
+                    "frame": 350,
+                    "value": "stage_number6.png"
+                },
+                {
+                    "frame": 400,
+                    "value": "stage_number7.png"
+                }
+            ]
+        }
+    }
+}

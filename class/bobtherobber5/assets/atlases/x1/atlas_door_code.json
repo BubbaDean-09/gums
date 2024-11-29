@@ -1,0 +1,36 @@
+{"frames": [
+
+{
+	"filename": "button_close.png",
+	"frame": {"x":354,"y":2,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "button_close_press.png",
+	"frame": {"x":354,"y":88,"w":84,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":84},
+	"sourceSize": {"w":84,"h":84}
+},
+{
+	"filename": "sheet.png",
+	"frame": {"x":2,"y":2,"w":350,"h":447},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":350,"h":447},
+	"sourceSize": {"w":350,"h":447}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_door_code.png",
+	"format": "RGBA8888",
+	"size": {"w":440,"h":451},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8949ce8b63767d4655dc6e55c173d515:b6855b53f0d37baf73b6ccac8e762913:e3a904011ca9f0e63a6f3efcb52ce683$"
+}
+}

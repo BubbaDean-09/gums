@@ -1,0 +1,68 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "logo"
+            },
+            {
+                "name": "bar_bg",
+                "children": [
+                    {
+                        "name": "bar"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "logo": {
+            "file": "logo.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -58
+                }
+            }
+        },
+        "bar_bg": {
+            "file": "bar_bg.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": 49
+                }
+            }
+        },
+        "bar_bg/bar": {
+            "file": "bar.png",
+            "image": "TILED",
+            "size": {
+                "width": 915,
+                "height": 50
+            },
+            "position": {
+                "x": -457.5,
+                "y": 0
+            },
+            "anchor": {
+                "x": 0,
+                "y": 0.5
+            },
+            "type": "sprite"
+        }
+    }
+}

@@ -1,0 +1,228 @@
+{"frames": [
+
+{
+	"filename": "pattern.png",
+	"frame": {"x":874,"y":2,"w":1,"h":1},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+	"sourceSize": {"w":89,"h":74}
+},
+{
+	"filename": "tutorial1.png",
+	"frame": {"x":228,"y":686,"w":214,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":214,"h":109},
+	"sourceSize": {"w":214,"h":109}
+},
+{
+	"filename": "tutorial10.png",
+	"frame": {"x":196,"y":588,"w":368,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":368,"h":96},
+	"sourceSize": {"w":368,"h":96}
+},
+{
+	"filename": "tutorial11.png",
+	"frame": {"x":579,"y":494,"w":368,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":368,"h":97},
+	"sourceSize": {"w":368,"h":97}
+},
+{
+	"filename": "tutorial12.png",
+	"frame": {"x":454,"y":797,"w":259,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":259,"h":96},
+	"sourceSize": {"w":259,"h":96}
+},
+{
+	"filename": "tutorial13.png",
+	"frame": {"x":208,"y":490,"w":369,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":369,"h":96},
+	"sourceSize": {"w":369,"h":96}
+},
+{
+	"filename": "tutorial14.png",
+	"frame": {"x":566,"y":593,"w":162,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":84},
+	"sourceSize": {"w":162,"h":84}
+},
+{
+	"filename": "tutorial15.png",
+	"frame": {"x":2,"y":770,"w":224,"h":115},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":224,"h":115},
+	"sourceSize": {"w":224,"h":115}
+},
+{
+	"filename": "tutorial16.png",
+	"frame": {"x":2,"y":2,"w":434,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":434,"h":96},
+	"sourceSize": {"w":434,"h":96}
+},
+{
+	"filename": "tutorial17.png",
+	"frame": {"x":438,"y":2,"w":434,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":434,"h":96},
+	"sourceSize": {"w":434,"h":96}
+},
+{
+	"filename": "tutorial18.png",
+	"frame": {"x":210,"y":294,"w":396,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":396,"h":96},
+	"sourceSize": {"w":396,"h":96}
+},
+{
+	"filename": "tutorial19.png",
+	"frame": {"x":210,"y":392,"w":396,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":396,"h":96},
+	"sourceSize": {"w":396,"h":96}
+},
+{
+	"filename": "tutorial2.png",
+	"frame": {"x":2,"y":463,"w":204,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":204,"h":105},
+	"sourceSize": {"w":204,"h":105}
+},
+{
+	"filename": "tutorial3.png",
+	"frame": {"x":2,"y":570,"w":192,"h":99},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":192,"h":99},
+	"sourceSize": {"w":192,"h":99}
+},
+{
+	"filename": "tutorial4.png",
+	"frame": {"x":210,"y":100,"w":402,"h":192},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":402,"h":192},
+	"sourceSize": {"w":402,"h":192}
+},
+{
+	"filename": "tutorial5.png",
+	"frame": {"x":444,"y":686,"w":213,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":213,"h":109},
+	"sourceSize": {"w":213,"h":109}
+},
+{
+	"filename": "tutorial6.png",
+	"frame": {"x":2,"y":671,"w":188,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":188,"h":97},
+	"sourceSize": {"w":188,"h":97}
+},
+{
+	"filename": "tutorial7.png",
+	"frame": {"x":2,"y":355,"w":206,"h":106},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":206,"h":106},
+	"sourceSize": {"w":206,"h":106}
+},
+{
+	"filename": "tutorial8.png",
+	"frame": {"x":659,"y":679,"w":211,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":211,"h":109},
+	"sourceSize": {"w":211,"h":109}
+},
+{
+	"filename": "tutorial9.png",
+	"frame": {"x":608,"y":297,"w":299,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":299,"h":96},
+	"sourceSize": {"w":299,"h":96}
+},
+{
+	"filename": "tutorialmobile_1.png",
+	"frame": {"x":614,"y":199,"w":331,"h":96},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":331,"h":96},
+	"sourceSize": {"w":331,"h":96}
+},
+{
+	"filename": "tutorialmobile_2.png",
+	"frame": {"x":614,"y":100,"w":331,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":331,"h":97},
+	"sourceSize": {"w":331,"h":97}
+},
+{
+	"filename": "tutorialmobile_3.png",
+	"frame": {"x":608,"y":395,"w":295,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":295,"h":97},
+	"sourceSize": {"w":295,"h":97}
+},
+{
+	"filename": "tutorialmobile_4.png",
+	"frame": {"x":2,"y":100,"w":206,"h":253},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":206,"h":253},
+	"sourceSize": {"w":206,"h":253}
+},
+{
+	"filename": "tutorialmobile_5.png",
+	"frame": {"x":715,"y":790,"w":211,"h":109},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":211,"h":109},
+	"sourceSize": {"w":211,"h":109}
+},
+{
+	"filename": "tutorialmobile_6.png",
+	"frame": {"x":730,"y":593,"w":162,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":84},
+	"sourceSize": {"w":162,"h":84}
+},
+{
+	"filename": "tutorialmobile_7.png",
+	"frame": {"x":228,"y":797,"w":224,"h":104},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":224,"h":104},
+	"sourceSize": {"w":224,"h":115}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas_ui_tutorial.png",
+	"format": "RGBA8888",
+	"size": {"w":955,"h":903},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:5f715ccec29df75db2d87a66db53817c:9e39f6e75f45e65807f4f0ea1aa9fbb9:851742641694d55cd013bb396a0d0e68$"
+}
+}

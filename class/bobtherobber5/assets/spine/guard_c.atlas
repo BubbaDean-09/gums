@@ -1,0 +1,335 @@
+
+guard_c.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GuardABodyFront
+  rotate: false
+  xy: 209, 121
+  size: 69, 61
+  orig: 69, 61
+  offset: 0, 0
+  index: -1
+GuardBBodySideA
+  rotate: false
+  xy: 346, 108
+  size: 60, 39
+  orig: 60, 39
+  offset: 0, 0
+  index: -1
+GuardBBodySideB
+  rotate: false
+  xy: 141, 102
+  size: 60, 39
+  orig: 60, 39
+  offset: 0, 0
+  index: -1
+GuardBEyebrow
+  rotate: true
+  xy: 505, 235
+  size: 19, 5
+  orig: 19, 5
+  offset: 0, 0
+  index: -1
+GuardBEyes
+  rotate: false
+  xy: 255, 62
+  size: 37, 8
+  orig: 37, 8
+  offset: 0, 0
+  index: -1
+GuardBEyesB
+  rotate: false
+  xy: 428, 160
+  size: 34, 13
+  orig: 34, 13
+  offset: 0, 0
+  index: -1
+GuardBEyesC
+  rotate: false
+  xy: 434, 175
+  size: 37, 8
+  orig: 37, 8
+  offset: 0, 0
+  index: -1
+GuardBEyesClosed
+  rotate: false
+  xy: 2, 2
+  size: 33, 4
+  orig: 33, 4
+  offset: 0, 0
+  index: -1
+GuardBEyesSideD
+  rotate: false
+  xy: 2, 2
+  size: 33, 4
+  orig: 33, 4
+  offset: 0, 0
+  index: -1
+GuardBFoot
+  rotate: true
+  xy: 225, 33
+  size: 26, 24
+  orig: 26, 24
+  offset: 0, 0
+  index: -1
+GuardBFootSideA
+  rotate: true
+  xy: 307, 71
+  size: 30, 27
+  orig: 30, 27
+  offset: 0, 0
+  index: -1
+GuardBFootSideAe
+  rotate: false
+  xy: 134, 59
+  size: 45, 41
+  orig: 45, 41
+  offset: 0, 0
+  index: -1
+GuardBGun
+  rotate: false
+  xy: 2, 8
+  size: 90, 49
+  orig: 90, 49
+  offset: 0, 0
+  index: -1
+GuardBHandA
+  rotate: false
+  xy: 197, 5
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+GuardBHandB
+  rotate: false
+  xy: 197, 33
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+GuardBHandDead
+  rotate: true
+  xy: 256, 72
+  size: 29, 49
+  orig: 29, 49
+  offset: 0, 0
+  index: -1
+GuardBHandDeade
+  rotate: false
+  xy: 141, 143
+  size: 66, 111
+  orig: 66, 111
+  offset: 0, 0
+  index: -1
+GuardBHandFrontA
+  rotate: false
+  xy: 408, 105
+  size: 36, 42
+  orig: 36, 42
+  offset: 0, 0
+  index: -1
+GuardBHandSideF
+  rotate: false
+  xy: 408, 105
+  size: 36, 42
+  orig: 36, 42
+  offset: 0, 0
+  index: -1
+GuardBHandFrontD
+  rotate: false
+  xy: 94, 2
+  size: 29, 55
+  orig: 29, 55
+  offset: 0, 0
+  index: -1
+GuardBHandFrontE
+  rotate: false
+  xy: 125, 2
+  size: 29, 55
+  orig: 29, 55
+  offset: 0, 0
+  index: -1
+GuardBHandSideA
+  rotate: true
+  xy: 201, 61
+  size: 26, 39
+  orig: 26, 39
+  offset: 0, 0
+  index: -1
+GuardBHandSideC
+  rotate: false
+  xy: 203, 89
+  size: 51, 30
+  orig: 51, 30
+  offset: 0, 0
+  index: -1
+GuardBHandSideD
+  rotate: false
+  xy: 181, 65
+  size: 18, 35
+  orig: 18, 35
+  offset: 0, 0
+  index: -1
+GuardBHandSideE
+  rotate: false
+  xy: 473, 165
+  size: 26, 18
+  orig: 26, 18
+  offset: 0, 0
+  index: -1
+GuardBHandSideG
+  rotate: false
+  xy: 224, 4
+  size: 24, 27
+  orig: 24, 27
+  offset: 0, 0
+  index: -1
+GuardBHandSideH
+  rotate: false
+  xy: 156, 3
+  size: 39, 54
+  orig: 39, 54
+  offset: 0, 0
+  index: -1
+GuardBHeadFront
+  rotate: false
+  xy: 209, 184
+  size: 75, 70
+  orig: 75, 70
+  offset: 0, 0
+  index: -1
+GuardBHeadSideA
+  rotate: false
+  xy: 286, 183
+  size: 72, 71
+  orig: 72, 71
+  offset: 0, 0
+  index: -1
+GuardBHeadSideAe
+  rotate: false
+  xy: 2, 119
+  size: 137, 135
+  orig: 137, 135
+  offset: 0, 0
+  index: -1
+GuardBHeadSideB
+  rotate: false
+  xy: 360, 183
+  size: 72, 71
+  orig: 72, 71
+  offset: 0, 0
+  index: -1
+GuardBHelmetA
+  rotate: false
+  xy: 280, 113
+  size: 64, 34
+  orig: 64, 34
+  offset: 0, 0
+  index: -1
+GuardBHelmetB
+  rotate: false
+  xy: 280, 149
+  size: 72, 32
+  orig: 72, 32
+  offset: 0, 0
+  index: -1
+GuardBHelmetBe
+  rotate: false
+  xy: 2, 59
+  size: 130, 58
+  orig: 130, 58
+  offset: 0, 0
+  index: -1
+GuardBHelmetC
+  rotate: false
+  xy: 354, 149
+  size: 72, 32
+  orig: 72, 32
+  offset: 0, 0
+  index: -1
+GuardBMouthA
+  rotate: false
+  xy: 428, 151
+  size: 23, 7
+  orig: 23, 7
+  offset: 0, 0
+  index: -1
+GuardBMouthB
+  rotate: true
+  xy: 134, 109
+  size: 8, 5
+  orig: 8, 5
+  offset: 0, 0
+  index: -1
+GuardBMouthClosed
+  rotate: true
+  xy: 242, 61
+  size: 26, 11
+  orig: 26, 11
+  offset: 0, 0
+  index: -1
+GuardBMouthD
+  rotate: true
+  xy: 464, 150
+  size: 23, 7
+  orig: 23, 7
+  offset: 0, 0
+  index: -1
+GuardBNose
+  rotate: true
+  xy: 337, 97
+  size: 14, 7
+  orig: 14, 7
+  offset: 0, 0
+  index: -1
+GuardBNoseSide
+  rotate: false
+  xy: 346, 96
+  size: 13, 10
+  orig: 13, 10
+  offset: 0, 0
+  index: -1
+GuardBNoseSideB
+  rotate: false
+  xy: 361, 96
+  size: 13, 10
+  orig: 13, 10
+  offset: 0, 0
+  index: -1
+GuardBRetina
+  rotate: false
+  xy: 37, 2
+  size: 26, 4
+  orig: 26, 4
+  offset: 0, 0
+  index: -1
+GuardBRetinaB
+  rotate: false
+  xy: 65, 2
+  size: 26, 4
+  orig: 26, 4
+  offset: 0, 0
+  index: -1
+GuardBSideMouthB
+  rotate: false
+  xy: 473, 155
+  size: 20, 8
+  orig: 20, 8
+  offset: 0, 0
+  index: -1
+_GunSplashA
+  rotate: false
+  xy: 434, 185
+  size: 69, 69
+  orig: 69, 69
+  offset: 0, 0
+  index: -1
+_GunSplashB
+  rotate: false
+  xy: 256, 103
+  size: 79, 8
+  orig: 79, 8
+  offset: 0, 0
+  index: -1
