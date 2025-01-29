@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/assets/ruffle/ruffle.js"></script>
+</head>
+<body>
+    
+    <embed src="run2.swf">
+
+
+</body>
+</html>
