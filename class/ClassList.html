@@ -117,6 +117,12 @@
                 @keyframes spin {
                     to { transform: rotate(360deg); }
                 }
+
+                .game-count {
+                    margin-top: 0.5rem;
+                    color: var(--text-color);
+                    font-size: 0.9rem;
+                }
             </style>
         </head>
         <body>
@@ -132,6 +138,7 @@
                     placeholder="Search games..."
                     oninput="filterGames()"
                 >
+                <div id="gameCount" class="game-count"></div>
             </div>
 
             <div class="game-grid" id="gameContainer">
@@ -593,9 +600,76 @@
                         image: "/assets/photos/crossyroad.png",
                         link: "English-Language-Arts/TheGivingTree.html"
                     },
-                
+                    {
+                        title: "Tiny Fishing",
+                        image: "/assets/photos/tinyfishing.png",
+                        link: "English-Language-Arts/TheHost.html"
+                    },
+                    {
+                        title: "Wallsmash",
+                        image: "/assets/photos/wallsmash.png",
+                        link: "English-Language-Arts/TheGoldencompass.html"
+                    },
+                    {
+                        title: "Sugar, Sugar",
+                        image: "/assets/photos/sugarsugar.png",
+                        link: "English-Language-Arts/LookingForAlaska.html"
+                    },
+                    {
+                        title: "Sugar, Sugar 2",
+                        image: "/assets/photos/sugarsugar2.png",
+                        link: "English-Language-Arts/VampireAcademy.html"
+                    },
+                    {
+                        title: "Sugar, Sugar 3",
+                        image: "/assets/photos/sugarsugar3.png",
+                        link: "English-Language-Arts/Uglies.html"
+                    },{
+                        title: "Tangerine Tycoon",
+                        image: "/assets/photos/tangerinetycoon.png",
+                        link: "English-Language-Arts/ClockworkAngel.html"
+                    },
+                    {
+                        title: "Earn to Die 2012",
+                        image: "/assets/photos/earntodie2012.png",
+                        link: "English-Language-Arts/Eragon.html"
+                    },
+                    {
+                        title: "Earn to Die 2012 Part 2",
+                        image: "/assets/photos/earntodie2012part2.png",
+                        link: "English-Language-Arts/Eragon.html"
+                    },
+                    {
+                        title: "Earn to Die 2 Exodus",
+                        image: "/assets/photos/earntodie2exodus.png",
+                        link: "English-Language-Arts/Speak.html"
+                    },
+                    {
+                        title: "Earn to Die B",
+                        image: "/assets/photos/earntodieb.png",
+                        link: "English-Language-Arts/TheMazeRunner.html"
+                    },
+                    {
+                        title: "Bubble Shooter",
+                        image: "/assets/photos/bubbleshooter.png",
+                        link: "English-Language-Arts/EndersGame.html"
+                    },
+                    {
+                        title: "Burrito Bison",
+                        image: "/assets/photos/burritobison.png",
+                        link: "English-Language-Arts/Inkheart.html"
+                    },
+                    {
+                        title: "Burrito Bison Revenge",
+                        image: "/assets/photos/burritobisonrevenge.png",
+                        link: "English-Language-Arts/ArtemisFowl.html"
+                    },
 
 
+
+
+
+                    
                 ];
                 // Generate game cards
                 function renderGames() {
@@ -616,16 +690,24 @@
                 function filterGames() {
                     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
                     const gameCards = document.getElementsByClassName('game-card');
+                    let visibleGames = 0;
                     
                     Array.from(gameCards).forEach(card => {
                         const title = card.dataset.title;
-                        card.style.display = title.includes(searchTerm) ? 'flex' : 'none';
+                        const isVisible = title.includes(searchTerm);
+                        card.style.display = isVisible ? 'flex' : 'none';
+                        if (isVisible) visibleGames++;
                     });
+
+                    // Update the counter
+                    const countDisplay = document.getElementById('gameCount');
+                    countDisplay.textContent = `Showing ${visibleGames} of ${games.length} games`;
                 }
 
                 // Initialize
                 window.addEventListener('load', () => {
                     renderGames();
+                    filterGames();
                     document.getElementById('loading-screen').style.display = 'none';
                 });
 
