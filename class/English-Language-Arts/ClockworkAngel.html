@@ -82,22 +82,30 @@
 
     <script>
      function toggleFullscreen() {
-    var gameContainer = document.querySelector('.gamecontainer');
-    
-    if (game-container) {
-        if (game-container.requestFullscreen) {
-            game-container.requestFullscreen();
-        } else if (game-container.mozRequestFullScreen) {
-            game-container.mozRequestFullScreen();
-        } else if (game-container.webkitRequestFullscreen) {
-            game-container.webkitRequestFullscreen();
-        } else if (game-container.msRequestFullscreen) {
-            game-container.msRequestFullscreen();
+            var iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
         }
-    } else {
-        console.error('Element with class .gamecontainer not found.');
-    }
-}
+    </script>
+
+<script>
+        function displayError(message) {
+            var errorList = document.getElementById('errorList');
+            var errorItem = document.createElement('li');
+            errorItem.textContent = message;
+            errorList.appendChild(errorItem);
+        }
+        
+        window.onerror = function(message, source, lineno, colno, error) {
+            displayError(message);
+        };
     </script>
 
 </body>
