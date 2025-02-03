@@ -95,16 +95,28 @@
         }
     </script>
 
-<script>
+<div id="errorContainer" style="color: red;">
+        <h2>Console Errors:</h2>
+        <ul id="errorList"></ul>
+    </div>
+
+    <script>
+        // Function to display errors on the screen
         function displayError(message) {
             var errorList = document.getElementById('errorList');
             var errorItem = document.createElement('li');
             errorItem.textContent = message;
             errorList.appendChild(errorItem);
         }
-        
+
+        // Use window.onerror to catch errors
         window.onerror = function(message, source, lineno, colno, error) {
-            displayError(message);
+            displayError(`Error: ${message} at ${source}:${lineno}:${colno}`);
+        };
+
+        // You can optionally add logging to "unhandledrejection" for Promise rejections
+        window.onunhandledrejection = function(event) {
+            displayError(`Unhandled rejection: ${event.reason}`);
         };
     </script>
 
