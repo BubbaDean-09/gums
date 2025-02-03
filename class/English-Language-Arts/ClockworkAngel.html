@@ -82,17 +82,20 @@
 
     <script>
      function toggleFullscreen() {
-    var gamecontainer = document.querySelector('iframe');
-    if (gamecontainer) {
-        if (gamecontainer.requestFullscreen) {
-            gamecontainer.requestFullscreen();
-        } else if (gamecontainer.mozRequestFullScreen) {
-            gamecontainer.mozRequestFullScreen();
-        } else if (gamecontainer.webkitRequestFullscreen) {
-            gamecontainer.webkitRequestFullscreen();
-        } else if (gamecontainer.msRequestFullscreen) {
-            gamecontainer.msRequestFullscreen();
+    var gameContainer = document.querySelector('.gamecontainer');
+    
+    if (gameContainer) {
+        if (gameContainer.requestFullscreen) {
+            gameContainer.requestFullscreen();
+        } else if (gameContainer.mozRequestFullScreen) {
+            gameContainer.mozRequestFullScreen();
+        } else if (gameContainer.webkitRequestFullscreen) {
+            gameContainer.webkitRequestFullscreen();
+        } else if (gameContainer.msRequestFullscreen) {
+            gameContainer.msRequestFullscreen();
         }
+    } else {
+        console.error('Element with class .gamecontainer not found.');
     }
 }
     </script>
