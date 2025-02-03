@@ -84,15 +84,15 @@
      function toggleFullscreen() {
     var gameContainer = document.querySelector('.gamecontainer');
     
-    if (gameContainer) {
-        if (gameContainer.requestFullscreen) {
-            gameContainer.requestFullscreen();
-        } else if (gameContainer.mozRequestFullScreen) {
-            gameContainer.mozRequestFullScreen();
-        } else if (gameContainer.webkitRequestFullscreen) {
-            gameContainer.webkitRequestFullscreen();
-        } else if (gameContainer.msRequestFullscreen) {
-            gameContainer.msRequestFullscreen();
+    if (game-container) {
+        if (game-container.requestFullscreen) {
+            game-container.requestFullscreen();
+        } else if (game-container.mozRequestFullScreen) {
+            game-container.mozRequestFullScreen();
+        } else if (game-container.webkitRequestFullscreen) {
+            game-container.webkitRequestFullscreen();
+        } else if (game-container.msRequestFullscreen) {
+            game-container.msRequestFullscreen();
         }
     } else {
         console.error('Element with class .gamecontainer not found.');
