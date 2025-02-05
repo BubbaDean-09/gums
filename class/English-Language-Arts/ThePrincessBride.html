@@ -81,21 +81,23 @@
     </div>
 
     <script>
-       function toggleFullscreen() {
-    var gameContainer = document.querySelector('.game-container');
-
-    if (gameContainer) {
-        if (gameContainer.requestFullscreen) {
-            gameContainer.requestFullscreen();
-        } else if (gameContainer.mozRequestFullScreen) {
-            gameContainer.mozRequestFullScreen();
-        } else if (gameContainer.webkitRequestFullscreen) {
-            gameContainer.webkitRequestFullscreen();
-        } else if (gameContainer.msRequestFullscreen) {
-            gameContainer.msRequestFullscreen();
-        }
-    }
-    </script>
+        function toggleFullscreen() {
+       var gameContainer = document.querySelector('.game-container');
+   
+       if (gameContainer) {
+           if (gameContainer.requestFullscreen) {
+               gameContainer.requestFullscreen();
+           } else if (gameContainer.mozRequestFullScreen) {
+               gameContainer.mozRequestFullScreen();
+           } else if (gameContainer.webkitRequestFullscreen) {
+               gameContainer.webkitRequestFullscreen();
+           } else if (gameContainer.msRequestFullscreen) {
+               gameContainer.msRequestFullscreen();
+           }
+       }
+   }
+       </script>
+   
 
 </body>
 </html>

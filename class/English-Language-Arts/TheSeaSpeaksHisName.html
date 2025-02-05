@@ -94,34 +94,7 @@
             }
         }
 
-        // Block back/forward navigation in fullscreen mode
-        document.addEventListener('keydown', (event) => {
-            if (document.fullscreenElement) {
-                // Disable browser back/forward navigation keys
-                if (event.key === 'Backspace' || 
-                    (event.altKey && (event.key === 'ArrowLeft' || event.key === 'ArrowRight'))) {
-                    event.preventDefault();
-                }
-            }
-        });
-
-        // Block mouse back/forward buttons in fullscreen mode
-        document.addEventListener('mousedown', (event) => {
-            if (document.fullscreenElement) {
-                if (event.button === 3 || event.button === 4) { // Buttons 3 and 4: Back/Forward
-                    event.preventDefault();
-                }
-            }
-        });
-
-        // Prevent navigation via browser history while in fullscreen
-        window.addEventListener('popstate', (event) => {
-            if (document.fullscreenElement) {
-                history.go(1); // Cancel the back/forward action
-                event.preventDefault();
-            }
-        });
-    </script>
+        </script>
 
 </body>
 </html>
