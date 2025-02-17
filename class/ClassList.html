@@ -1072,9 +1072,14 @@
                     document.getElementById('loading-screen').style.display = 'none';
                 });
 
-                // Security check
-                if (sessionStorage.getItem("canAccessClassList") !== "true") {
-                    window.location.href = "/index.html";
+                // Security check on ClassList page
+                if (sessionStorage.getItem("canAccessClassList") !== "true" && sessionStorage.getItem("cameFromAthletics") !== "true") {
+                window.location.href = "/index.html";  // Redirect to home page
+                }
+
+                // Optionally, clear the flag after accessing the Class List
+                if (window.location.pathname === '/class/ClassList.html') {
+                sessionStorage.removeItem("cameFromAthletics");  // Clear the flag once they've accessed the page
                 }
             </script>
 

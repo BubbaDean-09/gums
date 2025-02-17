@@ -1,0 +1,277 @@
+.hidden {
+    display: none;
+}
+
+.sc-left {
+    float: left;
+    box-sizing: border-box;
+}
+
+.sc-tags .sc-single-tag {
+    display: inline-block;
+    color: #fff;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    margin: 0 5px 5px 0;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(51, 122, 183);
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0 0 0 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.width25,
+.width50,
+.width75 {
+    width: 100%;
+    padding: 20px;
+}
+
+.sc_team_member .icons span {
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px 5px 0;
+    color: #fff;
+    transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+}
+
+
+.sc_personal_quote {
+    padding: 0 0 15px 0;
+    overflow: hidden;
+}
+
+.sc_personal_quote span {
+    display: inline-block;
+    float: left;
+}
+
+.sc_personal_quote span.sc_team_icon-quote-left {
+    width: 5%;
+    line-height: 40px;
+    font-size: 30px;
+    padding: 0 20px 0 0;
+}
+
+.sc_personal_quote span.sc_personal_quote_content {
+    width: 80%;
+    font-size: 24px;
+    line-height: 28px;
+    font-style: italic;
+    margin: 0 0 0 10px;
+}
+
+.sc_team_single_member .progress span {
+    color: rgb(255, 255, 255);
+    float: right;
+    padding: 0 10px 0 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media(min-width: 768px) {
+
+    .width25 {
+        width: 24%;
+        padding: 0 15px 0 15px;
+    }
+
+    .width50 {
+        width: 49%;
+        padding: 0 15px 0 15px;
+    }
+
+    .width75 {
+        width: 73%;
+        padding: 0 15px 0 15px;
+    }
+
+}
+
+@font-face {
+    font-family: 'sc_our_team';
+    src:  url('../fonts/sc_our_team2b4b.eot?h9q4v8');
+    src:  url('../fonts/sc_our_team2b4b.eot?h9q4v8#iefix') format('embedded-opentype'),
+      url('../fonts/sc_our_team2b4b.ttf?h9q4v8') format('truetype'),
+      url('../fonts/sc_our_team2b4b.woff?h9q4v8') format('woff'),
+      url('../fonts/sc_our_team2b4b.svg?h9q4v8#sc_our_team') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="sc_team_icon-"], [class*=" sc_team_icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'sc_our_team' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.sc_team_icon-linkedin2:before {
+  content: "\e900";
+}
+.sc_team_icon-brand:before {
+  content: "\e900";
+}
+.sc_team_icon-social:before {
+  content: "\e900";
+}
+.sc_team_icon-whatsapp:before {
+  content: "\e910";
+}
+.sc_team_icon-close:before {
+  content: "\e901";
+}
+.sc_team_icon-remove:before {
+  content: "\e901";
+}
+.sc_team_icon-times:before {
+  content: "\e901";
+}
+.sc_team_icon-quote-left:before {
+  content: "\e905";
+}
+.sc_team_icon-vimeo:before {
+  content: "\e906";
+}
+.sc_team_icon-soundcloud:before {
+  content: "\e907";
+}
+.sc_team_icon-skype:before {
+  content: "\e908";
+}
+.sc_team_icon-etsy:before {
+  content: "\e909";
+}
+.sc_team_icon-share-alt:before {
+  content: "\e90a";
+}
+.sc_team_icon-instagram:before {
+  content: "\e90b";
+}
+.sc_team_icon-pinterest-p:before {
+  content: "\e90c";
+}
+.sc_team_icon-phone:before {
+  content: "\e90d";
+}
+.sc_team_icon-envelope-o:before {
+  content: "\e90e";
+}
+.sc_team_icon-linkedin:before {
+  content: "\e90f";
+}
+.sc_team_icon-google-plus:before {
+  content: "\e902";
+}
+.sc_team_icon-twitter:before {
+  content: "\e903";
+}
+.sc_team_icon-facebook:before {
+  content: "\e904";
+}
+.sc_team_icon-facebook-f:before {
+  content: "\e904";
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-facebook:hover {
+    background: #3b5998;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-twitter:hover {
+    background: #00aced;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-linkedin:hover {
+    background: #007bb6;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-google-plus:hover {
+    background: #dd4b39;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-envelope-o:hover {
+    background: #0072b1;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-phone:hover {
+    background: #00bf8f;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-instagram:hover {
+    background: #125688;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-share-alt:hover {
+    background: #DAA819;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-pinterest-p:hover {
+    background: #cb2027;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-whatsapp:hover {
+    background: #00e676;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-etsy:hover {
+    background: #f56400;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-skype:hover {
+    background: #00aff0;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-vimeo:hover {
+    background: #00adef;
+}
+
+#sc_our_team .sc_team_member .icons span.sc_team_icon-soundcloud:hover {
+    background: #ff5500;
+}

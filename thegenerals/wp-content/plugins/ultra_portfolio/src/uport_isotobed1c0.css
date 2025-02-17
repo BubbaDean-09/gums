@@ -1,0 +1,31 @@
+
+.isotobe,
+.isotobe .isotobe-item {
+    /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotobe {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotobe .isotobe-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+
+.uport-grid.iso_easeInCubic, .uportiso.iso_easeInCubic{
+
+}
+
+.uport-grid.iso_easeInCubic, .uportiso.iso_easeInCubic{
+    -webkit-transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190); 
+    -moz-transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190); 
+    -o-transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190); 
+    transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190); /* easeInCubic
+    }

@@ -1,0 +1,72 @@
+/**
+ * @Package: WordPress Plugin
+ * @Subpackage: Ultra Portfolio
+ * @Since: Ultra Portfolio 1.0
+ * @Current Version: Ultra Portfolio 1.0
+ * @WordPress Version: 3.5 or above
+ * This file is part of Ultra Portofolio WordPress Plugin.
+ */
+
+
+.uport-grid .mix{
+    display: none;
+    opacity: 0;
+    vertical-align: top;
+}
+
+.uport-grid .gap{
+    display: inline-block;
+}
+
+.uport-wrapper ul{padding: 0px;}
+
+
+
+.uport-wrapper .owl-item .item{
+/*    width: 100%;*/
+}
+.owl-carousel .owl-wrapper-outer{
+    
+}
+.uport-wrapper ul{margin: 0px;}
+.uport-wrapper .owl-theme .owl-controls .owl-page span{
+    opacity: 1;
+    width: 8px !important;
+    height: 8px !important;
+    padding: 0px !important;
+    margin: 5px !important;
+}
+
+.fancypox-type-inline.fancypox-wrap{
+    height: auto !important;
+    width: auto !important;
+
+}
+
+.fancypox-type-inline .mejs-layer{
+    height: 100% !important;
+}
+
+.fancypox-type-inline .fancypox-inner,
+.fancypox-type-inline .mejs-container{
+    height: 100% !important;
+}
+
+.fancypox-type-inline .fancypox-inner{
+    overflow: hidden !important;
+}
+
+/***********************
+
+.uport-grid .mix{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        background: #ccc;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 200px;
+        }
+.uport-grid .gap{	width: 200px;}
+*/

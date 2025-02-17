@@ -1,0 +1,397 @@
+/** #single-sidebar **/
+
+.sc_team_single_member.sidebar {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+#sc_team_sidebar_body .sc_social img {
+    max-width: 30px;
+    margin: 4px 4px 4px 4px;
+}
+
+#sc_team_sidebar_body .social span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px 5px 0;
+    color: #fff;
+    transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    text-align: center;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-facebook:hover {
+    background: #3b5998;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-twitter:hover {
+    background: #00aced;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-linkedin:hover {
+    background: #007bb6;
+}
+
+#sc_team_sidebar_body  .social span.sc_team_icon-google-plus:hover {
+    background: #dd4b39;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-envelope-o:hover {
+    background: #0072b1;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-phone:hover {
+    background: #00bf8f;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-instagram:hover {
+    background: #125688;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-share-alt:hover {
+    background: #DAA819;
+}
+
+#sc_team_sidebar_body .social span.sc_team_icon-pinterest-p:hover {
+    background: #cb2027;
+}
+
+@media(min-width: 768px) {
+
+    .sc_team_single_member.sidebar #sc_team_sidebar_staff_list {
+        float: left;
+        width: 20%;
+    }
+
+    .sc_team_single_member.sidebar #sc_team_sidebar_body {
+        float: left;
+        width: 56%;
+        margin: 0 2% 0 2%;
+    }
+
+    .sc_team_single_member.sidebar #sc_team_sidebar_profile {
+        float: left;
+        width: 20%;
+    }
+
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_profile .sc_team_profile_image img {
+    width: 100%;
+}
+
+#sc_team_sidebar_profile > div.sc_team_profile_image.circle {
+    text-align: center;
+}
+
+#sc_team_sidebar_profile div.sc_team_profile_image.circle img {
+    border-radius: 100%;
+    border-bottom: none !important;
+    height: 200px;
+    width: 200px !important;
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_staff_list {
+    background-color: #fff;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 15px;
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_body {
+    background-color: #fff;
+    padding: 30px 30px 30px 30px;
+    margin: 0 0 15px 0;
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_profile {
+    background-color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.sc_team_single_member.sidebar .sc_personal_quote {
+    background-color: #fff;
+    color: #1c1c1c;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+}
+
+.sc_team_single_member.sidebar .sc_personal_quote span {
+    font-size: 18px;
+    float: none;
+    margin: 0 0 0 0;
+}
+
+.sc_team_single_member.sidebar .sc_team_single_skills,
+.sc_team_single_member.sidebar .sc-tags {
+    float: none;
+    width: 100%;
+    padding: 15px 15px 15px 15px;
+    color: #1c1c1c;
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_profile hr {
+    margin: 5px 15px 5px 15px;
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_body .name {
+    font-size: 46px;
+    margin: 0 0 0 0;
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_body .title {
+    font-size: 18px;
+    margin: 0 0 0 0;
+}
+
+.sc_team_single_member.sidebar #sc_team_sidebar_body hr {
+    margin: 10px 0 10px 0;
+}
+
+.sc_team_single_member.sidebar .social {
+    margin: 20px 0 20px 0;
+}
+
+.sc_team_single_member.sidebar .social span {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 3px 3px 0;
+    text-align: center;
+}
+
+.sc_team_single_member.sidebar ul.sc_team_list,
+.sc_team_single_member.sidebar ul.sc_team_list ul {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    list-style: none;
+}
+
+.sc_team_single_member.sidebar .sc_team_list .sc_team_group {
+    padding: 0 0 15px 0;
+}
+
+.sc_team_single_member.sidebar .sc_team_list .sc_team_group span {
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    color: #1c1c1c;
+    display: inline-block;
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+.sc_team_single_member.sidebar .sc_team_list .sc_team_group .sc_team_group_members li {
+    padding: 5px 0 5px 0;
+}
+
+.sc_team_single_member.sidebar .sc_team_list .sc_team_group .sc_team_group_members li:last-of-type {
+    border: none;
+}
+
+.sc_team_single_member.sidebar .sc-team-member-posts .width25.left {
+    display: none;
+}
+
+.sc_team_single_member.sidebar .sc-team-member-posts .width75.left {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    padding: 10px 20px 10px 20px;
+}
+
+.sc_team_single_member.sidebar .sc-team-member-posts .width75.left a {
+    color: #1c1c1c;
+}
+
+/** #single-custom **/
+
+.sc-single-wrapper {
+    padding: 15px 0 15px 0;
+    max-width: 1170px;
+    margin: 0 auto 0 auto;
+}
+
+.sc_single_main .articles {
+    margin: 20px 0 0 0;
+}
+
+.sc_team_single_member .sc_single_side .social span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px 5px 0;
+    color: #fff;
+    transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    text-align: center;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-facebook:hover {
+    background: #3b5998;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-twitter:hover {
+    background: #00aced;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-linkedin:hover {
+    background: #007bb6;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-google-plus:hover {
+    background: #dd4b39;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-envelope-o:hover {
+    background: #0072b1;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-phone:hover {
+    background: #00bf8f;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-instagram:hover {
+    background: #125688;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-share-alt:hover {
+    background: #daa819;
+}
+
+.sc_team_single_member .sc_single_side .social span.sc_team_icon-pinterest-p:hover {
+    background: #cb2027;
+}
+
+.sc_team_single_member {
+    overflow: hidden;
+}
+
+.sc_team_single_member .sc_single_side .social {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.sc_team_single_member .sc_single_side .social img {
+    max-width: 30px;
+    margin: 2px 2px 2px 2px;
+}
+
+.sc_team_single_member .sc_single_side .social .sc-social {
+    width: 25px;
+    position: relative;
+    top: 7px;
+    padding: 0 0 5px 0;
+}
+
+.sc_team_single_member .sc_single_side .name {
+    font-size: 22px;
+    margin: 12px 0 7px 0;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 0 10px 0;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 400;
+}
+
+.sc_team_single_member .sc_single_side .title {
+    text-align: center;
+    font-weight: 400;
+}
+
+.sc_team_single_member .circle .wp-post-image {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.sc_team_single_member .inner {
+    background: rgba(150, 150, 150, 0.2);
+    padding: 15px 15px 15px 15px;
+    margin: 0 0 15px 0;
+}
+
+.sc_team_single_member .sc_single_main {
+    margin: 10px 10px 10px 10px;
+}
+
+.sc_team_single_member .sc_single_main .sc_personal_quote {
+    padding: 15px 0 15px 0;
+}
+
+.smartcat_team_single_icons img.sc-social,
+.smartcat_team_single_icons img {
+    width: 25px !important;
+    margin: 0 10px 0 0 !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.sc_team_single_member .wp-post-image {
+    width: 100%;
+}
+
+.sc_team_single_member .articles hr {
+    border-bottom: 1px solid #b9b9b9;
+    margin: 15px 0 15px 0;
+}
+
+.sc_team_single_member .articles h2 {
+    margin: 0 10px 0 10px;
+}
+
+.sc_team_single_member .articles .article {
+    background: #fff;
+    margin: 10px 0 10px 0;
+    background: rgba(150, 150, 150, 0.2);
+    padding: 10px 10px 10px 10px;
+}
+
+@media ( min-width: 768px ) {
+
+    .sc_team_single_member .sc_single_side .title {
+        font-size: 17px;
+    }
+
+    .sc_team_single_member .sc_single_side {
+        float: left;
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .sc_team_single_member .sc_single_main {
+        float: left;
+        width: 71%;
+        margin-left: 2%;
+        margin-top: 0;
+        padding: 15px 15px 15px 15px;
+        box-sizing: border-box;
+        background: rgba(150, 150, 150, 0.2);
+    }
+
+    .sc_team_single_member .wp-post-image {
+        width: 100%;
+    }
+
+    .sc_team_single_member .sc_single_main.sc-skills {
+        width: 46%;
+        margin: 0 2% 0 2%;
+    }
+
+    .sc_team_single_member .sc_team_single_skills {
+        width: 25%;
+        float: left;
+    }
+
+}
+
