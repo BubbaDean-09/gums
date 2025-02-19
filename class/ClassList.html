@@ -1,12 +1,29 @@
         <!DOCTYPE html>
         <html lang="en">
         <head>
-<img src="/assets/photos/Screenshot_20250218_134123_Facebook.jpg" alt="alternatetext" width="300" height="400">
-<img src="/assets/photos/Screenshot_20250218_134210_Facebook.jpg" alt="alternatetext" width="300" height="400">
-<img src="/assets/photos/Screenshot_20250218_134258_Facebook.jpg" alt="alternatetext" width="300" height="400">
-<img src="/assets/photos/Snapchat_1862268913.jpg" alt="alternatetext" width="200" height="400">
-<img src="/assets/photos/Snapchat_377270829.jpg" alt="alternatetext" width="300" height="400">
+            
 
+            <style>
+                .swiper {
+                    width: 100%;
+                    max-width: 600px; /* Limit max width */
+                    height: 250px; /* Smaller height */
+                    margin: auto; /* Center the slider */
+                }
+                .swiper-slide img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; /* Ensure images fit well */
+                    border-radius: 10px; /* Optional: rounded corners */
+                }
+            </style>
+            
+
+
+
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+            
             <title>LearningAlly Audiobooks</title>
             <link rel="shortcut icon" href="/assets/photos/favicon.ico">
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -77,6 +94,7 @@
                     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
                     z-index: 100;
                     text-align: center;
+                    
                 }
 
                 .search-bar {
@@ -129,6 +147,9 @@
                     color: var(--text-color);
                     font-size: 0.9rem;
                 }
+                
+
+                
             </style>
         </head>
         <body>
@@ -144,13 +165,28 @@
                     placeholder="Search games..."
                     oninput="filterGames()"
                 >
+
+                
                 <div id="gameCount" class="game-count"></div>
+            </div>
+
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134123_Facebook.jpg" alt="Image 1"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134210_Facebook.jpg" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134258_Facebook.jpg" alt="Image 3"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/Snapchat_1862268913.jpg" alt="Image 4"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/Snapchat_377270829.jpg" alt="Image 5"></div>
+                </div>
             </div>
 
             <div class="game-grid" id="gameContainer">
                 <!-- Games will be dynamically inserted here -->
             </div>
 
+
+            
             <script>
                 // Game data structure
                 const games = [
@@ -1086,21 +1122,32 @@
                 }
             </script>
 
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-(function(schg){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = schg || {};
-s.src = "\/\/palecount.com\/bpXTV.sQdmGXlR0PYsW\/c-\/Decmg9IuaZOU\/l\/kZPYTkYCwaOADyE\/0\/NrD\/YytiNNjcAZ4\/MQTnQN0iNdwT";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
+        var swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000, // 3 seconds per slide
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            speed: 1000,
+        });
+    </script>
+
+
+<script>
+    (function(lclq){
+    var d = document,
+        s = d.createElement('script'),
+        l = d.scripts[d.scripts.length - 1];
+    s.settings = lclq || {};
+    s.src = "\/\/starryprotection.com\/bzX.Vhs\/dJGMlw0qYZWeco\/Pe\/mu9\/u\/ZvUul\/koP_TTYLxiMTDPYY4\/MVD\/k\/tmNVjuEKwINdjugLxcMPAJ";
+    s.async = true;
+    s.referrerPolicy = 'no-referrer-when-downgrade';
+    l.parentNode.insertBefore(s, l);
+    })({})
+    </script>
 
 
 
