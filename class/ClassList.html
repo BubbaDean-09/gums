@@ -177,8 +177,12 @@
                     <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134210_Facebook.jpg" alt="Image 2"></div>
                     <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134258_Facebook.jpg" alt="Image 3"></div>
                     <div class="swiper-slide"><img src="/assets/photos/Snapchat_1862268913.jpg" alt="Image 4"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/caughtgooning.jpg" alt="Image 6"></div>
-                    
+                    <div class="swiper-slide"><img src="/assets/photos/Snapchat_377270829.jpg" alt="Image 5"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/huntercockman1.jpg" alt="Image 6"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/caughtgooning.jpg" alt="Image 7"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/luke.jpg" alt="Image 8"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/luke2.jpg" alt="Image 9"></div>
+                    <div class="swiper-slide"><img src="/assets/photos/burgertime.jpg" alt="Image 10"></div>
                 </div>
             </div>
 
@@ -823,6 +827,11 @@
                         link: "English-Language-Arts/Fangirl.html"
                     },
                     {
+                        title: "Governor of Poker 2",
+                        image: "/assets/photos/governorofpoker2.png",
+                        link: "English-Language-Arts/SelectedWorks.html"
+                    },
+                    {
                         title: "Pandemic",
                         image: "/assets/photos/pandemic.png",
                         link: "English-Language-Arts/SixOfCrows.html"
@@ -1067,12 +1076,23 @@
                         image: "/assets/photos/uphillrush6.png",
                         link: "English-Language-Arts/Watchmen.html"
                     },
+                    {
+                        title: "Universal Paperclips",
+                        image: "/assets/photos/paperclips.png",
+                        link: "English-Language-Arts/TheInfluencingMachine.html"
+                    },
+                    {
+                        title: "Lawnmower Game",
+                        image: "/assets/photos/lawnmowergame.png",
+                        link: "English-Language-Arts/ThroughBlackSpruce.html"
+                    },
+                    
                     
                 ];
 
 
 
-                // Generate game cards
+                // Generate game pictures
                 function renderGames() {
                     const container = document.getElementById('gameContainer');
                     container.innerHTML = games.map(game => `
@@ -1087,7 +1107,7 @@
                     `).join('');
                 }
 
-                // Filter games based on search
+                // search
                 function filterGames() {
                     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
                     const gameCards = document.getElementsByClassName('game-card');
@@ -1105,21 +1125,21 @@
                     countDisplay.textContent = `Showing ${visibleGames} of ${games.length} games`;
                 }
 
-                // Initialize
+                // start
                 window.addEventListener('load', () => {
                     renderGames();
                     filterGames();
                     document.getElementById('loading-screen').style.display = 'none';
                 });
 
-                // Security check on ClassList page
+                // check
                 if (sessionStorage.getItem("canAccessClassList") !== "true" && sessionStorage.getItem("cameFromAthletics") !== "true") {
-                window.location.href = "/index.html";  // Redirect to home page
+                window.location.href = "/index.html";  // redirect
                 }
 
-                // Optionally, clear the flag after accessing the Class List
+                // clear
                 if (window.location.pathname === '/class/ClassList.html') {
-                sessionStorage.removeItem("cameFromAthletics");  // Clear the flag once they've accessed the page
+                sessionStorage.removeItem("cameFromAthletics");  // clear
                 }
             </script>
 
@@ -1131,7 +1151,7 @@
                 delay: 3000, // 3 seconds per slide
                 disableOnInteraction: false,
             },
-            effect: 'fade',
+            effect: '',
             speed: 1000,
         });
     </script>
