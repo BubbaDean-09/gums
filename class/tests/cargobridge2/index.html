@@ -1,18 +1,35 @@
 <html>
   <head>
-
-
     <script src="/js/all.min.js" nonce="MjYzNjg0MTE3NSw0NTUyNjI0MQ=="></script>
-
-
-
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Run 2</title>
-    <style>html{background-color:#000;}</style>
+    <style>
+      html, body {
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #ruffle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #player {
+        width: 80vw; /* Adjust width as needed */
+        height: 60vh; /* Adjust height as needed */
+        max-width: 800px; /* Optional max size */
+        max-height: 600px; /* Optional max size */
+      }
+    </style>
   </head>
   <body>
-    <div id="ruffle" width="100%" height="100%"></div>
+    <div id="ruffle"></div>
     <script src="https://unpkg.com/@ruffle-rs/ruffle" nonce="MjYzNjg0MTE3NSw0NTUyNjI0MQ=="></script>
     <script nonce="MjYzNjg0MTE3NSw0NTUyNjI0MQ==">
       window.RufflePlayer = window.RufflePlayer || {};
@@ -20,13 +37,11 @@
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
         const container = document.getElementById("ruffle");
+
         player.id = "player";
-        player.style.width = "100%";
-        player.style.height = "100%";
         container.appendChild(player);
-        player.load("cargobridge23.swf");
+        player.load("CargoBridge2.swf");
       });
     </script>
   </body>
 </html>
-
