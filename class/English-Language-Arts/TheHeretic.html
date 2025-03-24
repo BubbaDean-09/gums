@@ -1,69 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7795926428767200"
      crossorigin="anonymous"></script>
-     
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearningAlly Audiobooks</title>
     <link rel="shortcut icon" href="/assets/photos/favicon.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(44, 44, 44);
-        }
-
-        .game-container {
-            position: relative;
-            width: 90%;
-            max-width: 1700px;
-            height: 900px;
-            margin: 60px auto;
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .bottom-menu {
-            position: fixed;
-            bottom: 320px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 10px;
-            z-index: 1000;
-        }
-
-        .bottom-menu button {
-            background: none;
-            border: none;
-            padding: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-
-        .bottom-menu button:hover {
-            transform: scale(1.1);
-            opacity: 0.8;
-        }
-
-        .back-button img,
-        .fullscreen-button img {
-            width: 35px;
-            height: 35px;
-        }
-    </style>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
+
+
 <body>
 
     <div class="game-container">
@@ -71,7 +23,7 @@
     </div>
 
     <div class="bottom-menu">
-        <button class="back-button" onclick="window.history.back()">
+        <button class="back-button" onclick="goBack()">
             <img src="/assets/photos/back.png" alt="Back Button">
         </button>
 
@@ -80,23 +32,120 @@
         </button>
     </div>
 
-    <script>
-        function toggleFullscreen() {
-       var gameContainer = document.querySelector('.game-container');
-   
-       if (gameContainer) {
-           if (gameContainer.requestFullscreen) {
-               gameContainer.requestFullscreen();
-           } else if (gameContainer.mozRequestFullScreen) {
-               gameContainer.mozRequestFullScreen();
-           } else if (gameContainer.webkitRequestFullscreen) {
-               gameContainer.webkitRequestFullscreen();
-           } else if (gameContainer.msRequestFullscreen) {
-               gameContainer.msRequestFullscreen();
-           }
-       }
-   }
-       </script>
+    
+
+    <div class="leaderboard-container">
+
+        <p class="leaderboard-message">show proof of ur record and I'll change it</p>
+
+        <h2>skibs</h2>
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Track</th>
+                    <th>Player</th>
+                    <th>Time</th>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>BigSkibs</td>
+                    <td>24.411</td>
+                    
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>BigSkibs</td>
+                    <td>20.941</td>
+                   
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>BigSkibs</td>
+                    <td>17.415</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>4</td>
+                    <td>BigSkibs</td>
+                    <td>23.265</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>5</td>
+                    <td>BigSkibs</td>
+                    <td>43.773</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>6</td>
+                    <td>BigSkibs</td>
+                    <td>42.125</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>7</td>
+                    <td>BigSkibs</td>
+                    <td>29.084</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>8</td>
+                    <td>BigSkibs</td>
+                    <td>59.788</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>9</td>
+                    <td>BigSkibs</td>
+                    <td>29.997</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>10</td>
+                    <td>BigSkibs</td>
+                    <td>49.387</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>11</td>
+                    <td>BigSkibs</td>
+                    <td>32.869</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>12</td>
+                    <td>BigSkibs</td>
+                    <td>22.867</td>
+                    
+                </tr>
+    
+                <tr>
+                    <td>13</td>
+                    <td>BigSkibs</td>
+                    <td>1:35.003</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
 <script>
 (function(schg){
 var d = document,
