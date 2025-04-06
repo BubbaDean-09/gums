@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Run 2</title>
+    <style>
+        hhtml, body {
+    background-color: #000;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#ruffle, #player {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div id="ruffle"></div>
+
+    <!-- Load Ruffle -->
+    <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (window.RufflePlayer) {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("ruffle");
+
+                player.style.width = "100%";
+                player.style.height = "100%";
+                container.appendChild(player);
+                
+                // Load SWF file (make sure it's accessible from the same domain)
+                player.load("redball.swf");
+            } else {
+                console.error("Ruffle failed to load.");
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+    console.log("Initializing Ruffle...");
+
+    if (window.RufflePlayer) {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        player.id = "player";  // Ensure it has an ID for styling
+
+        const container = document.getElementById("ruffle");
+        container.innerHTML = ""; // Clear any previous content
+        container.appendChild(player);
+
+        console.log("Loading SWF file...");
+        player.load("redball.swf").then(() => {
+            console.log("SWF Loaded Successfully!");
+        }).catch(err => {
+            console.error("SWF Load Error:", err);
+        });
+
+        // Debugging: Log when Ruffle is ready
+        player.addEventListener("loadedmetadata", () => {
+            console.log("SWF metadata loaded!");
+        });
+
+        player.addEventListener("play", () => {
+            console.log("SWF is playing!");
+        });
+
+        player.addEventListener("error", (e) => console.error("Ruffle Error:", e));
+    } else {
+        console.error("Ruffle failed to load.");
+    }
+});
+
+
+    </script>
+
+
+
+</body>
+</html>
