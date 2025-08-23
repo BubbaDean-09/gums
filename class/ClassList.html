@@ -1,208 +1,272 @@
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningAlly Audiobooks</title>
+    <link rel="shortcut icon" href="/assets/photos/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    
+    <style>
+        :root {
+            --primary-bg: #2c2c2c;
+            --accent-color: #00bcd4;
+            --text-color: #ffffff;
+            --hover-transform: translateY(-5px);
+            --border-radius: 15px;
+            --transition-speed: 0.3s;
+        }
 
-            <script type="text/javascript">
-                window.onload = function() {
-                    alert("click on the ads 🙏😛 ");
-                }
-            </script>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        #loading-screen {
+            position: fixed;
+            inset: 0;
+            background-color: var(--primary-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        #loading-screen.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top-color: var(--text-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Search Container */
+        .search-container {
+            position: sticky;
+            top: 0;
+            background-color: var(--primary-bg);
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            text-align: center;
+        }
+
+        .search-bar {
+            width: min(300px, 90vw);
+            padding: 0.8rem 1.2rem;
+            border-radius: 25px;
+            border: 2px solid var(--accent-color);
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all var(--transition-speed) ease;
+            outline: none;
+        }
+
+        .search-bar:focus {
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+            width: min(350px, 95vw);
+        }
+
+        .search-bar::placeholder {
+            color: #888;
+        }
+
+        .game-count {
+            margin-top: 0.5rem;
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+
+        /* Swiper Styles */
+        .swiper {
+            width: 100%;
+            max-width: 600px;
+            height: 250px;
+            margin: 1rem auto;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Game Grid */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 1rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .game-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .game-card:hover {
+            transform: var(--hover-transform);
+        }
+
+        .game-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .game-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .game-button:hover .game-image {
+            transform: scale(1.05);
+        }
+
+        .game-title {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            max-width: 200px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .game-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
             
-
-            <style>
-                .swiper {
-                    width: 100%;
-                    max-width: 600px; /* Limit max width */
-                    height: 250px; /* Smaller height */
-                    margin: auto; /* Center the slider */
-                }
-                .swiper-slide img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover; /* Ensure images fit well */
-                    border-radius: 10px; /* Optional: rounded corners */
-                }
-            </style>
+            .game-button {
+                width: 150px;
+                height: 150px;
+            }
             
+            .game-title {
+                font-size: 0.9rem;
+                max-width: 150px;
+            }
+        }
 
-
-
-
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        @media (max-width: 480px) {
+            .game-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 10px;
+            }
             
-            <title>LearningAlly Audiobooks</title>
-            <link rel="shortcut icon" href="/assets/photos/favicon.ico">
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <style>
-                :root {
-                    --primary-bg: #2c2c2c;
-                    --accent-color: #00bcd4;
-                    --text-color: #ffffff;
-                }
-
-                body {
-                    background-color: var(--primary-bg);
-                    margin: 0;
-                    font-family: 'Poppins', sans-serif;
-                    color: var(--text-color);
-                }
-
-                .game-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                    gap: 20px;
-                    padding: 1rem;
-                    max-width: 1400px;
-                    margin: 0 auto;
-                }
-
-                .game-card {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    transition: transform 0.3s ease;
-                }
-
-                .game-card:hover {
-                    transform: translateY(-5px);
-                }
-
-                .game-button {
-                    background: none;
-                    border: none;
-                    cursor: pointer;
-                    padding: 0;
-                    width: 200px;
-                    height: 200px;
-                }
-
-                .game-image {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 15px;
-                    object-fit: cover;
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                }
-
-                .game-title {
-                    margin-top: 0.5rem;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    text-align: center;
-                }
-
-                .search-container {
-                    position: sticky;
-                    top: 0;
-                    background-color: var(--primary-bg);
-                    padding: 1rem;
-                    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-                    z-index: 100;
-                    text-align: center;
-                    
-                }
-
-                .search-bar {
-                    width: 300px;
-                    padding: 0.8rem 1.2rem;
-                    border-radius: 25px;
-                    border: 2px solid var(--accent-color);
-                    background-color: var(--primary-bg);
-                    color: var(--text-color);
-                    font-family: inherit;
-                    font-size: 1rem;
-                    transition: all 0.3s ease;
-                }
-
-                .search-bar:focus {
-                    outline: none;
-                    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
-                    width: 350px;
-                }
-
-                .search-bar::placeholder {
-                    color: #888;
-                }
-
-                #loading-screen {
-                    position: fixed;
-                    inset: 0;
-                    background-color: var(--primary-bg);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 9999;
-                }
-
-                .spinner {
-                    width: 50px;
-                    height: 50px;
-                    border: 4px solid rgba(255,255,255,0.3);
-                    border-top-color: var(--text-color);
-                    border-radius: 50%;
-                    animation: spin 1s linear infinite;
-                }
-
-                @keyframes spin {
-                    to { transform: rotate(360deg); }
-                }
-
-                .game-count {
-                    margin-top: 0.5rem;
-                    color: var(--text-color);
-                    font-size: 0.9rem;
-                }
-
-                
-                
-
-                
-            </style>
-        </head>
-        <body>
-            <div id="loading-screen">
-                <div class="spinner"></div>
-            </div>
-
-            <div class="search-container">
-                <input
-                    id="searchInput"
-                    class="search-bar"
-                    type="text"
-                    placeholder="Search games..."
-                    oninput="filterGames()"
-                >
-
-                
-                <div id="gameCount" class="game-count"></div>
-            </div>
-
-
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134123_Facebook.jpg" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134210_Facebook.jpg" alt="Image 2"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134258_Facebook.jpg" alt="Image 3"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/Snapchat_1862268913.jpg" alt="Image 4"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/Snapchat_377270829.jpg" alt="Image 5"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/huntercockman1.jpg" alt="Image 6"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/caughtgooning.jpg" alt="Image 7"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/luke.jpg" alt="Image 8"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/luke2.jpg" alt="Image 9"></div>
-                    <div class="swiper-slide"><img src="/assets/photos/burgertime.jpg" alt="Image 10"></div>
-                </div>
-            </div>
-
-            <div class="game-grid" id="gameContainer">
-                <!-- Games will be dynamically inserted here -->
-            </div>
-
-
+            .game-button {
+                width: 120px;
+                height: 120px;
+            }
             
-            <script>
-                // Game data structure
-                const games = [
+            .game-title {
+                font-size: 0.8rem;
+                max-width: 120px;
+            }
+        }
+        
+            .top-right-img {
+            position: absolute;
+            top: 125px;  /* Distance from the top */
+            right: 100px; /* Distance from the right */
+            width: 290px; /* Adjust size as needed */
+            height: auto;
+            z-index: 10; /* Ensure it stays on top */
+            border-radius: var(--border-radius); /* Optional: rounded corners */
+        }
+        
+        .top-left-img {
+        position: absolute;
+        top: 125px;  /* Distance from the top */
+        left: px; /* Distance from the right */
+        width: 250px; /* Adjust size as needed */
+        height: auto;
+        z-index: 10; /* Ensure it stays on top */
+        border-radius: var(--border-radius); /* Optional: rounded corners */
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    
+    <div class="search-container">
+        <input
+            id="searchInput"
+            class="search-bar"
+            type="text"
+            placeholder="Search games..."
+            autocomplete="off"
+        >
+        <div id="gameCount" class="game-count"></div>
+    </div>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134123_Facebook.jpg" alt="Image 1"></div>
+            <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134210_Facebook.jpg" alt="Image 2"></div>
+            <div class="swiper-slide"><img src="/assets/photos/Screenshot_20250218_134258_Facebook.jpg" alt="Image 3"></div>
+            <div class="swiper-slide"><img src="/assets/photos/Snapchat_1862268913.jpg" alt="Image 4"></div>
+            <div class="swiper-slide"><img src="/assets/photos/Snapchat_377270829.jpg" alt="Image 5"></div>
+            <div class="swiper-slide"><img src="/assets/photos/huntercockman1.jpg" alt="Image 6"></div>
+            <div class="swiper-slide"><img src="/assets/photos/caughtgooning.jpg" alt="Image 7"></div>
+            <div class="swiper-slide"><img src="/assets/photos/luke.jpg" alt="Image 8"></div>
+            <div class="swiper-slide"><img src="/assets/photos/luke2.jpg" alt="Image 9"></div>
+            <div class="swiper-slide"><img src="/assets/photos/burgertime.jpg" alt="Image 10"></div>
+        </div>
+    </div>
+
+    <img src="/assets/photos/Screenshot_20250821_025812_Gallery.jpg" alt="Top Right Image" class="top-right-img">
+    <img src="/assets/photos/Screenshot_20250821_030805_Gallery.jpg" alt="Top Left Image" class="top-left-img">
+    
+    <div class="game-grid" id="gameContainer"></div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const games = [
                     {
                         title: "Fancy Pants Adventures",
                         image: "/assets/photos/fancypantsadventure1.png",
@@ -222,7 +286,8 @@
                         title: "Achievement Unlocked",
                         image: "/assets/photos/achievementunlocked.png",
                         link: "English-Language-Arts/Frankenstein.html"
-                    }, {
+                    },
+                    {
                         title: "Rooftop Snipers",
                         image: "/assets/photos/rooftopsnipers.png",
                         link: "English-Language-Arts/OfMiceAndMen.html"
@@ -231,7 +296,8 @@
                         title: "Getaway Shootout",
                         image: "/assets/photos/getawayshootout1.png",
                         link: "English-Language-Arts/RomeoAndJuliet.html"
-                    }, {
+                    },
+                    {
                         title: "Snow Rider 3D",
                         image: "/assets/photos/snowrider3d.png",
                         link: "English-Language-Arts/TheCrucible.html"
@@ -240,7 +306,8 @@
                         title: "Basketball Stars",
                         image: "/assets/photos/basketballstars.png",
                         link: "English-Language-Arts/TheGreatGatsby.html"
-                    }, {
+                    },
+                    {
                         title: "Eggy Car",
                         image: "/assets/photos/eggycar.png",
                         link: "English-Language-Arts/TheOutsiders.html"
@@ -680,21 +747,6 @@
                         link: "English-Language-Arts/ClockworkAngel.html"
                     },
                     {
-                        title: "Earn to Die 2012",
-                        image: "/assets/photos/earntodie2012.png",
-                        link: "English-Language-Arts/Eragon.html"
-                    },
-                    {
-                        title: "Earn to Die 2012 Part 2",
-                        image: "/assets/photos/earntodie2012part2.png",
-                        link: "English-Language-Arts/Eragon.html"
-                    },
-                    {
-                        title: "Earn to Die B",
-                        image: "/assets/photos/earntodieb.png",
-                        link: "English-Language-Arts/TheMazeRunner.html"
-                    },
-                    {
                         title: "Bubble Shooter",
                         image: "/assets/photos/bubbleshooter.png",
                         link: "English-Language-Arts/EndersGame.html"
@@ -715,84 +767,9 @@
                         link: "English-Language-Arts/ThirteenReasonsWhy.html"
                     },
                     {
-                        title: "Crashtest Launcher",
-                        image: "/assets/photos/crashtestlauncher.png",
-                        link: "English-Language-Arts/ThePrincessBride.html"
-                    },
-                    {
                         title: "Flight",
                         image: "/assets/photos/flight.png",
                         link: "English-Language-Arts/TheSelection.html"
-                    },
-                    {
-                        title: "Hedgehog Launch",
-                        image: "/assets/photos/hedgehoglaunch.png",
-                        link: "English-Language-Arts/TheWestingGame.html"
-                    },
-                    {
-                        title: "Homerun in Berzerk Land",
-                        image: "/assets/photos/homeruninberzerkland.png",
-                        link: "English-Language-Arts/ALittlePrincess.html"
-                    },
-                    {
-                        title: "Into Space",
-                        image: "/assets/photos/intospace.png",
-                        link: "English-Language-Arts/JustListen.html"
-                    },
-                    {
-                        title: "Into Space 2",
-                        image: "/assets/photos/intospace2.png",
-                        link: "English-Language-Arts/WhereTheRedFernGrows.html"
-                    },
-                    {
-                        title: "Potty Racers",
-                        image: "/assets/photos/pottyracers.png",
-                        link: "English-Language-Arts/Matched.html"
-                    },
-                    {
-                        title: "Potty Racers 2",
-                        image: "/assets/photos/pottyracers2.png",
-                        link: "English-Language-Arts/TheTruthAboutHowever.html"
-                    },
-                    {
-                        title: "Potty Racers 3",
-                        image: "/assets/photos/pottyracers3.png",
-                        link: "English-Language-Arts/PrincessAcademy.html"
-                    },
-                    {
-                        title: "Rocket Toilet",
-                        image: "/assets/photos/rockettoilet.png",
-                        link: "English-Language-Arts/AGreatAndTerribleBeauty.html"
-                    },
-                    {
-                        title: "Rocket Toilet 2",
-                        image: "/assets/photos/rockettoilet2.png",
-                        link: "English-Language-Arts/Delirium.html"
-                    },
-                    {
-                        title: "Shopping Cart Hero",
-                        image: "/assets/photos/shoppingcarthero.png",
-                        link: "English-Language-Arts/BeautifulCreatures.html"
-                    },
-                    {
-                        title: "Shopping Cart Hero 2",
-                        image: "/assets/photos/shoppingcarthero2.png",
-                        link: "English-Language-Arts/BecauseOfWinn.html"
-                    },
-                    {
-                        title: "Shopping Cart Hero 3",
-                        image: "/assets/photos/shoppingcarthero3.png",
-                        link: "English-Language-Arts/Legend.html"
-                    },
-                    {
-                        title: "Toss the Turtle",
-                        image: "/assets/photos/tosstheturtle.png",
-                        link: "English-Language-Arts/BlackBeauty.html"
-                    },
-                    {
-                        title: "Truck Toss",
-                        image: "/assets/photos/trucktoss.png",
-                        link: "English-Language-Arts/TheGooseGirl.html"
                     },
                     {
                         title: "Learn to Drive",
@@ -818,11 +795,6 @@
                         title: "Learn to Fly Idle",
                         image: "/assets/photos/learntoflyidle.png",
                         link: "English-Language-Arts/WickedLovely.html"
-                    },
-                    {
-                        title: "Learn to Park",
-                        image: "/assets/photos/learntopark.png",
-                        link: "English-Language-Arts/Wonder.html"
                     },
                     {
                         title: "Governor of Poker",
@@ -860,16 +832,6 @@
                         link: "English-Language-Arts/ASeperatePeace.html"
                     },
                     {
-                        title: "Awesome Tanks 2",
-                        image: "/assets/photos/awesometanks2.png",
-                        link: "English-Language-Arts/TheHelp.html"
-                    },
-                    {
-                        title: "Desktop Racing 2",
-                        image: "/assets/photos/desktopracing2.png",
-                        link: "English-Language-Arts/TheAlchemist.html"
-                    },
-                    {
                         title: "Flood Runner 2",
                         image: "/assets/photos/floodrunner2.png",
                         link: "English-Language-Arts/TheRavenBoys.html"
@@ -883,31 +845,6 @@
                         title: "Flood Runner 4",
                         image: "/assets/photos/floodrunner4.png",
                         link: "English-Language-Arts/LockAndKey.html"
-                    },
-                    {
-                        title: "Feed Us",
-                        image: "/assets/photos/feedus.png",
-                        link: "English-Language-Arts/LifeOfPi.html"
-                    },
-                    {
-                        title: "Feed Us 2",
-                        image: "/assets/photos/feedus2.png",
-                        link: "English-Language-Arts/Night.html"
-                    },
-                    {
-                        title: "Feed Us 3",
-                        image: "/assets/photos/feedus3.png",
-                        link: "English-Language-Arts/RedQueen.html"
-                    },
-                    {
-                        title: "Feed Us 4",
-                        image: "/assets/photos/feedus4.png",
-                        link: "English-Language-Arts/AlongForTheRide.html"
-                    },
-                    {
-                        title: "Feed Us 5",
-                        image: "/assets/photos/feedus5.png",
-                        link: "English-Language-Arts/Forever.html"
                     },
                     {
                         title: "Hobo",
@@ -954,31 +891,7 @@
                         image: "/assets/photos/18wd3.png",
                         link: "English-Language-Arts/FourQuartets.html"
                     },
-                    {
-                        title: "Sniper Assassin",
-                        image: "/assets/photos/sniperassassin.png",
-                        link: "English-Language-Arts/NorthangerAbbey.html"
-                    },
-                    {
-                        title: "Sniper Assassin 2",
-                        image: "/assets/photos/sniperassassin2.png",
-                        link: "English-Language-Arts/Demian.html"
-                    },
-                    {
-                        title: "Sniper Assassin 3",
-                        image: "/assets/photos/sniperassassin3.png",
-                        link: "English-Language-Arts/TheHeidiChronicles.html"
-                    },
-                    {
-                        title: "Sniper Assassin 4",
-                        image: "/assets/photos/sniperassassin4.png",
-                        link: "English-Language-Arts/LittleMen.html"
-                    },
-                    {
-                        title: "Sniper Assassin 5",
-                        image: "/assets/photos/sniperassassin5.png",
-                        link: "English-Language-Arts/BridgeToTerabithia.html"
-                    },
+                    
                     {
                         title: "Wake up The Box 3",
                         image: "/assets/photos/wutb3.png",
@@ -993,11 +906,6 @@
                         title: "Wake up The Box 5",
                         image: "/assets/photos/wutb5.png",
                         link: "English-Language-Arts/CollectedPoems.html"
-                    },
-                    {
-                        title: "Wheely 1",
-                        image: "/assets/photos/wheely.png",
-                        link: "English-Language-Arts/CalvinAndHobbes.html"
                     },
                     {
                         title: "Wheely 2",
@@ -1048,36 +956,6 @@
                         title: "World's Hardest Game 4",
                         image: "/assets/photos/whg4.png",
                         link: "English-Language-Arts/TillTomorrow.html"
-                    },
-                    {
-                        title: "Uphill Rush",
-                        image: "/assets/photos/uphillrush.png",
-                        link: "English-Language-Arts/Utopia.html"
-                    },
-                    {
-                        title: "Uphill Rush 2",
-                        image: "/assets/photos/uphillrush2.png",
-                        link: "English-Language-Arts/TheEnigmaticExpanse.html"
-                    },
-                    {
-                        title: "Uphill Rush 3",
-                        image: "/assets/photos/uphillrush3.png",
-                        link: "English-Language-Arts/TheStoryOfKingArthur.html"
-                    },
-                    {
-                        title: "Uphill Rush 4",
-                        image: "/assets/photos/uphillrush4.png",
-                        link: "English-Language-Arts/DreamOfTheRedChamber.html"
-                    },
-                    {
-                        title: "Uphill Rush 5",
-                        image: "/assets/photos/uphillrush5.png",
-                        link: "English-Language-Arts/CallumMcbride.html"
-                    },
-                    {
-                        title: "Uphill Rush 6",
-                        image: "/assets/photos/uphillrush6.png",
-                        link: "English-Language-Arts/Watchmen.html"
                     },
                     {
                         title: "Universal Paperclips",
@@ -1135,11 +1013,6 @@
                         link: "English-Language-Arts/CallToArms.html"
                     },
                     {
-                        title: "2D Rocket League",
-                        image: "/assets/photos/2drocketleague.png",
-                        link: "English-Language-Arts/TheSocialContract.html"
-                    },
-                    {
                         title: "Subway Surfers NY",
                         image: "/assets/photos/subwaysurfersny.png",
                         link: "English-Language-Arts/PastTheShallows.html"
@@ -1154,143 +1027,106 @@
                         image: "/assets/photos/mc.png",
                         link: "English-Language-Arts/FoenemGrave.html"
                     },
-                    
-                ];
+        ];
 
+        // Performance optimized game rendering
+        function renderGames() {
+            const container = document.getElementById('gameContainer');
+            const fragment = document.createDocumentFragment();
+            
+            games.forEach(game => {
+                const gameCard = document.createElement('div');
+                gameCard.className = 'game-card';
+                gameCard.setAttribute('data-title', game.title.toLowerCase());
                 
+                gameCard.innerHTML = `
+                    <a href="${game.link}">
+                        <button class="game-button">
+                            <img class="game-image" src="${game.image}" alt="${game.title}" loading="lazy">
+                        </button>
+                    </a>
+                    <div class="game-title">${game.title}</div>
+                `;
+                
+                fragment.appendChild(gameCard);
+            });
+            
+            container.appendChild(fragment);
+        }
 
-
-
-                // Generate game pictures
-                function renderGames() {
-                    const container = document.getElementById('gameContainer');
-                    container.innerHTML = games.map(game => `
-                        <div class="game-card" data-title="${game.title.toLowerCase()}">
-                            <a href="${game.link}">
-                                <button class="game-button">
-                                    <img class="game-image" src="${game.image}" alt="${game.title}">
-                                </button>
-                            </a>
-                            <div class="game-title">${game.title}</div>
-                        </div>
-                    `).join('');
-                }
-
-                // search
-                function filterGames() {
-                    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-                    const gameCards = document.getElementsByClassName('game-card');
-                    let visibleGames = 0;
-                    
-                    Array.from(gameCards).forEach(card => {
-                        const title = card.dataset.title;
-                        const isVisible = title.includes(searchTerm);
-                        card.style.display = isVisible ? 'flex' : 'none';
-                        if (isVisible) visibleGames++;
-                    });
-
-                    // Update the counter
-                    const countDisplay = document.getElementById('gameCount');
-                    countDisplay.textContent = `Showing ${visibleGames} of ${games.length} games`;
-                }
-
-                // start
-                window.addEventListener('load', () => {
-                    renderGames();
-                    filterGames();
-                    document.getElementById('loading-screen').style.display = 'none';
+        // Debounced search function for better performance
+        let searchTimeout;
+        function filterGames() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+                const gameCards = document.querySelectorAll('.game-card');
+                let visibleGames = 0;
+                
+                gameCards.forEach(card => {
+                    const title = card.dataset.title;
+                    const isVisible = title.includes(searchTerm);
+                    card.style.display = isVisible ? 'flex' : 'none';
+                    if (isVisible) visibleGames++;
                 });
 
-                // check
-                if (sessionStorage.getItem("canAccessClassList") !== "true" && sessionStorage.getItem("cameFromAthletics") !== "true") {
-                window.location.href = "/index.html";  // redirect
-                }
+                document.getElementById('gameCount').textContent = 
+                    `Showing ${visibleGames} of ${games.length} games`;
+            }, 150);
+        }
 
-                // clear
-                if (window.location.pathname === '/class/ClassList.html') {
-                sessionStorage.removeItem("cameFromAthletics");  // clear
-                }
-            </script>
+        // Initialize Swiper
+        function initSwiper() {
+            return new Swiper('.swiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                speed: 1000,
+                lazy: true
+            });
+        }
 
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplay: {
-                delay: 3000, // 3 seconds per slide
-                disableOnInteraction: false,
-            },
-            effect: '',
-            speed: 1000,
+        // Session management
+        function checkAccess() {
+            const canAccess = sessionStorage.getItem("canAccessClassList") === "true";
+            const cameFromAthletics = sessionStorage.getItem("cameFromAthletics") === "true";
+            
+            if (!canAccess && !cameFromAthletics) {
+                window.location.href = "/index.html";
+                return false;
+            }
+            
+            if (window.location.pathname === '/class/ClassList.html') {
+                sessionStorage.removeItem("cameFromAthletics");
+            }
+            
+            return true;
+        }
+
+        // Initialize application
+        function init() {
+            if (!checkAccess()) return;
+            
+            renderGames();
+            filterGames();
+            initSwiper();
+            
+            // Hide loading screen with animation
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.classList.add('hidden');
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+            }, 500);
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('searchInput').addEventListener('input', filterGames);
         });
+
+        window.addEventListener('load', init);
     </script>
-
-
-<script>
-    (function(qjb){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = qjb || {};
-    s.src = "\/\/juhevomu.com\/cOD.9Z6\/bC2l5\/lZSfWHQc9\/N-j\/Eo4cOaD\/gu4RNrSF0\/2wMyT\/g_4uObDrg\/2Z";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-    })({})
-    </script>
-
-<script>
-    (function(bgdlt){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = bgdlt || {};
-    s.src = "\/\/sirovygri.com\/bcX.VosWdyGRl-0rYFWXdgigYiW-5iuxZIXYIn\/Pe\/my9ouPZBUolCk\/PlTjYCxgOdDmg\/5iM\/DbIKtINMjEEd4JOiDJkjwdMkwX";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-    })({})
-    </script>
-
-<script>
-    (function(gvicf){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = gvicf || {};
-    s.src = "\/\/sirovygri.com\/b\/XMVJsRd.GmlU0RY_Whcb\/JeImj9culZBUkl\/klPMTDYvxTOIDUgR5\/MhTiI\/tnNxjdE\/4HO-D-kExQMNwT";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-    })({})
-    </script>
-
-<script>
-    (function(syky){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = syky || {};
-    s.src = "\/\/sirovygri.com\/b.X\/VZsvdgGFl\/0UY_WRcO\/_eSmN9CuSZjU\/lFk\/PZTdYNxWO\/DNgg5XMFjYIitlNTjEE\/4zO\/DVk_yCM\/wE";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-    })({})
-    </script>
-
-<script>
-    (function(syky){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = syky || {};
-    s.src = "\/\/sirovygri.com\/b.X\/VZsvdgGFl\/0UY_WRcO\/_eSmN9CuSZjU\/lFk\/PZTdYNxWO\/DNgg5XMFjYIitlNTjEE\/4zO\/DVk_yCM\/wE";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-    })({})
-    </script>
-
-
-        </body>
-        </html>
+</body>
+</html>
