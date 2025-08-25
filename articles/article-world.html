@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breaking World News - Latest Global Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
         }
 
         /* Fixed Navigation Bar */
@@ -18,92 +25,122 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
+            border-bottom: 1px solid #30363d;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
 
         header a:hover {
-            text-decoration: underline;
+            background-color: #21262d;
+            color: #58a6ff;
         }
 
         /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 100px 20px 40px 20px;
             margin: 30px auto;
             max-width: 800px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            background-color: #21262d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            color: #e0e0e0;
+            border-radius: 12px;
+            border: 1px solid #30363d;
         }
 
         h2 {
-            font-size: 32px;
-            color: #2a2a2a;
-            margin-bottom: 320px;
+            font-size: 2rem;
+            color: #f0f6fc;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #8b949e;
+            margin-bottom: 20px;
         }
 
         img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 320px;
+            margin: 25px 0;
+            border: 1px solid #30363d;
         }
 
         .author {
             font-style: italic;
-            color: #777;
-            font-size: 14px;
+            color: #58a6ff;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #8b949e;
             text-align: center;
-            padding: 15px;
+            padding: 25px;
             margin-top: 40px;
+            border-top: 1px solid #30363d;
         }
 
         .back-button {
-            background-color: #00bcd4;
-            color: white;
+            background-color: #238636;
+            color: #f0f6fc;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 500;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            transition: background-color 0.2s;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-family: 'Inter', sans-serif;
         }
 
         .back-button:hover {
-            background-color: #ff4081;
+            background-color: #2ea043;
         }
 
+        @media (max-width: 768px) {
+            .article {
+                margin: 20px 15px;
+                padding: 80px 15px 30px 15px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Fixed Navigation Bar -->
     <header>
-        <a href="/">Home</a>
+        <a href="../index.html">Home</a>
         <a href="article-world.html">World News</a>
         <a href="article-sports.html">Sports</a>
         <a href="article-tech.html">Tech</a>
@@ -127,7 +164,7 @@
 
         <p class="author">Written by: Jane Doe, Senior Global Economic Analyst</p>
 
-        <button class="back-button" onclick="window.history.back()">Back to Home</button>
+        <button class="back-button" onclick="window.location.href='../index.html'">Back to Home</button>
     </div>
 
     <!-- Footer Section -->

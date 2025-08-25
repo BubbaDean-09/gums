@@ -1,112 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta name="4aa276021b79d5ac9040878d3e5f28da291717fe" content="4aa276021b79d5ac9040878d3e5f28da291717fe" />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7795926428767200"
      crossorigin="anonymous"></script>
 
-     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #f0f6fc;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
+            border-bottom: 1px solid #30363d;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 48px;
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #58a6ff;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            color: #8b949e;
         }
 
         .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-            padding: 10px;
+            background-color: #161b22;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            border-bottom: 1px solid #30363d;
         }
 
         .navbar a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
             margin: 0 15px;
-            padding: 10px;
-            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
 
         .navbar a:hover {
-            background-color: #00bcd4;
-            border-radius: 5px;
+            background-color: #21262d;
+            color: #58a6ff;
         }
 
         .content {
-            display: flex;
-            justify-content: center;
-            padding: 30px 20px;
-            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
         }
 
         .news-section {
-            background-color: white;
-            width: 300px;
-            margin: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            background-color: #21262d;
+            border-radius: 12px;
+            padding: 25px;
             text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #30363d;
+        }
+
+        .news-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+            border-color: #58a6ff;
         }
 
         .news-section h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #f0f6fc;
+            font-weight: 600;
         }
 
         .news-section p {
-            font-size: 16px;
-            color: #666;
+            color: #8b949e;
             margin-bottom: 20px;
+            font-size: 0.95rem;
         }
 
         .news-button {
-            background-color: #00bcd4;
-            color: white;
+            background-color: #238636;
+            color: #f0f6fc;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 10px 24px;
+            font-size: 0.9rem;
+            font-weight: 500;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            transition: background-color 0.2s;
         }
 
         .news-button:hover {
-            background-color: #ff4081;
+            background-color: #2ea043;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #8b949e;
             text-align: center;
-            padding: 15px;
-            position: relative;
-            width: 100%;
-            bottom: 0;
+            padding: 25px;
+            margin-top: 40px;
+            border-top: 1px solid #30363d;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                grid-template-columns: 1fr;
+                padding: 20px 15px;
+            }
+            
+            .navbar a {
+                display: inline-block;
+                margin: 5px;
+            }
         }
     </style>
 </head>
 <body>
-
     <!-- Header Section -->
     <header>
         <h1>Daily News</h1>
@@ -116,6 +156,9 @@
     <!-- Navigation Bar -->
     <div class="navbar">
         <a href="#home">Home</a>
+        <a href="#latest">Latest</a>
+        <a href="#trending">Trending</a>
+        <a href="#about">About</a>
     </div>
 
     <!-- Main Content Section -->
@@ -131,34 +174,34 @@
         <div class="news-section">
             <h2>Tech Innovations</h2>
             <p>Explore the latest in tech from gadgets to software advancements.</p>
-            <button class="news-button" onclick="window.location.href='/articles/article-tech.html'">Read Article</button>
+            <button class="news-button" onclick="window.location.href='articles/article-tech.html'">Read Article</button>
         </div>
 
         <!-- Section 3: Sports -->
         <div class="news-section">
             <h2>Sports Highlights</h2>
             <p>Catch up with the latest results, scores, and player news.</p>
-            <button class="news-button" onclick="window.location.href='/articles/article-sports.html'">Read Article</button>
+            <button class="news-button" onclick="window.location.href='articles/article-sports.html'">Read Article</button>
         </div>
 
         <!-- Section 4: Entertainment -->
         <div class="news-section">
             <h2>Entertainment Buzz</h2>
             <p>From movie premieres to celebrity gossip, get all the buzz.</p>
-            <button class="news-button" onclick="window.location.href='/articles/article-entertainment.html'">Read Article</button>
+            <button class="news-button" onclick="window.location.href='articles/article-entertainment.html'">Read Article</button>
         </div>
 
         <!-- Additional Sections -->
         <div class="news-section">
             <h2>Business Insights</h2>
             <p>Get the latest updates from the business world.</p>
-            <button class="news-button" onclick="window.location.href='/articles/article-business.html'">Read Article</button>
+            <button class="news-button" onclick="window.location.href='articles/article-business.html'">Read Article</button>
         </div>
 
         <div class="news-section">
             <h2>Health Tips</h2>
             <p>Learn how to stay healthy with expert advice.</p>
-            <button class="news-button" onclick="window.location.href='/articles/article-health.html'">Read Article</button>
+            <button class="news-button" onclick="window.location.href='articles/article-health.html'">Read Article</button>
         </div>
 
         <div class="news-section">
@@ -213,21 +256,6 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Daily News - All Rights Reserved</p>
-        
     </footer>
-    <script>
-        (function(osibj){
-        var d = document,
-            s = d.createElement('script'),
-            l = d.scripts[d.scripts.length - 1];
-        s.settings = osibj || {};
-        s.src = "\/\/starryprotection.com\/bjXPV\/s.d\/Gala0OYVW\/cE\/Feqmq9cudZnU-lHk-PdTnY\/xoMnDpYU3\/OrTYk\/tUN\/jzE\/w\/NMjPgBwDMqAG";
-        s.async = true;
-        s.referrerPolicy = 'no-referrer-when-downgrade';
-        l.parentNode.insertBefore(s, l);
-        })({})
-        </script>
-        
-
 </body>
 </html>

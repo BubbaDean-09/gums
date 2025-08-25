@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entertainment: The Evolution of Pop Culture</title>
+    <title>Entertainment Buzz - Latest Entertainment News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
         }
 
         /* Fixed Navigation Bar */
@@ -18,92 +25,122 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
+            border-bottom: 1px solid #30363d;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
 
         header a:hover {
-            text-decoration: underline;
+            background-color: #21262d;
+            color: #58a6ff;
         }
 
         /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 100px 20px 40px 20px;
             margin: 30px auto;
             max-width: 800px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            background-color: #21262d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            color: #e0e0e0;
+            border-radius: 12px;
+            border: 1px solid #30363d;
         }
 
         h2 {
-            font-size: 32px;
-            color: #2a2a2a;
-            margin-bottom: 320px;
+            font-size: 2rem;
+            color: #f0f6fc;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #8b949e;
+            margin-bottom: 20px;
         }
 
         img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 320px;
+            margin: 25px 0;
+            border: 1px solid #30363d;
         }
 
         .author {
             font-style: italic;
-            color: #777;
-            font-size: 14px;
+            color: #58a6ff;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #8b949e;
             text-align: center;
-            padding: 15px;
+            padding: 25px;
             margin-top: 40px;
+            border-top: 1px solid #30363d;
         }
 
         .back-button {
-            background-color: #00bcd4;
-            color: white;
+            background-color: #238636;
+            color: #f0f6fc;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 500;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            transition: background-color 0.2s;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-family: 'Inter', sans-serif;
         }
 
         .back-button:hover {
-            background-color: #ff4081;
+            background-color: #2ea043;
         }
 
+        @media (max-width: 768px) {
+            .article {
+                margin: 20px 15px;
+                padding: 80px 15px 30px 15px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Fixed Navigation Bar -->
     <header>
-        <a href="/">Home</a>
+        <a href="../index.html">Home</a>
         <a href="article-world.html">World News</a>
         <a href="article-sports.html">Sports</a>
         <a href="article-tech.html">Tech</a>
@@ -112,30 +149,22 @@
 
     <!-- Article Content -->
     <div class="article">
-        <h2>The Evolution of Pop Culture: From Film to Streaming</h2>
-        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/gray/VMRFKJAFKBDFFJVO5LNCMBR424.jpg" alt="Entertainment">
+        <h2>Hollywood's Golden Age: A New Era of Storytelling</h2>
+        <img src="https://thumbs.dreamstime.com/b/hollywood-sign-california-usa-sunset-background-famous-landmark-los-angeles-124220724.jpg" alt="Hollywood Sign">
         
-        <p>Entertainment has always been a crucial part of human life, but as technology has advanced, the way we experience entertainment has drastically changed. From cinema to television and now to streaming platforms, pop culture has evolved in ways that reflect society's growing need for instant access and immersive experiences. This article explores the transformation of entertainment and its influence on modern culture.</p>
+        <p>The entertainment industry is experiencing a renaissance unlike anything seen in decades, with streaming platforms, independent filmmakers, and international collaborations creating a new golden age of storytelling. From groundbreaking series to innovative film techniques, audiences are being treated to content that pushes creative boundaries and explores new narratives.</p>
 
-        <p><strong>The Rise of Streaming Platforms</strong> – In the past decade, streaming services like Netflix, Hulu, and Disney+ have become the dominant force in entertainment. These platforms have shifted the traditional media model by offering on-demand content that allows viewers to watch shows and movies at their convenience. No longer bound by fixed TV schedules, audiences now have the power to binge-watch entire seasons in a single sitting.</p>
+        <p>Streaming services have revolutionized how we consume entertainment, giving creators unprecedented freedom to tell stories that might not have found a home in traditional media. This has led to an explosion of diverse voices and perspectives, with shows and movies representing cultures and experiences from around the world. The result is a richer, more inclusive entertainment landscape that reflects the global nature of our society.</p>
 
-        <p>The success of streaming services has led to the rise of original content, with major networks and studios investing heavily in creating exclusive series and films for their platforms. This shift has not only changed how content is consumed but also how it's created. Shows like *Stranger Things*, *The Mandalorian*, and *The Witcher* have become global phenomena, proving that streaming is more than just a trend – it's the future of entertainment.</p>
+        <p>Independent cinema is also thriving, with filmmakers using new technologies and distribution methods to bring their visions to life. Social media and crowdfunding platforms have democratized the filmmaking process, allowing talented creators to bypass traditional gatekeepers and connect directly with their audiences. This has resulted in some of the most innovative and thought-provoking films of recent years.</p>
 
-        <p><strong>The Impact of Social Media</strong> – Social media has played a significant role in the evolution of entertainment. Platforms like Instagram, TikTok, and YouTube have allowed individuals to become content creators, disrupting the traditional celebrity system. Influencers, vloggers, and streamers are now the new faces of entertainment, with millions of followers and endorsement deals. The entertainment industry now relies on social media to engage with fans, market new releases, and even create viral moments.</p>
+        <p>Music and television are also experiencing exciting changes, with artists and showrunners experimenting with new formats and storytelling techniques. Reality shows are becoming more sophisticated, while scripted series are exploring complex themes and character development that rival the best literature. The line between different forms of entertainment is blurring, creating new hybrid experiences for audiences.</p>
 
-        <p>In addition to influencers, social media has also become a platform for fan engagement. Shows and movies now have dedicated hashtags and fan pages that allow audiences to discuss theories, share fan art, and even interact with the creators themselves. This direct communication between stars and fans has humanized the entertainment industry and created a more personal connection.</p>
+        <p><strong>Looking Forward:</strong> As technology continues to evolve, the future of entertainment looks brighter than ever. Virtual reality, augmented reality, and artificial intelligence are opening up new possibilities for storytelling and audience engagement. The key challenge will be maintaining the human element that makes entertainment meaningful while embracing the innovations that can enhance our experiences.</p>
 
-        <p><strong>The Return of Nostalgia</strong> – In recent years, the entertainment industry has leaned heavily into nostalgia, bringing back classic movies, TV shows, and even toys from the past. Remakes, reboots, and sequels of beloved franchises like *Ghostbusters*, *Star Wars*, and *The Lion King* have proven to be commercially successful. For many viewers, these familiar stories provide comfort and a connection to their childhood, which is why nostalgia has become a powerful tool in modern entertainment.</p>
+        <p class="author">Written by: Lisa Chen, Entertainment Reporter</p>
 
-        <p><strong>Interactive Entertainment</strong> – Another significant trend in entertainment is the rise of interactive experiences. Video games, virtual reality (VR), and augmented reality (AR) have transformed passive viewers into active participants. Virtual reality gaming, for example, allows players to immerse themselves in entirely new worlds, while interactive films and TV shows, such as *Bandersnatch* on Netflix, offer viewers a chance to shape the story. These innovations are changing the way we experience entertainment, blurring the lines between reality and fiction.</p>
-
-        <p><strong>Entertainment in the Digital Age</strong> – As the world becomes more connected, the boundaries of entertainment continue to expand. Artists, musicians, and creators are now able to reach global audiences instantly through platforms like Spotify, SoundCloud, and YouTube. The rise of digital distribution has democratized entertainment, allowing anyone with an internet connection to share their work with the world.</p>
-
-        <p>The digital age has also led to a shift in how we consume music and live performances. Virtual concerts, live streams, and online music festivals have become increasingly popular, especially during the COVID-19 pandemic. These experiences offer fans a chance to connect with their favorite artists without having to leave their homes.</p>
-
-        <p class="author">Written by: Emily Roberts, Entertainment Journalist</p>
-
-        <button class="back-button" onclick="window.history.back()">Back to Home</button>
+        <button class="back-button" onclick="window.location.href='../index.html'">Back to Home</button>
     </div>
 
     <!-- Footer Section -->

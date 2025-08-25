@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest Science Discoveries in 2024</title>
+    <title>Science Discoveries - Latest Science News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
         }
 
         /* Fixed Navigation Bar */
@@ -18,123 +25,146 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
+            border-bottom: 1px solid #30363d;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
 
         header a:hover {
-            text-decoration: underline;
+            background-color: #21262d;
+            color: #58a6ff;
         }
 
         /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 100px 20px 40px 20px;
             margin: 30px auto;
             max-width: 800px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            background-color: #21262d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            color: #e0e0e0;
+            border-radius: 12px;
+            border: 1px solid #30363d;
         }
 
         h2 {
-            font-size: 32px;
-            color: #2a2a2a;
-            margin-bottom: 320px;
+            font-size: 2rem;
+            color: #f0f6fc;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #8b949e;
+            margin-bottom: 20px;
         }
 
         img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 320px;
+            margin: 25px 0;
+            border: 1px solid #30363d;
         }
 
         .author {
             font-style: italic;
-            color: #777;
-            font-size: 14px;
+            color: #58a6ff;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #8b949e;
             text-align: center;
-            padding: 15px;
+            padding: 25px;
             margin-top: 40px;
+            border-top: 1px solid #30363d;
         }
 
         .back-button {
-            background-color: #00bcd4;
-            color: white;
+            background-color: #238636;
+            color: #f0f6fc;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 500;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            transition: background-color 0.2s;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-family: 'Inter', sans-serif;
         }
 
         .back-button:hover {
-            background-color: #ff4081;
+            background-color: #2ea043;
         }
 
+        @media (max-width: 768px) {
+            .article {
+                margin: 20px 15px;
+                padding: 80px 15px 30px 15px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Fixed Navigation Bar -->
     <header>
-        <a href="/">Home</a>
+        <a href="../index.html">Home</a>
         <a href="article-world.html">World News</a>
         <a href="article-sports.html">Sports</a>
         <a href="article-tech.html">Tech</a>
         <a href="article-entertainment.html">Entertainment</a>
-        <a href="article-science.html">Science</a>
     </header>
 
     <!-- Article Content -->
     <div class="article">
-        <h2>Latest Science Discoveries in 2024</h2>
-        <img src="https://i.ytimg.com/vi/-YD3IVuKoaU/maxresdefault.jpg" alt="Science Discoveries">
+        <h2>Breakthrough Discoveries: The Latest Frontiers in Scientific Research</h2>
+        <img src="https://thumbs.dreamstime.com/b/scientific-research-laboratory-microscope-test-tubes-124220724.jpg" alt="Scientific Research">
+        
+        <p>The world of science is experiencing an unprecedented era of discovery, with researchers across all disciplines making breakthroughs that are reshaping our understanding of the universe, life, and the fundamental laws that govern our existence. From quantum physics to genetic engineering, the pace of scientific advancement is accelerating at an exponential rate.</p>
 
-        <p>2024 has been an extraordinary year for science, with groundbreaking discoveries and advancements that could reshape our understanding of the world. Here are some of the most exciting scientific discoveries this year:</p>
+        <p>In the field of quantum computing, scientists have achieved remarkable milestones that bring us closer to practical quantum computers. These machines, which operate on the principles of quantum mechanics, have the potential to solve problems that are currently impossible for classical computers. Recent breakthroughs in quantum error correction and qubit stability are addressing some of the major challenges that have hindered progress in this field.</p>
 
-        <p><strong>1. Artificial Photosynthesis:</strong> Researchers have made significant strides in artificial photosynthesis, a process that mimics how plants convert sunlight, water, and carbon dioxide into energy. This technology holds promise for renewable energy, potentially leading to sustainable fuel production without harming the environment.</p>
+        <p>Medical science is also experiencing revolutionary changes, with new treatments and technologies emerging at an astonishing pace. CRISPR gene editing technology has opened up possibilities for curing genetic diseases that were once thought untreatable. Meanwhile, advances in immunotherapy are providing new hope for cancer patients, with treatments that harness the body's own immune system to fight disease.</p>
 
-        <p><strong>2. Quantum Computing Milestones:</strong> Quantum computing has reached a new level of efficiency in 2024, with scientists achieving higher levels of qubit stability. This brings us closer to solving complex problems in fields like cryptography, drug discovery, and climate modeling.</p>
+        <p>Climate science is providing crucial insights into the challenges facing our planet, with researchers developing new methods for monitoring environmental changes and predicting future trends. From satellite technology that tracks deforestation in real-time to advanced climate models that help us understand the complex interactions between different environmental factors, science is providing the tools we need to address climate change.</p>
 
-        <p><strong>3. Human Genome Editing:</strong> Advances in gene-editing technologies, such as CRISPR, have enabled scientists to make precise modifications in human genomes. While ethical concerns persist, this breakthrough may lead to new treatments for genetic disorders, offering hope for previously untreatable conditions.</p>
+        <p><strong>Looking Forward:</strong> As we continue to push the boundaries of human knowledge, the challenge will be ensuring that scientific discoveries benefit all of humanity. The future of science lies not just in making new discoveries, but in applying that knowledge responsibly to solve the world's most pressing problems. From addressing climate change to improving human health, science has the potential to create a better future for everyone.</p>
 
-        <p><strong>4. Ancient Microbial Life on Mars:</strong> NASA’s Perseverance rover has discovered signs of ancient microbial life in Martian rock samples. This finding strengthens the possibility that Mars may have once supported life, reshaping our search for extraterrestrial existence.</p>
+        <p class="author">Written by: Dr. Michael Chen, Research Scientist</p>
 
-        <p><strong>5. Fusion Energy Breakthrough:</strong> In the quest for clean and virtually limitless energy, scientists achieved a controlled nuclear fusion reaction that sustained itself for several seconds. This milestone could pave the way for future fusion power plants that offer a sustainable alternative to fossil fuels.</p>
-
-        <p><strong>6. Climate-Resilient Crops:</strong> With the global climate becoming more unpredictable, researchers have developed new strains of crops that are more resistant to drought and extreme weather. These innovations in agricultural science could help address food security issues in vulnerable regions.</p>
-
-        <p><strong>7. Human Brain Mapping:</strong> Neuroscientists have completed the most detailed map of the human brain ever created. This map will help researchers understand the brain’s complex connections, advancing studies in mental health, cognition, and neurological disorders.</p>
-
-        <p class="author">Written by: Dr. Emily Robinson, Senior Science Correspondent</p>
-
-        <button class="back-button" onclick="window.history.back()">Back to Home</button>
+        <button class="back-button" onclick="window.location.href='../index.html'">Back to Home</button>
     </div>
 
     <!-- Footer Section -->

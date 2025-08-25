@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Fashion Trends of 2024</title>
+    <title>Fashion Trends - Latest Fashion News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
         }
 
         /* Fixed Navigation Bar */
@@ -18,125 +25,146 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
+            border-bottom: 1px solid #30363d;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
 
         header a:hover {
-            text-decoration: underline;
+            background-color: #21262d;
+            color: #58a6ff;
         }
 
         /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 100px 20px 40px 20px;
             margin: 30px auto;
             max-width: 800px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            background-color: #21262d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            color: #e0e0e0;
+            border-radius: 12px;
+            border: 1px solid #30363d;
         }
 
         h2 {
-            font-size: 32px;
-            color: #2a2a2a;
-            margin-bottom: 320px;
+            font-size: 2rem;
+            color: #f0f6fc;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #8b949e;
+            margin-bottom: 20px;
         }
 
         img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 320px;
+            margin: 25px 0;
+            border: 1px solid #30363d;
         }
 
         .author {
             font-style: italic;
-            color: #777;
-            font-size: 14px;
+            color: #58a6ff;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #8b949e;
             text-align: center;
-            padding: 15px;
+            padding: 25px;
             margin-top: 40px;
+            border-top: 1px solid #30363d;
         }
 
         .back-button {
-            background-color: #00bcd4;
-            color: white;
+            background-color: #238636;
+            color: #f0f6fc;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 500;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            transition: background-color 0.2s;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-family: 'Inter', sans-serif;
         }
 
         .back-button:hover {
-            background-color: #ff4081;
+            background-color: #2ea043;
         }
 
+        @media (max-width: 768px) {
+            .article {
+                margin: 20px 15px;
+                padding: 80px 15px 30px 15px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Fixed Navigation Bar -->
     <header>
-        <a href="/">Home</a>
+        <a href="../index.html">Home</a>
         <a href="article-world.html">World News</a>
         <a href="article-sports.html">Sports</a>
         <a href="article-tech.html">Tech</a>
         <a href="article-entertainment.html">Entertainment</a>
-        <a href="article-fashion.html">Fashion</a>
     </header>
 
     <!-- Article Content -->
     <div class="article">
-        <h2>Top Fashion Trends of 2024</h2>
-        <img src="https://theglamandglitter.com/wp-content/uploads/2024/01/SS24-Trends.jpg" alt="Fashion Trends 2024">
+        <h2>Sustainable Fashion: The Future of Style and Responsibility</h2>
+        <img src="https://thumbs.dreamstime.com/b/fashion-design-concept-stylish-clothes-accessories-124220724.jpg" alt="Fashion Design">
+        
+        <p>The fashion industry is undergoing a revolutionary transformation as sustainability becomes the driving force behind design, production, and consumption. What was once a niche concern has now become mainstream, with consumers, designers, and brands recognizing that the future of fashion must be both stylish and responsible.</p>
 
-        <p>As we step into 2024, the fashion industry is buzzing with new trends that blend style, sustainability, and self-expression. From bold colors to nostalgic revivals, here’s a look at the top fashion trends dominating runways and wardrobes this year:</p>
+        <p>One of the most significant changes has been the rise of eco-friendly materials and production methods. Designers are increasingly turning to organic cotton, recycled polyester, and innovative fabrics made from materials like bamboo, hemp, and even pineapple leaves. These alternatives not only reduce environmental impact but also often provide superior quality and comfort compared to traditional materials.</p>
 
-        <p><strong>1. Eco-Friendly Fabrics:</strong> Sustainability continues to be at the forefront of fashion in 2024. Brands are embracing eco-friendly materials like organic cotton, bamboo, and recycled polyester. The focus on reducing environmental impact is influencing designers and consumers alike to make mindful choices.</p>
+        <p>The concept of circular fashion is gaining momentum, with brands implementing take-back programs, repair services, and resale platforms. This shift from a linear "take-make-waste" model to a circular one extends the life of garments and reduces the need for new production. Consumers are also embracing second-hand shopping, vintage pieces, and clothing rental services as ways to enjoy fashion without contributing to overproduction.</p>
 
-        <p><strong>2. Bold, Vibrant Colors:</strong> Say goodbye to neutrals—this year is all about bright, bold colors. Electric blues, hot pinks, and sunshine yellows are taking center stage. Color-blocking and monochromatic outfits in vibrant hues are a popular way to make a statement.</p>
+        <p>Technology is playing a crucial role in sustainable fashion, with innovations like 3D printing, digital sampling, and AI-powered design tools reducing waste in the design and production process. Virtual try-on technology is also helping reduce returns and the environmental impact of shipping multiple items to customers.</p>
 
-        <p><strong>3. Oversized Blazers:</strong> The oversized blazer trend is here to stay. This year, it’s being styled in various ways, from casual daytime looks with jeans to chic evening outfits paired with skirts or trousers. It’s the perfect blend of sophistication and comfort.</p>
+        <p><strong>Looking Forward:</strong> As the sustainable fashion movement continues to grow, the challenge will be making eco-friendly options accessible to everyone, regardless of budget. The future of fashion lies in creating beautiful, high-quality garments that respect both the environment and the people who make them. Style and sustainability are no longer mutually exclusive – they're the foundation of a more responsible and beautiful fashion industry.</p>
 
-        <p><strong>4. Futuristic Metallics:</strong> Reflective and metallic fabrics are adding a futuristic touch to fashion. Silver, chrome, and holographic pieces are making appearances in jackets, skirts, and accessories, bringing an edgy, sci-fi-inspired vibe to outfits.</p>
+        <p class="author">Written by: Isabella Rodriguez, Fashion Editor</p>
 
-        <p><strong>5. 90s Revival:</strong> Nostalgia for the 90s continues with trends like chunky sneakers, bucket hats, and high-waisted jeans. These throwback styles are being reimagined with a modern twist, bringing a fun and playful element to contemporary fashion.</p>
-
-        <p><strong>6. Sheer Layers:</strong> Sheer fabrics and layers are making waves, offering a subtle and elegant way to show skin. Sheer tops, skirts, and dresses are being paired with statement undergarments for a chic, layered look that’s both bold and sophisticated.</p>
-
-        <p><strong>7. Gender-Neutral Clothing:</strong> Gender-fluid fashion is gaining momentum in 2024, with many brands designing versatile pieces that can be worn by anyone. This trend reflects a shift towards inclusivity and self-expression, with loose silhouettes and minimalist styles taking the spotlight.</p>
-
-        <p><strong>8. Statement Accessories:</strong> From oversized sunglasses to chunky chains and bold hats, statement accessories are a must-have this year. These accessories can elevate even the simplest outfit, adding a touch of personality and flair.</p>
-
-        <p class="author">Written by: Alex Smith, Fashion Correspondent</p>
-
-        <button class="back-button" onclick="window.history.back()">Back to Home</button>
+        <button class="back-button" onclick="window.location.href='../index.html'">Back to Home</button>
     </div>
 
     <!-- Footer Section -->

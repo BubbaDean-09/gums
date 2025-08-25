@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Insights - Trends and Strategies</title>
+    <title>Business Insights - Latest Business News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
         }
 
         /* Fixed Navigation Bar */
@@ -18,119 +25,146 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
+            border-bottom: 1px solid #30363d;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
 
         header a:hover {
-            text-decoration: underline;
+            background-color: #21262d;
+            color: #58a6ff;
         }
 
         /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 100px 20px 40px 20px;
             margin: 30px auto;
             max-width: 800px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            background-color: #21262d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            color: #e0e0e0;
+            border-radius: 12px;
+            border: 1px solid #30363d;
         }
 
         h2 {
-            font-size: 32px;
-            color: #2a2a2a;
-            margin-bottom: 320px;
+            font-size: 2rem;
+            color: #f0f6fc;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #8b949e;
+            margin-bottom: 20px;
         }
 
         img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 320px;
+            margin: 25px 0;
+            border: 1px solid #30363d;
         }
 
         .author {
             font-style: italic;
-            color: #777;
-            font-size: 14px;
+            color: #58a6ff;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #8b949e;
             text-align: center;
-            padding: 15px;
+            padding: 25px;
             margin-top: 40px;
+            border-top: 1px solid #30363d;
         }
 
         .back-button {
-            background-color: #00bcd4;
-            color: white;
+            background-color: #238636;
+            color: #f0f6fc;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 500;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            transition: background-color 0.2s;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-family: 'Inter', sans-serif;
         }
 
         .back-button:hover {
-            background-color: #ff4081;
+            background-color: #2ea043;
         }
 
+        @media (max-width: 768px) {
+            .article {
+                margin: 20px 15px;
+                padding: 80px 15px 30px 15px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Fixed Navigation Bar -->
     <header>
-        <a href="/">Home</a>
+        <a href="../index.html">Home</a>
         <a href="article-world.html">World News</a>
         <a href="article-sports.html">Sports</a>
         <a href="article-tech.html">Tech</a>
         <a href="article-entertainment.html">Entertainment</a>
-        <a href="article-business.html">Business Insights</a>
     </header>
 
     <!-- Article Content -->
     <div class="article">
-        <h2>Business Insights: Emerging Trends in 2024</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSg_yM96GbR6ZgbYd5gnavZhitieiDmM7HOg&s" alt="Business Insights">
+        <h2>Digital Transformation: How Businesses Are Adapting to the New Economy</h2>
+        <img src="https://thumbs.dreamstime.com/b/business-people-working-office-modern-building-city-background-124220724.jpg" alt="Business People">
+        
+        <p>The business landscape is undergoing a fundamental transformation as companies across all industries embrace digital technologies to stay competitive in an increasingly connected world. From small startups to multinational corporations, organizations are rethinking their strategies, processes, and customer relationships to thrive in the digital age.</p>
 
-        <p>The business world is evolving rapidly in 2024, driven by advances in technology, changing consumer expectations, and an increased focus on sustainability. As companies strive to adapt, several key trends are shaping the landscape.</p>
+        <p>One of the most significant changes has been the acceleration of e-commerce adoption. The COVID-19 pandemic served as a catalyst for digital transformation, forcing businesses to quickly establish or enhance their online presence. Companies that had already invested in digital infrastructure found themselves at a significant advantage, while others scrambled to catch up. This shift has permanently changed consumer behavior, with online shopping becoming the preferred method for many customers.</p>
 
-        <p><strong>Digital Transformation and AI:</strong> Artificial intelligence and automation are becoming integral to operations across industries. Businesses are using AI to streamline tasks, enhance customer experiences, and analyze large datasets for decision-making. Automation is also increasing productivity, allowing companies to optimize workflows and reduce costs.</p>
+        <p>Remote work has also become a permanent fixture in the business world, with companies recognizing the benefits of flexible work arrangements. This change has led to new challenges and opportunities, including the need for better collaboration tools, cybersecurity measures, and employee engagement strategies. Companies are investing heavily in technology that enables seamless remote collaboration while maintaining productivity and team cohesion.</p>
 
-        <p><strong>Sustainability and Social Responsibility:</strong> As consumers become more environmentally conscious, businesses are adopting sustainable practices to reduce their carbon footprint. This includes sourcing eco-friendly materials, minimizing waste, and supporting local communities. Many companies are now integrating corporate social responsibility (CSR) into their core values, which can improve their public image and attract loyal customers.</p>
+        <p>Data analytics and artificial intelligence are playing increasingly important roles in business decision-making. Companies are using advanced analytics to understand customer behavior, optimize operations, and identify new market opportunities. AI-powered tools are automating routine tasks, improving customer service, and providing insights that would be impossible to gather manually.</p>
 
-        <p><strong>Hybrid Work Models:</strong> The COVID-19 pandemic has left a lasting impact on the workplace, with hybrid work models becoming the norm. Many organizations are offering flexible schedules and remote work options to meet employees' needs, resulting in a healthier work-life balance and improved employee satisfaction. However, companies are also investing in digital tools and cybersecurity measures to support this shift.</p>
+        <p><strong>Looking Forward:</strong> As we move into the next phase of digital transformation, businesses must focus on creating seamless omnichannel experiences that integrate online and offline interactions. The companies that succeed will be those that can adapt quickly to changing market conditions while maintaining the human touch that customers value. The future belongs to organizations that can balance technological innovation with genuine human connection.</p>
 
-        <p><strong>Data Privacy and Cybersecurity:</strong> As data breaches and cyberattacks become more prevalent, businesses are prioritizing data protection and investing in robust cybersecurity solutions. The implementation of regulations such as GDPR has also highlighted the importance of protecting customer information, prompting companies to adopt stringent data privacy measures.</p>
+        <p class="author">Written by: David Wilson, Business Analyst</p>
 
-        <p><strong>E-commerce and Globalization:</strong> The growth of e-commerce continues to reshape retail, with online sales reaching unprecedented levels. Companies are capitalizing on this trend by expanding their digital presence and catering to global markets. Cross-border e-commerce is particularly lucrative, allowing businesses to reach a larger audience and diversify revenue streams.</p>
-
-        <p class="author">Written by: Alex Johnson, Business Analyst</p>
-
-        <button class="back-button" onclick="window.history.back()">Back to Home</button>
+        <button class="back-button" onclick="window.location.href='../index.html'">Back to Home</button>
     </div>
 
     <!-- Footer Section -->

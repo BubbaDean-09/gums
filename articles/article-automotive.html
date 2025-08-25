@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automotive Innovations - The Future of Mobility</title>
+    <title>Automotive News - Latest Car News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
         }
 
         /* Fixed Navigation Bar */
@@ -18,130 +25,146 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+            background-color: #0d1117;
+            color: #f0f6fc;
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
+            border-bottom: 1px solid #30363d;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         header a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
 
         header a:hover {
-            text-decoration: underline;
+            background-color: #21262d;
+            color: #58a6ff;
         }
 
         /* Main Content Styling */
         .article {
-            padding: 80px 20px 20px 20px; /* Add padding to make space for the fixed header */
+            padding: 100px 20px 40px 20px;
             margin: 30px auto;
             max-width: 800px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            background-color: #21262d;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            color: #e0e0e0;
+            border-radius: 12px;
+            border: 1px solid #30363d;
         }
 
         h2 {
-            font-size: 32px;
-            color: #2a2a2a;
-            margin-bottom: 320px;
+            font-size: 2rem;
+            color: #f0f6fc;
+            margin-bottom: 25px;
+            font-weight: 600;
         }
 
         p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #8b949e;
+            margin-bottom: 20px;
         }
 
         img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 320px;
+            margin: 25px 0;
+            border: 1px solid #30363d;
         }
 
         .author {
             font-style: italic;
-            color: #777;
-            font-size: 14px;
+            color: #58a6ff;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #30363d;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #0d1117;
+            color: #8b949e;
             text-align: center;
-            padding: 15px;
+            padding: 25px;
             margin-top: 40px;
+            border-top: 1px solid #30363d;
         }
 
         .back-button {
-            background-color: #00bcd4;
-            color: white;
+            background-color: #238636;
+            color: #f0f6fc;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 500;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 20px;
+            transition: background-color 0.2s;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-family: 'Inter', sans-serif;
         }
 
         .back-button:hover {
-            background-color: #ff4081;
+            background-color: #2ea043;
         }
 
+        @media (max-width: 768px) {
+            .article {
+                margin: 20px 15px;
+                padding: 80px 15px 30px 15px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Fixed Navigation Bar -->
     <header>
-        <a href="/">Home</a>
+        <a href="../index.html">Home</a>
         <a href="article-world.html">World News</a>
         <a href="article-sports.html">Sports</a>
         <a href="article-tech.html">Tech</a>
-        <a href="article-automotive.html">Automotive</a>
+        <a href="article-entertainment.html">Entertainment</a>
     </header>
 
     <!-- Article Content -->
     <div class="article">
-        <h2>Automotive Innovations - The Future of Mobility</h2>
-        <img src="https://example.com/automotive-innovations-2024.jpg" alt="Automotive Innovations">
+        <h2>Electric Revolution: The Future of Automotive Technology</h2>
+        <img src="https://thumbs.dreamstime.com/b/electric-car-charging-station-modern-vehicle-124220724.jpg" alt="Electric Car">
+        
+        <p>The automotive industry is experiencing its most significant transformation since the invention of the automobile, with electric vehicles, autonomous driving technology, and connected car systems reshaping how we think about transportation. This revolution is not just about changing how cars are powered – it's about reimagining the entire concept of personal mobility.</p>
 
-        <p>The automotive industry in 2024 is charging full speed ahead with cutting-edge innovations, sustainable solutions, and groundbreaking technologies. From electric vehicles to autonomous driving, here's what's driving the future of mobility:</p>
+        <p>Electric vehicles have moved from niche products to mainstream options, with major automakers investing billions in EV development and production. The technology has evolved rapidly, with modern EVs offering ranges that rival traditional gasoline vehicles and charging infrastructure that's becoming more widespread and convenient. The environmental benefits of EVs are clear, but the performance advantages are also impressive, with instant torque and smooth acceleration that many drivers find superior to traditional engines.</p>
 
-        <p><strong>1. Electric Vehicles (EVs) Dominate the Roads:</strong> The transition to electric vehicles continues to accelerate, with major automakers like Tesla, Ford, and Toyota introducing new EV models that are more affordable, efficient, and accessible than ever before. Governments worldwide are offering incentives to encourage EV adoption, aiming for greener transportation solutions.</p>
+        <p>Autonomous driving technology is advancing at an astonishing pace, with companies testing fully self-driving vehicles on public roads. While fully autonomous cars are not yet widely available, advanced driver assistance systems are becoming standard features on new vehicles. These systems can handle tasks like adaptive cruise control, lane keeping, and automatic emergency braking, making driving safer and more comfortable.</p>
 
-        <p><strong>2. Autonomous Driving Advances:</strong> Self-driving technology is making strides in 2024, with companies like Waymo and Cruise leading the way. Level 4 autonomous vehicles, which can operate without human intervention in specific conditions, are being tested in urban areas and could soon become mainstream.</p>
+        <p>Connected car technology is transforming vehicles into mobile computing platforms, with features like over-the-air updates, real-time traffic information, and integration with smart home systems. This connectivity is not just about convenience – it's about creating a more integrated transportation ecosystem that can reduce congestion, improve safety, and provide better user experiences.</p>
 
-        <p><strong>3. Hydrogen Fuel Cell Vehicles:</strong> Hydrogen-powered cars are gaining momentum as an alternative to battery-powered EVs. Automakers like Hyundai and Toyota are investing heavily in hydrogen technology, which promises quick refueling times and longer ranges.</p>
+        <p><strong>Looking Forward:</strong> As automotive technology continues to evolve, the challenge will be ensuring that these innovations benefit everyone, not just those who can afford the latest models. The future of transportation lies in creating systems that are sustainable, accessible, and designed to improve the quality of life for people around the world. From reducing emissions to improving safety, automotive technology has the potential to create a better future for everyone.</p>
 
-        <p><strong>4. Sustainable Manufacturing:</strong> Automakers are not just focusing on the vehicles themselves but also on making the production process more eco-friendly. From using recycled materials to reducing factory emissions, sustainability is a key focus for the automotive industry.</p>
+        <p class="author">Written by: Carlos Mendez, Automotive Journalist</p>
 
-        <p><strong>5. Over-the-Air (OTA) Updates:</strong> Much like smartphones, vehicles now receive software updates over the air. This means improved performance, new features, and bug fixes without needing a visit to the dealership, providing a seamless experience for car owners.</p>
-
-        <p><strong>6. Shared Mobility Models:</strong> Ride-sharing and car-sharing platforms are evolving with the integration of autonomous and electric fleets. Companies like Uber and Lyft are experimenting with sustainable shared mobility solutions that could reshape urban transportation.</p>
-
-        <p><strong>7. Smart Interiors:</strong> The cars of 2024 boast advanced interiors with features like augmented reality dashboards, AI-powered personal assistants, and seamless connectivity. Comfort, convenience, and technology blend to create a futuristic driving experience.</p>
-
-        <p><strong>8. Flying Cars on the Horizon:</strong> While still in development, flying cars are closer to becoming a reality. Companies like Joby Aviation and AeroMobil are working on prototypes that could revolutionize urban and intercity transportation.</p>
-
-        <p><strong>9. Enhanced Safety Features:</strong> Advanced Driver Assistance Systems (ADAS) are standard in many vehicles today. Features like automatic emergency braking, lane-keeping assist, and adaptive cruise control are making roads safer for everyone.</p>
-
-        <p><strong>10. Global EV Infrastructure Expansion:</strong> To support the growing number of EVs, governments and private companies are rapidly expanding charging infrastructure. Ultra-fast charging stations and wireless charging solutions are becoming more commonplace.</p>
-
-        <p>As we move forward, the automotive industry continues to innovate, offering solutions that are not only high-tech but also sustainable. 2024 is set to be a landmark year for mobility, bringing us closer to a cleaner, smarter, and more connected future.</p>
-
-        <p class="author">Written by: Alex Carter, Automotive Industry Expert</p>
-
-        <button class="back-button" onclick="window.history.back()">Back to Home</button>
+        <button class="back-button" onclick="window.location.href='../index.html'">Back to Home</button>
     </div>
 
     <!-- Footer Section -->
