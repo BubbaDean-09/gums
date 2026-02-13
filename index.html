@@ -2,158 +2,147 @@
 <html lang="en">
 <head>
     <meta name="4aa276021b79d5ac9040878d3e5f28da291717fe" content="4aa276021b79d5ac9040878d3e5f28da291717fe" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7795926428767200"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7795926428767200" crossorigin="anonymous"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily News</title>
+    <title>Daily News | Trusted Global Updates</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg-body: #1a1a1a;
+            --bg-header: #0d1117;
+            --bg-nav: #161b22;
+            --bg-card: #21262d;
+            --border: #30363d;
+            --text-main: #e0e0e0;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --btn-green: #238636;
+            --btn-hover: #2ea043;
         }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            background-color: #1a1a1a;
+            background-color: var(--bg-body);
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            color: #e0e0e0;
+            color: var(--text-main);
         }
 
         header {
-            background-color: #0d1117;
-            color: #f0f6fc;
+            background-color: var(--bg-header);
+            padding: 50px 20px;
             text-align: center;
-            padding: 40px 20px;
-            border-bottom: 1px solid #30363d;
+            border-bottom: 1px solid var(--border);
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            color: var(--accent);
             font-weight: 600;
-            margin-bottom: 10px;
-            color: #58a6ff;
+            margin-bottom: 8px;
         }
 
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.8;
-            color: #8b949e;
-        }
+        header p { color: var(--text-muted); font-size: 1.1rem; }
 
         .navbar {
-            background-color: #161b22;
-            padding: 15px;
+            background-color: var(--bg-nav);
+            padding: 12px;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            border-bottom: 1px solid #30363d;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .navbar a {
             color: #c9d1d9;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 8px 16px;
+            margin: 0 12px;
+            padding: 6px 14px;
+            font-size: 0.95rem;
             border-radius: 20px;
-            transition: all 0.2s;
+            transition: 0.2s;
         }
 
-        .navbar a:hover {
-            background-color: #21262d;
-            color: #58a6ff;
-        }
+        .navbar a:hover { background-color: var(--bg-card); color: var(--accent); }
 
         .content {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            margin: 40px auto;
+            padding: 0 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 25px;
         }
 
         .news-section {
-            background-color: #21262d;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
             border-radius: 12px;
             padding: 25px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: 1px solid #30363d;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, border-color 0.2s;
         }
 
         .news-section:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.6);
-            border-color: #58a6ff;
+            transform: translateY(-5px);
+            border-color: var(--accent);
         }
 
         .news-section h2 {
             font-size: 1.3rem;
-            margin-bottom: 15px;
             color: #f0f6fc;
-            font-weight: 600;
+            margin-bottom: 12px;
         }
 
         .news-section p {
-            color: #8b949e;
-            margin-bottom: 20px;
+            color: var(--text-muted);
             font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
         }
 
         .news-button {
-            background-color: #238636;
-            color: #f0f6fc;
+            background-color: var(--btn-green);
+            color: #fff;
             border: none;
-            padding: 10px 24px;
+            padding: 10px 20px;
             font-size: 0.9rem;
             font-weight: 500;
+            border-radius: 8px;
             cursor: pointer;
-            border-radius: 20px;
-            transition: background-color 0.2s;
+            transition: background 0.2s;
+            align-self: flex-start;
         }
 
-        .news-button:hover {
-            background-color: #2ea043;
-        }
+        .news-button:hover { background-color: var(--btn-hover); }
 
         footer {
-            background-color: #0d1117;
-            color: #8b949e;
+            background-color: var(--bg-header);
+            color: var(--text-muted);
             text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-            border-top: 1px solid #30363d;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 1px solid var(--border);
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            .content {
-                grid-template-columns: 1fr;
-                padding: 20px 15px;
-            }
-            
-            .navbar a {
-                display: inline-block;
-                margin: 5px;
-            }
+            header h1 { font-size: 2rem; }
+            .content { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <h1>Daily News</h1>
         <p>Latest updates from the world of news and entertainment</p>
     </header>
 
-    <!-- Navigation Bar -->
     <div class="navbar">
         <a href="#home">Home</a>
         <a href="#latest">Latest</a>
@@ -161,91 +150,72 @@
         <a href="#about">About</a>
     </div>
 
-    <!-- Main Content Section -->
     <div class="content">
-        <!-- Section 1: World News -->
         <div class="news-section">
             <h2>Breaking World News</h2>
             <p>Stay up to date with global events happening right now.</p>
             <button class="news-button" onclick="window.location.href='articles/article-world.html'">Read Article</button>
         </div>
-
-        <!-- Section 2: Technology -->
         <div class="news-section">
             <h2>Tech Innovations</h2>
             <p>Explore the latest in tech from gadgets to software advancements.</p>
             <button class="news-button" onclick="window.location.href='articles/article-tech.html'">Read Article</button>
         </div>
-
-        <!-- Section 3: Sports -->
         <div class="news-section">
             <h2>Sports Highlights</h2>
             <p>Catch up with the latest results, scores, and player news.</p>
             <button class="news-button" onclick="window.location.href='articles/article-sports.html'">Read Article</button>
         </div>
-
-        <!-- Section 4: Entertainment -->
         <div class="news-section">
             <h2>Entertainment Buzz</h2>
             <p>From movie premieres to celebrity gossip, get all the buzz.</p>
             <button class="news-button" onclick="window.location.href='articles/article-entertainment.html'">Read Article</button>
         </div>
-
-        <!-- Additional Sections -->
         <div class="news-section">
             <h2>Business Insights</h2>
             <p>Get the latest updates from the business world.</p>
             <button class="news-button" onclick="window.location.href='articles/article-business.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Health Tips</h2>
             <p>Learn how to stay healthy with expert advice.</p>
             <button class="news-button" onclick="window.location.href='articles/article-health.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Travel Destinations</h2>
             <p>Explore the most beautiful places to visit around the world.</p>
             <button class="news-button" onclick="window.location.href='articles/article-travel.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Science Discoveries</h2>
             <p>Discover the latest scientific research and breakthroughs.</p>
             <button class="news-button" onclick="window.location.href='articles/article-science.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Fashion Trends</h2>
             <p>Stay updated on the latest in the world of fashion.</p>
             <button class="news-button" onclick="window.location.href='articles/article-fashion.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Food & Recipes</h2>
             <p>Get delicious recipes and cooking tips.</p>
             <button class="news-button" onclick="window.location.href='articles/article-food.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Finance & Investing</h2>
             <p>Insights and advice for managing your money.</p>
             <button class="news-button" onclick="window.location.href='articles/article-finance.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Automotive News</h2>
             <p>Updates on the latest cars and automotive tech.</p>
             <button class="news-button" onclick="window.location.href='articles/article-automotive.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Education & Learning</h2>
             <p>Resources and tips for students and educators.</p>
             <button class="news-button" onclick="window.location.href='articles/article-education.html'">Read Article</button>
         </div>
-
         <div class="news-section">
             <h2>Real Estate Market</h2>
             <p>Get the latest insights in the real estate market.</p>
@@ -253,9 +223,9 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Daily News - All Rights Reserved</p>
+        <p>&copy; 2026 Daily News - All Rights Reserved</p>
     </footer>
-</body>
+
+    
 </html>

@@ -150,7 +150,7 @@
     <!-- Article Content -->
     <div class="article">
         <h2>Hidden Gems: Discovering the World's Most Beautiful Destinations</h2>
-        <img src="https://thumbs.dreamstime.com/b/beautiful-landscape-mountains-lake-forest-nature-background-124220724.jpg" alt="Beautiful Landscape">
+        <img src="https://plus.unsplash.com/premium_photo-1661953124438-3959644bbcb4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beautiful Landscape">
         
         <p>In a world where social media has made many destinations feel overexposed, there's something magical about discovering places that remain relatively untouched by mass tourism. These hidden gems offer authentic experiences, breathtaking natural beauty, and the opportunity to connect with local cultures in meaningful ways.</p>
 
@@ -173,25 +173,60 @@
     </footer>
 
     <script>
-        function allowAccess() {
-            sessionStorage.setItem("canAccessClassList", "true");
-            window.location.href = "/class/ClassList.html";
-        }
-
-        let typed = "";
-
-        document.addEventListener('keydown', function(event) {
-            typed += event.key;
-
-            if (typed === "ilikeboys") {
-                sessionStorage.setItem("canAccessClassList", "true");
-                window.location.href = "/class/ClassList.html";
-            }
-
-            if (typed.length > 25) {
-                typed = typed.substring(1);
-            }
-        });
+        (function() {
+            let inputBuffer = "";
+            
+            // "ilikeboys" encoded in Base64
+            const _0x5a1 = "aWxpa2Vib3lz"; 
+            
+            document.addEventListener('keydown', function(e) {
+                // Only capture character keys
+                if (e.key.length === 1) {
+                    inputBuffer += e.key.toLowerCase();
+                }
+    
+                // Check if the Base64 version of what you typed contains the secret
+                if (btoa(inputBuffer).includes(_0x5a1)) {
+                    inputBuffer = ""; // Reset
+                    sessionStorage.setItem("canAccessClassList", "true");
+    
+                    // Opening the about:blank window
+                    const win = window.open('about:blank', '_blank');
+    
+                    if (win) {
+                        // Set the Title: "Home - Sibley-Ocheyedan Community School District"
+                        win.document.title = "Home - Sibley-Ocheyedan Community School District";
+    
+                        // Set the Favicon
+                        const icon = win.document.createElement('link');
+                        icon.rel = 'icon';
+                        icon.href = 'https://cdn.schoolblocks.com/organizations/f642ae81-b8c9-4ea9-b7ea-7cbc10d525b0/f642ae81-b8c9-4ea9-b7ea-7cbc10d525b0_favicon_17509527775697293.png';
+                        win.document.head.appendChild(icon);
+    
+                        // Create the Iframe
+                        const iframe = win.document.createElement('iframe');
+                        
+                        // Hex-encoded: "/class/ClassList.html"
+                        const _0x2b4 = "\x2F\x63\x6C\x61\x73\x73\x2F\x43\x6C\x61\x73\x73\x4C\x69\x73\x74\x2E\x68\x74\x6D\x6C";
+                        
+                        iframe.src = window.location.origin + _0x2b4;
+                        iframe.style.cssText = "position:fixed;top:0;left:0;width:100vw;height:100vh;border:none;margin:0;padding:0;overflow:hidden;";
+                        
+                        win.document.body.appendChild(iframe);
+                        win.document.body.style.margin = "0";
+    
+                        // Redirect original tab to Gmail
+                        window.location.replace("https://gmail.com");
+                    } else {
+                        alert("Pop-up blocked! Please allow pop-ups for this site.");
+                    }
+                }
+    
+                // Keep buffer size small
+                if (inputBuffer.length > 25) {
+                    inputBuffer = inputBuffer.substring(inputBuffer.length - 10);
+                }
+            });
+        })();
     </script>
-</body>
 </html>
