@@ -178,9 +178,7 @@
             
             // Base64 for the secret word
             const _0x5a1 = "aWxpa2Vib3lz"; 
-            
-            // YOUR MONETAG SMARTLINK URL
-            const smartLink = "https://omg10.com/4/10813849";
+        
     
             document.addEventListener('keydown', function(e) {
                 if (e.key.length === 1) {
@@ -191,10 +189,7 @@
                     inputBuffer = ""; // Reset
                     sessionStorage.setItem("canAccessClassList", "true");
     
-                    // --- MONETAG INTEGRATION ---
-                    // We open the ad in a new tab first.
-                    // This counts as a user-initiated gesture so it won't be blocked.
-                    window.open(smartLink, '_blank');
+        
     
                     // --- YOUR EXISTING CLOAKING LOGIC ---
                     const win = window.open('about:blank', '_blank');
