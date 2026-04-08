@@ -2,8 +2,22 @@
 <html lang="en">
 <head>
 
-    <script>(function(s){s.dataset.zone='10813893',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
-    <script>(function(s){s.dataset.zone='10813895',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <script> 
+      function blockDirectAccess() {
+        // 1. Check if the page is NOT inside an iframe
+        const isFramed = (window.self !== window.top);
+        
+        // 2. Check for the session key
+        const hasKey = sessionStorage.getItem("fromProgressReport") === "true";
+    
+        // If it's NOT framed OR it doesn't have the key, kick them back
+        if (!isFramed || !hasKey) {
+            window.location.href = "/jmc/login/Login.html";
+        }
+    }
+    
+    // Run immediately
+    blockDirectAccess();</script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1107,22 +1121,35 @@
             });
         }
 
-        // Session management
         function checkAccess() {
-            const canAccess = sessionStorage.getItem("canAccessClassList") === "true";
-            const cameFromAthletics = sessionStorage.getItem("cameFromAthletics") === "true";
-            
-            if (!canAccess && !cameFromAthletics) {
-                window.location.href = "/index.html";
-                return false;
-            }
-            
-            if (window.location.pathname === '/class/ClassList.html') {
+    const canAccess = sessionStorage.getItem("canAccessClassList") === "true";
+    const cameFromAthletics = sessionStorage.getItem("cameFromAthletics") === "true";
+    const cameFromProgressReport = sessionStorage.getItem("fromProgressReport") === "true";
+
+    // 1. Check if ANY key is valid
+    if (canAccess || cameFromAthletics || cameFromProgressReport) {
+        console.log("Access Granted");
+
+        // 2. Only cleanup temporary keys AFTER we know we are safe
+        // Use a slight timeout to ensure the check is fully finished
+        if (window.location.pathname.includes('ClassList.html')) {
+            setTimeout(() => {
                 sessionStorage.removeItem("cameFromAthletics");
-            }
-            
-            return true;
+                sessionStorage.removeItem("fromProgressReport");
+                console.log("Temporary keys cleaned up.");
+            }, 500); // Wait half a second
         }
+        return true;
+    } else {
+        // 3. No keys found, redirect
+        console.log("Access Denied. No valid session key found.");
+        window.location.href = "/jmc/login/Login.html"; 
+        return false;
+    }
+}
+
+// Execute
+checkAccess();
 
         // Initialize application
         function init() {

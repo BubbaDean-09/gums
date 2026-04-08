@@ -1,0 +1,1148 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+@media Screen {
+	.PrintOnly {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media Print {
+	.ScreenOnly {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+/* AJAX controls */
+.ListSearchExtenderPrompt {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+	color: Black;
+	background-color: transparent;
+}
+
+/*Modal Popup*/
+
+.modalBackground {
+	background-color: #D3D3D3;
+	/* filter: alpha(opacity=70); */
+	/*opacity: 0.7; */
+}
+
+
+.modalPopup {
+	background-color: #F8F8FF;
+	border-width: 1px;
+	border-style: solid;
+	border-color: Black;
+	padding: 3px;
+	position: absolute;
+	top: -1000px;
+	/*	z-index:-1;*/
+}
+
+.rounded_corners {
+	height: 35px;
+	width: 160px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.CollapsiblePanelExtender {
+	font-weight: bold;
+	background-color: #eeeeee;
+	padding: 5px;
+	cursor: pointer;
+	border: solid 1px #c0c0c0;
+}
+
+.panel {
+	border-width: 1px;
+	border-style: solid;
+	border-color: Black;
+}
+
+.login_input {
+	width: 337px;
+	height: 17px;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	background: url('images/inputLogin_2.png') no-repeat left top;
+	color: Black;
+	padding: 5px;
+	font-weight: bold;
+	outline: none;
+}
+
+	.login_input:focus {
+		background: transparent url(images/inputLogin_2.png) no-repeat bottom left;
+		outline: none;
+	}
+
+.mlogin_input {
+	width: 320px;
+	height: 17px;
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	background: url('images/inputLogin_2.png') no-repeat left top;
+	color: Black;
+	padding: 5px;
+	font-weight: bold;
+	outline: none;
+}
+
+	.mlogin_input:focus {
+		background: transparent url(images/inputLogin_2.png) no-repeat bottom left;
+		outline: none;
+	}
+/* Rounded Corners */
+.smcheckbox {
+	font-family: Verdana;
+	font-size: 7pt;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+	text-align: left;
+}
+
+	.smcheckbox input {
+		height: 10px;
+		width: 10px;
+	}
+
+.checkbox {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+	text-align: left;
+}
+
+.checkboxlist {
+	font-family: Verdana;
+	font-size: 8pt;
+	/*font-weight: bold;*/
+	background-color: Transparent;
+	color: Black;
+	border-style: solid;
+	border-width: 1px;
+	border-color: Black;
+}
+
+.checkbox_gv {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+	text-align: left;
+}
+
+.roundedPanel {
+	width: 300px;
+	background-color: #5377A9;
+	color: white;
+	font-weight: bold;
+}
+
+.WaterMarkText {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: normal;
+	background-color: Transparent;
+	color: Gray;
+	background-color: white;
+}
+
+/* these can go on Label control */
+.data {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+}
+
+.data_underline {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+	text-decoration: underline;
+}
+
+/*
+.datalist
+{ 
+    font-family: Verdana;
+    font-size:  8pt;
+    font-weight: normal;
+    background-color: Transparent;
+    border-style: none;
+    color: Black;
+}
+*/
+
+.listbox {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	color: Black;
+}
+
+.dropdownlist {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	color: Black;
+}
+
+.dropdownlist_readonly {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	/* background-color: #FFFFE0; */
+	background-color: #D3D3D3;
+	color: Black;
+}
+
+.radiobuttonlist {
+	font-family: Verdana;
+	font-size: 8pt;
+	/*font-weight: bold;*/
+	background-color: Transparent;
+	color: Black;
+	border-style: solid;
+	border-width: 1px;
+	border-color: Black;
+}
+
+.radiobutton {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	color: Black;
+	text-align: right;
+}
+
+.gridview {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: white;
+	border-style: none;
+	color: Black;
+}
+
+.gridviewWithBorder {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: white;
+	border-style: solid;
+	color: Black;
+}
+
+.treeview {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+}
+
+/* these go on Label control */
+.label {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+}
+
+.label_nonbold {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+}
+
+.label_red {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: red;
+}
+
+.label_green {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: lime;
+}
+
+.label_white {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: white;
+}
+
+.label_small {
+	font-family: Verdana;
+	font-size: small;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+}
+
+.label_center {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.header {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+}
+
+.header_list {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+}
+
+.header_info {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Black;
+	text-decoration: underline;
+}
+
+.login_info {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: Transparent;
+	border-style: none;
+	color: White;
+}
+
+.linkbutton {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: transparent;
+	color: Blue;
+	text-decoration: none;
+}
+
+.button {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	text-align: center;
+	color: Black;
+	height: 20px;
+	background-color: #CEE3F6;
+	border-top-style: solid;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-bottom-width: 1px;
+	border-left-style: solid;
+	border-left-color: #1858B8;
+	border-left-width: 4px;
+	border-right-style: solid;
+	border-right-color: #000000;
+	border-right-width: 1px;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+}
+
+	.button:hover {
+		background-color: #2888D8;
+		border-top-color: #000000;
+		border-bottom-color: #000000;
+		border-left-color: #CC0000;
+		border-right-color: #000000;
+	}
+
+	.button[disabled] {
+		font-family: Verdana;
+		font-size: 8pt;
+		font-weight: bold;
+		text-align: left;
+		color: #AAAAAA;
+		height: 20px;
+		background-color: #EEEEEE;
+		border-top-style: solid;
+		border-top-color: #000000;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #000000;
+		border-bottom-width: 1px;
+		border-left-style: solid;
+		border-left-color: #888888;
+		border-left-width: 4px;
+		border-right-style: solid;
+		border-right-color: #000000;
+		border-right-width: 1px;
+	}
+
+.buttondisabled {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	text-align: left;
+	color: #AAAAAA;
+	height: 20px;
+	background-color: #EEEEEE;
+	border-top-style: solid;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-bottom-width: 1px;
+	border-left-style: solid;
+	border-left-color: #888888;
+	border-left-width: 4px;
+	border-right-style: solid;
+	border-right-color: #000000;
+	border-right-width: 1px;
+}
+
+.btn {
+	font-family: Verdana;
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	outline: none;
+	color: White;
+	background: url('images/bankButton.jpg');
+	height: 32px;
+	width: 116px;
+}
+
+@media print {
+	.hideWhenPrinting {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+.button_small {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Gray;
+	color: Black;
+	border-style: outset;
+	height: 30px;
+	width: 55px;
+}
+
+.textbox {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: white;
+	color: Black;
+	outline: none;
+	border-width: 1px;
+}
+
+.textbox:focus {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: white;
+	color: Black;
+	outline: none;
+	border-width: 1px;
+}
+
+.textbox_readonly {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	/* background-color: #FFFFE0; */
+	background-color: #D3D3D3;
+	color: Black;
+	outline: none;
+	border-width: 1px;
+}
+
+.textbox_login {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	background-color: white;
+	color: Black;
+	outline: none;
+}
+
+.link {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Blue;
+}
+
+.menulink {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: White;
+}
+
+.error {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: Transparent;
+	border-style: none;
+	color: Red;
+}
+
+.TabArea {
+	BORDER-RIGHT: black 1px solid;
+	BORDER-TOP: black 1px solid;
+	FONT-SIZE: x-small;
+	Z-INDEX: -25;
+	BORDER-LEFT: black 1px solid;
+	BORDER-BOTTOM: black 1px solid;
+	POSITION: absolute;
+	TOP: 42px;
+	HEIGHT: 600px;
+	BACKGROUND-COLOR: Transparent;
+}
+
+/*
+http://www.december.com/html/spec/color0.html
+
+http://www.w3schools.com/HTML/html_colornames.asp
+
+Blues:
+azure2 #E0EEEE
+aliceblue(SVG) #F0F8FF
+silver #E6E8FA
+quartz #D9D9F3
+
+neutrals:
+gray82 #D1D1D1
+*/
+
+oldBODY {
+	BACKGROUND-COLOR: #F8F8FF;
+	FONT-FAMILY: Verdana;
+	FONT-SIZE: .8em;
+	FONT-WEIGHT: normal;
+	LETTER-SPACING: normal;
+	TEXT-TRANSFORM: none;
+	WORD-SPACING: normal;
+}
+
+H1, H2, H3, H4, H5, TH, THEAD, TFOOT {
+	COLOR: #003366;
+}
+
+H1 {
+	font-family: Verdana;
+	font-size: 2em;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+H2 {
+	font-family: Verdana;
+	font-size: 1.75em;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+H3 {
+	font-family: Verdana;
+	font-size: 1.58em;
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: none;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+H4 {
+	font-family: Verdana;
+	font-size: 1.33em;
+	font-weight: 500;
+	text-decoration: none;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+H5, DT {
+	font-family: Verdana;
+	font-size: 1em;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+H6 {
+	font-family: Verdana;
+	font-size: .8em;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+TFOOT, THEAD {
+	font-size: 1em;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	font-family: Verdana;
+}
+
+TH {
+	vertical-align: baseline;
+	font-size: 1em;
+	font-weight: bold;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	font-family: Verdana;
+}
+
+
+A:link {
+	text-decoration: none;
+	color: #3333cc;
+}
+
+A:visited {
+	text-decoration: none;
+	color: #333399;
+}
+
+A:active {
+	text-decoration: none;
+	color: #333399;
+}
+
+A:hover {
+	text-decoration: underline;
+	color: #3333cc;
+}
+
+SMALL {
+	font-size: .7em;
+}
+
+BIG {
+	font-size: 1.17em;
+}
+
+BLOCKQUOTE, PRE {
+	font-family: Verdana;
+}
+
+
+UL LI {
+	list-style-type: square;
+}
+
+	UL LI LI {
+		list-style-type: disc;
+	}
+
+		UL LI LI LI {
+			list-style-type: circle;
+		}
+
+OL LI {
+	list-style-type: decimal;
+}
+
+OL OL LI {
+	list-style-type: lower-alpha;
+}
+
+OL OL OL LI {
+	list-style-type: lower-roman;
+}
+
+/*
+IMG 	{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 512px;
+	height: 84px;
+}
+*/
+
+body {
+	font-family: tahoma, helvetica, arial, sans-serif;
+	font-size: 10px;
+	color: #6f6f6f;
+}
+
+.reporttable {
+	font-family: Courier New, Courier, Monospace;
+	font-style: normal;
+}
+
+html, body, #wrapper, h1, #nav-top, #nav-top li, #nav-left, #nav-top li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	height: 669px;
+}
+
+th, td {
+	font-size: 11px;
+}
+
+/*
+img { border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	width: 121px;
+	height: 34px;
+}
+*/
+
+#wrapper {
+	position: relative;
+	width: 1024px;
+	height: 656px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+	background-image: url('images/testbg2.jpg');
+}
+
+h1, h2, h3 {
+	font-size: 11px;
+}
+
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+h3 {
+	padding: 4px 0 0 0;
+}
+
+p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+.block {
+	display: block;
+}
+
+.clear {
+	clear: both;
+	height: 1px;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+* html .clear {
+	margin-top: -5px;
+	margin-bottom: -4px;
+}
+
+.left {
+	float: left;
+	margin: 1px 8px 0px 0px;
+}
+
+.softright {
+	text-align: right;
+}
+
+.readmore {
+	text-align: right;
+}
+
+/* ***** */
+
+
+/* header */
+
+#header {
+	background: url(images/logobg.jpg) repeat-x;
+	position: relative;
+	width: 1350px;
+	margin-bottom: 0px;
+	height: 63px;
+}
+
+
+	/* 	background: url(images/leftlogo.jpg) repeat-x; */
+	#header div {
+		background: url(images/logobg.jpg) repeat-x;
+		position: absolute;
+		height: 63px;
+		width: 170px;
+		left: 5px;
+		right: -418px;
+	}
+
+
+		#header div div {
+			background: url(images/logo.jpg) repeat-x;
+			position: absolute;
+			height: 63px;
+			width: 168px;
+			left: 597px;
+		}
+
+			#header div div div {
+				background: url(images/logobg.jpg) repeat-x;
+				position: absolute;
+				height: 63px;
+				width: 191px;
+				left: 550px;
+				top: 0px;
+			}
+
+	#header .tr {
+		background: url(images/header_tr.gif) top right no-repeat;
+	}
+
+	#header .bl {
+		background: url(images/header_bl.gif) bottom left no-repeat;
+	}
+
+	#header .br {
+		background: url(images/header_br.jpg) bottom right no-repeat;
+		width: 100%;
+	}
+
+/* the story of two navs */
+
+#nav-top {
+	position: absolute;
+	top: 17px;
+	left: 252px;
+	color: #fff;
+}
+
+	#nav-top li {
+		display: inline;
+	}
+
+	#nav-top a {
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+		#nav-top a:hover {
+			text-decoration: underline;
+		}
+
+#nav-left {
+	position: absolute;
+	top: 66px;
+	left: 26px;
+}
+
+/* body */
+
+#body {
+}
+
+	#body h2 {
+		margin: 0 0 1.5em 0;
+	}
+
+	#body h3 {
+		margin: 0 0 0 0;
+	}
+
+	#body ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	#body li {
+		padding: 0;
+		margin: 0.8em 0;
+	}
+
+a {
+	color: #ce7210;
+}
+
+	a:hover {
+		color: #6f3f0b;
+	}
+
+#cap {
+	clear: both;
+	text-align: center;
+	background: url(images/bar_Bg.jpg) repeat-x;
+}
+
+	#cap div div {
+		padding: 5px 0;
+	}
+
+
+	#cap, #cap a {
+		color: #fff;
+	}
+
+		#cap div {
+			background: url(images/left_bar.jpg) no-repeat;
+			width: 100%;
+		}
+
+			#cap div div {
+				background: url(images/right_bar.jpg) top right no-repeat;
+				width: 100%;
+			}
+
+
+#leftNav {
+	float: left;
+	width: 189px;
+	margin-left: 12px;
+	padding: 25px 0;
+	display: inline;
+}
+
+	#leftNav div {
+		width: 184px;
+		margin-left: 3px;
+		padding: 5px 0;
+	}
+
+#loginFooter {
+	position: absolute;
+	left: 40%;
+	top: 120%;
+	margin-left: -150px;
+	margin-top: -150px;
+}
+
+#mainData {
+	position: absolute;
+	left: 47%;
+	top: 44%;
+	margin-left: -150px;
+	margin-top: -150px;
+	width: 358px;
+	height: 394px;
+}
+
+	#mainData p {
+		line-height: 1.5;
+	}
+
+	#mainData h3 {
+		font-size: 10px;
+	}
+
+
+#news {
+	float: right;
+	width: 190px;
+	padding: 25px 0;
+	margin-left: 5px;
+}
+
+	#news h3 {
+		font-size: 10px;
+	}
+
+		#news h3 a {
+			text-decoration: none;
+		}
+
+	#news p {
+		line-height: 1.5;
+	}
+
+	#news div {
+		width: 185px;
+		padding: 5px 0;
+		margin-left: 10px;
+	}
+
+		#news div div {
+			padding: 5px 0;
+		}
+
+
+.timed {
+	background: #5b96da url(images/support_bg.jpg) no-repeat;
+	color: #fff;
+	padding: 10px 10px 1.3em 71px;
+	margin: 2em 0;
+	border-bottom: 1px solid white;
+}
+
+	.timed .readmore {
+		margin-bottom: 0;
+	}
+
+	.timed h3 {
+		margin: 0;
+		padding: 0;
+		text-indent: -57px;
+	}
+
+	.timed a {
+		color: #fff;
+	}
+
+		.timed a:hover {
+			text-decoration: none;
+		}
+
+/* footer */
+
+#footer {
+	clear: both;
+	text-align: center;
+	background: url(images/barb_Bg.jpg) repeat-x;
+}
+
+	#footer div div {
+		padding-bottom: 22px;
+	}
+
+	#footer, #footer a {
+		color: #fff;
+	}
+
+		#footer div {
+			background: url(images/leftb_bar.jpg) no-repeat;
+			width: 100%;
+		}
+
+			#footer div div {
+				background: url(images/rightb_bar.jpg) top right no-repeat;
+				width: 100%;
+			}
+
+
+/*Password Streingth*/
+.Base {
+	display: inline-block;
+	font: 12px/18px "segoe ui",arial,sans-serif;
+	height: 20px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	width: 121px;
+	color: #fff;
+	border: 1px solid #333;
+}
+
+.L0 {
+	border: 0 none;
+}
+
+.L1 {
+	background-color: #ff3933;
+}
+
+.L5 {
+	background-color: #33cc00;
+}
+
+
+.PasswordStrengthIndicator {
+	display: inline-block;
+	font: 12px/18px "segoe ui",arial,sans-serif;
+	height: 25px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	border: 1px solid #333;
+}
+
+.no-close .ui-dialog-titlebar-close {
+	display: none;
+}

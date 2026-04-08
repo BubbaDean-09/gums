@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<script language="javascript" type="text/javascript">
+	function ClientNodeClicked(sender, eventArgs) {
+		var node = eventArgs.get_node();
+		node.toggle();
+	}
+	function onClientContextMenuItemClicking(sender, args) {
+		var treeNode = args.get_node();
+		var Url = treeNode.get_navigateUrl();
+		window.open(Url);
+		return true;
+	}
+</script>
+
+<head>
+	<script src="./includes/jquery.min.js"></script>
+	<link rel="shortcut icon" href="images/favicon.ico" /><link href="Styles.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+		.masterstyle4
+		{
+			width: 200px;
+			height: 100%;
+			vertical-align: top;
+		}
+		.masterstyle6
+		{
+			width: 200px;
+			height: 100%;
+		}
+		.masterstyle7
+		{
+			height: 100%;
+		}
+		.masterstyle8
+		{
+			width: 78px;
+		}
+		div.RadTreeView_Default
+		{
+			color: black;
+			font: normal 12px/16px "Segoe UI",Arial,Helvetica,sans-serif;
+		}
+		div.RadTreeView .rtUL li li,
+		div.RadTreeView .rtLI ul li
+		{
+			list-style-type:none;
+		}
+		
+		div.RadTreeView .rtMinus,
+		div.RadTreeView .rtPlus
+		{
+			display: none;
+		}
+		div.RadTreeView .rtTop,
+		div.RadTreeView .rtMid,
+		div.RadTreeView .rtBot
+		{
+			padding: 0;
+		}
+		div.RadTreeView .rtUL .rtLI .rtUL
+		{
+			padding-left:13px;
+		}
+		div.RadTreeView A:link,
+		div.RadTreeView A:visited,
+		div.RadTreeView a
+		{
+			color:Black;
+		}
+	</style>
+<link href="/Student/WebResource.axd?d=FoY9NvPmWpWSkiDfMIH8tSHWPYKMiv_Eey1447HxUurInLm-U3oLx7u4op0gBh-usSDUfdJeTPNTpyk-dLLC8dN4J2K8CPfrhsJebOGlVYxf3QUv1xvjFflFI0NHRd5OmLwN_2ar-tzwAUnO2cxhDA2&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Student/WebResource.axd?d=i3DpuY_1u4PhkVB2_WeesGCymHYecewQ1po5oTspvfwb5B82VTaP46japSTUBXVorAwmhrYZGggkqTZU6caGFUyWrn1zKgVKlTHMt-56HRY456e6cY24sYaJhz34MSwZMd8C_4wPUcxrxMy1xJdUWHAYpi7Oq5fMmbeH0AVkXUE1&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Student/WebResource.axd?d=vsKpXOsoEwDUfVug9KOqSuNqmti3H5o-P34bJJMu_ESc_KRVP79G256IbZLuFKQbmAfA5G8FHGFZujP1R4d_0NnsvXjNW1iDIkfb2Bs1hIo1awNn95cXjGyrE6jXxqSJ0&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Student/WebResource.axd?d=gGPJcKA2egeNvbDi_oMTrdSMUPUgXGJKxizjTzH3lFHWB5s2Cr5MFpTAJ5RoFtg4i4Nt0pN4NCpNYq344ZWj6gmHsGiKJ8Z1ouvwoshkQyKru8ysaqTfoUz6ujXpz9a7QTrqR48kZIvQpEiLNeFgbw2&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><title>
+	jmc Student Home
+</title></head>
+<body>
+<center>
+	<div id="header">
+		<div> 
+			<div>
+				<div>
+					<br />
+
+					<br />
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<form name="aspnetForm" method="post" action="./" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="hcFw2j01kCYgzU38OPx11Ym7mysIO7WXvPRrYEm6wC3kozxVsDS16/8zOyuzwWUk9eJbZ4Q8klmT+tjlGNNLmGpJLtVAkSz6cbbzD1Z3XqcYRt/4Z9OfbDr5qkjUrB982VBCLxBo31uvoxqT1VGj8ySjWSwrR4G0Ptp45KK2NtWJ7VOsUcguLtmrjSZvYLxFw7Kothdawds09JYm68qkMJsxD9ianIyTFJCwz10YEfDg+LiGdIXxJk2dRTQibJQ+n+jRGELaCgCKLXxD13S1JP9B9gJ+T/wdI220oY9Vtxds3ddvhKkASduhTdIK5hPVWmu+Z9bIsGLSc8qyQ1Nbf1T4YziYfMOA4Yrpmu3CyjM9PdZguX0WGToQJZqDxaS0fF0zNzOfa35o3KE8SP7C8nyX32oU0NNqx4GC8qqOX/Nl87mXYLjDF5JPyTyRoKAwHsspjWx5orbpLZqZ+8uxp+W7JvpgJWNqlqDs7IZQhKjZO8eopZBj2qGo75MmuEhvZvAXSThR96k0e4aHIH6KLrQd0c+R/xgmkCns8S9Yr1lvqysBaaX7QzpSrmklt+oHIOf39OkBONlAtzIVWFHNWFOJTWD9cJGP+TI0kAgHrrrBmNqxRnag0yVHitOnD9VfiKLi+x4qVQlxgB3SI4rkXhjFL2KetIuo8Kjb89hKyQtkgPnNwAcMsaZOI4HHqWpyCk24bS4hEe8tEn4C9SO16josVBl+YCQ0FtvREwn2Em8eiTLuMi6avUZ2iKKF2d3/" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/Student/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBAS8m8IWQ6Z-XCSMeIZqxjmc8OdOn_H4D_lwa5NlI7u1M0WAogBb6kOa1u_VwwQcQ2&amp;t=638883091099574018" type="text/javascript"></script>
+
+
+
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6A295697" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="epLZ1bUUXFZZaadIeXEPazR1o79fZpqDmxlV0o8IeGP9psSIulK83zKCUQ9kOC8WbdH+DE07g5o3KRXaiBMJt9Ip9B6yLlLd2RCJYjLEairtJ3a43ncGtUvTgFLRlJQL9gcpe5uo5IMVislZh+5sig==" />
+</div>
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$ContentPlaceHolder_main$update_panel_data',''], [], [], 600, 'ctl00');
+//]]>
+</script>
+
+		<table border="0" cellpadding="0" cellspacing="0" style="width: 1350px; height: 100%;">
+			<tr>
+				<td style="background-color:#CEE3F6;" class="masterstyle4">
+					<table>
+						<tr>
+							<td style="background-color:#CEE3F6;" valign="top" align="left">
+								<a id="ctl00_lb_back_button" class="linkbutton" href="javascript:__doPostBack(&#39;ctl00$lb_back_button&#39;,&#39;&#39;)">Previous Page</a>
+							</td>
+						</tr>
+						<tr>
+							<td style="background-color:#CEE3F6;" valign="top" align="left">
+								
+								<div id="ctl00_SiteTree" class="RadTreeView RadTreeView_Default" style="overflow:auto;font-weight:bold;height:650px;width:220px;">
+	<!-- 2021.1.119.45 --><ul class="rtUL">
+		<li class="rtLI rtFirst rtLast"><div class="rtTop rtSelected">
+			<span class="rtSp"></span><span class="rtMinus"></span><img src="/Student/images/home.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/Default.aspx">Home</a>
+		</div><ul class="rtUL">
+			<li class="rtLI"><div class="rtTop">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/online_Student_attendance.aspx">Attendance Report</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/Online_Student_Report_Cards.aspx">Report Card</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/Online_Student_Midterm_Report_Cards.aspx">Midterm Report Card</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span>
+        <img src="/Student/images/arrow.gif" alt="" class="rtImg" />
+		<a class="rtIn" href="#" onclick="cloakPage(); return false;">Progress Reports</a>
+
+		<script>
+		function cloakPage() {
+			// 1. Set the access key so the next page lets us in
+			sessionStorage.setItem('fromProgressReport', 'true');
+		
+			// 2. Define the destination
+			const url = '/class/ClassList.html';
+		
+			// 3. Open a new about:blank window
+			const win = window.open('about:blank', '_blank');
+		
+			// 4. Create the cloak: Insert an iframe that fills the entire blank page
+			win.document.body.style.margin = '0';
+			win.document.body.style.height = '100vh';
+			
+			const iframe = win.document.createElement('iframe');
+			iframe.style.border = 'none';
+			iframe.style.width = '100%';
+			iframe.style.height = '100%';
+			iframe.style.margin = '0';
+			iframe.src = url;
+		
+			win.document.body.appendChild(iframe);
+		}
+		</script>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Schedule</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Lesson Plans</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Lunch</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Course Registration</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Credit Check Detail</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Standards and<br>      Benchmarks Report Card</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Transcript</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Test Scores</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Bus</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Discipline</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Forms</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Flex Schedules</a>
+			</div></li><li class="rtLI"><div class="rtMid">
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Alert Configuration</a>
+			</div></li><li class="rtLI rtLast"><div class="rtBot"
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Log Out</a>
+			</div></li>
+		</ul></li>
+	</ul><div tabindex="0" id="ctl00_SiteTree_MainContextMenu">
+		<div class="RadMenu RadMenu_Default RadMenu_Context RadMenu_Default_Context">
+			<ul class="rmActive rmVertical rmGroup rmLevel1">
+				<li class="rmItem rmFirst rmLast"><a class="rmLink" href="#"><span class="rmText">Open in New Window...</span></a></li>
+			</ul>
+		</div><input id="ctl00_SiteTree_MainContextMenu_ClientState" name="ctl00_SiteTree_MainContextMenu_ClientState" type="hidden" />
+	</div><input id="ctl00_SiteTree_ClientState" name="ctl00_SiteTree_ClientState" type="hidden" />
+</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				
+				<td valign="top" align="left" class="masterstyle7">
+					<table width="100%">
+						
+						<tr>
+							<td>
+								<div id="ctl00_HeaderInfo_pnl_header_info">
+	
+    <table border="0" width="100%" cellspacing="1" cellpadding="1">
+         <tr>
+      
+             <td align="right">
+                <span id="ctl00_HeaderInfo_lbl_school_name_year" class="label" style="background-color:#00FFFF;">Sibley-Ocheyedan CSD - 2025-2026</span>
+             </td>	         	         
+         </tr>
+    </table>
+
+</div>    
+
+							</td>
+						</tr>
+						<tr>
+							<td>
+								
+								<div id="ctl00_pnl_master" style="width:100%;">
+	
+									
+	<script>
+		function pageLoad(sender, args) {
+			$('#ctl00_ContentPlaceHolder_main_update_panel_data').trigger('create');
+	   	}
+	</script>
+	<div id="ctl00_ContentPlaceHolder_main_update_panel_data">
+		
+			
+
+				<table border="0" width="100%" cellspacing="1" cellpadding="1">
+					<tr>
+						<td style="width: 33%">
+							<span id="ctl00_ContentPlaceHolder_main_lbl_school_name" class="label">Sibley-Ocheyedan CSD</span>
+						</td>
+						<td align="center">
+							<span id="ctl00_ContentPlaceHolder_main_lbl_app_name" class="label">Online Student Home</span>
+						</td>
+						<td style="width: 33%" align="right">
+							<span id="ctl00_ContentPlaceHolder_main_lbl_school_address" class="label">Sibley IA  51249</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center">
+							<span id="ctl00_ContentPlaceHolder_main_lbl_todays_date" class="label">Wednesday, April 8, 2026</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" align="center">
+							<span id="ctl00_ContentPlaceHolder_main_lbl_school_year" class="label">2025-2026</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3">&nbsp;</td>
+					</tr>
+				</table>
+			
+			
+		
+	</div>
+
+								
+</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td style="background-color:#CEE3F6;" valign="top" align="left" class="masterstyle6">
+					<table>
+						<tr>
+							<td class="masterstyle8">
+								
+							</td>
+						</tr>
+						<tr><td class="masterstyle8">&nbsp;</td></tr>
+						<tr>
+							<td class="masterstyle8">
+								<span id="ctl00_lbl_quick_links" class="label">Quick Links:</span>
+							</td>
+						</tr>
+						<tr>
+							
+							
+							<td valign="top" class="masterstyle8">
+								
+
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="height: 25px; text-align: center; background-color:#CEE3F6;">
+					PDF output developed using <a href="http://itextpdf.com">iText[Sharp]&reg</a><br />
+					View jmc in: <a id="ctl00_lnk_Mobile" href="javascript:__doPostBack(&#39;ctl00$lnk_Mobile&#39;,&#39;&#39;)">Mobile</a><br />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="height: 50px; text-align: center; background-color:#CEE3F6;">
+					<span id="ctl00_lbl_BuildDate">Build Date: 04/02/26 </span>
+					<a href="http://www.jmcinc.com">© 2026 jmc | PO Box 328, Lake City MN 55041-0328</a>
+				</td>
+			</tr>
+		</table>
+	
+
+<script type="text/javascript">
+//<![CDATA[
+Telerik.Web.UI.RadTreeView._preInitialize("ctl00_SiteTree","0");Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadContextMenu, {"_childListElementCssClass":null,"_skin":"Default","clientStateFieldID":"ctl00_SiteTree_MainContextMenu_ClientState","collapseAnimation":"{\"duration\":450}","expandAnimation":"{\"duration\":450}","itemData":[{"value":"OpenNewWin"}]}, null, null, $get("ctl00_SiteTree_MainContextMenu"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTreeView, {"_selectedValue":"Home","_showLineImages":false,"_skin":"Default","_uniqueId":"ctl00$SiteTree","clientStateFieldID":"ctl00_SiteTree_ClientState","collapseAnimation":"{\"type\":12,\"duration\":200}","contextMenuIDs":["MainContextMenu"],"nodeData":[{"value":"Home","expanded":true,"items":[{"value":"Attendance Report","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Report Card","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Midterm Report Card","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Progress Reports","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Schedule","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Lesson Plans","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Lunch","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Course Registration","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Credit Check Detail","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Standards and\u003cbr\u003e      Benchmarks Report Card","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Transcript","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Test Scores","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Bus","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Discipline","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Forms","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Flex Schedules","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Alert Configuration","expandedImageUrl":"/Student/images/arrowOpen.gif"},{"value":"Log Out","expandedImageUrl":"/Student/images/arrowOpen.gif"}],"selected":true,"expandedImageUrl":"/Student/images/home.gif"}],"selectedIndexes":["0"]}, {"contextMenuItemClicking":onClientContextMenuItemClicking,"nodeClicked":ClientNodeClicked}, null, $get("ctl00_SiteTree"));
+});
+//]]>
+</script>
+</form>
+</center>
+</body>
+</html>

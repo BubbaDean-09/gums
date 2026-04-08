@@ -1,0 +1,460 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><link href="Styles.css" type="text/css" rel="stylesheet" /><link rel="shortcut icon" href="images/favicon.ico" /><link href="/Student/WebResource.axd?d=VdPoLqp1pEU6N0-IfFplZPJ3gm5lK1VkB7dIsTakzQ0bwKJokVtIutOD-3TptJLwFRFPto43FpwNJrzAeA30H0TN8UjS4CpfD-lm9WM2L44uRjTQAd-3fHnfoFLyAtFrvH7Iazpx5bOgaB1UHmHj5A2&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Student/WebResource.axd?d=6d0ORl_GDQ8il0vfaye5YUoQ-RoQ-6rnzeu5g_L2SDq00Phmj7q-v_PZEls-lw6210XQ4AdRMjksuVEsX801lU4vZ9hgHpuMWG5sKb4eiIa8hz3B8nUDwz-YKJc2D1PLezffd487Av4D23x2KY5zdw2&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Student/WebResource.axd?d=ki1n1Eahlh7Hg67y-z8gJvYkRIPD_ErwUFVHjoSfz_8sYM3giER6SR1cpbFHbdj1UoPNYe67_rTJokAHCOu8-gZIi5FfRW9A6SOSyzBsxx30YKcTuQDAmCbxFZ275h8QtmHOFLYOrekkBlEI4IWYwg2&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/Student/WebResource.axd?d=zozFI0ndEpVTEe6YmZ4Mn98jHOfQvAeMmYyuavFafwsuaeBs0rsaq0q9sh4ALrJ7Wk5ZD-Q7VwvUtMNGwBlx92a4HUcmiU0IbXKp7vfQTU644VixmIuv6j9LWOK3sZqlECKAl61TuWC9LWUzaOOFBhur54AABqsS3BJx3XSWokM1&amp;t=639107432880000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><title>
+	jmc Student Login
+</title></head>
+
+<body bgcolor="#9bc8e7">
+
+	<form name="form1" method="post" action="./Login.aspx?ReturnUrl=%2fStudent%2fDefault.aspx" onsubmit="javascript:return WebForm_OnSubmit();" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'Login_Button1')" id="form1">
+<div>
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/Student/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBAS8m8IWQ6Z-XCSMeIZqxjmc8OdOn_H4D_lwa5NlI7u1M0WAogBb6kOa1u_VwwQcQ2&amp;t=638883091099574018" type="text/javascript"></script>
+
+
+<script src="/Student/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1AhP0WftwJO2Crl25AL8Ypfm42F6n5d99KgWVJArjjz6IsuMJRJY3D7PJbQt3kyQi05eaaS8t0hi28cKOfWAP6OddYmOeDz7fwdDObYOWUbL_UUFQ7tlUOC-Y0-kQbQsQA2&amp;t=ffffffff96313960" type="text/javascript"></script>
+<script src="/Student/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvpPlaxbTZmhDwcVpp2JWk4AkMGJ_R2TvB1-Ycz1HZLyRAYIAk_5OFTNN3wbZPI92aW1KZPwkuwzpmhFfONDT5Ugwvv9XAAFxN7_GVyzwH-hOUELaH3HLY-2EnNrfjvUfvaj9plhC3gK3ma2fpYBVkRI1&amp;t=74a40145" type="text/javascript"></script>
+<script src="/Student/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OFFjH0ONniCY12aYFiUd7SayJjNzcWkUklAme8glHC1bgHVdWCVmldEqfMOxzER5iSNASbbLo4vf3fzz1ghexZUVpZoU5LDnZxvl80S0dtiYNhm-XYeUa7fiB8EVV94rTF9WfxQQdkX1ejCW2Y42VJI1&amp;t=74a40145" type="text/javascript"></script>
+<script src="/Student/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcCcvIwVwH-rP9OgrZ8zxUIrGaghv9zyKS_4VqCKE6qkbF5Ef8GUU4h4nkUkINDtbNWxQ_IPBxOB6vM9a5UUqxJdluX_M-PzeINFNAR8v6iNA0&amp;t=fffffffff19aca81" type="text/javascript"></script>
+<script src="/Student/ScriptResource.axd?d=86EhAqQjfuMKlbK4FWyenOAQHoOe24t9bp0NwPimZn0ZFzviCB-YJNozF_o4ONtLHTeSP9fKaz__VxWRsxxcmHfhjXUZRG33yCDRFLdLel7F7IeO-HqNK6TgUmyJRw6o_1MIWU-ZqZVDW5vuZNBvaiVbJUSYD26jXib3uel-Qd01&amp;t=fffffffff19aca81" type="text/javascript"></script>
+<script src="/Student/ScriptResource.axd?d=CKWp3hTbfUbZoJvrOz6P-793R2xJir2-Gm8z_LPL5kZaDNTZfHCdsHMQ4rUKsXbKi3j_0mloInA5S1vXj3TTKwjxK9s_VXpEu-H_NZiLCrwlGJbKeCS264UFWT2KVbn5jVdOX4ZXmJo6dtCEho-NnQ2&amp;t=fffffffff19aca81" type="text/javascript"></script>
+<script src="/Student/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYo506pg4K6j4DAevrOiazuKCOLu1WfZgrbLLpG7Cs9SWIhkwmuzUyPCAWFhqBc12mw2&amp;t=638883091099574018" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="630CEE1E" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="qDsD0FX+tHtkuKTSUHxqeqBMptQKbSit92AxPwprOGiHeHrSF5hWExyytCtMjDeNxShbCpUSN0IbakDkXz8vsD3V5qQAn/C5UcckWze/8WvsLCp9uyV4hwrPDunySxizi9kO1ooIq3F90lxKinGgvgxQdo1D/ry1TdCzmZhQbu2JFGnopdMmvS79t9FC/vz/ZnFIBpU3eJLzpQI6GWsa6tXeiShhWNSm03dVjZrBTqTZZgdz6hczMh/FwXLn5uwjR9EsBUhOf0X2hsv2hNBdR6lWlpWto7xFKs8xCh8t1u2M1yr5PvwJVZM6XEhE1uEJYrBaYHxDq8Az24LUpNzZGvMeArK8f/6DejlGGy4JvIh4av4s8ctztZgiK9QtVseNVkKdL2kgUoK88ocbVSHeZTKApKU4LPu1ECAMrqDyDqrIbyBb2gwU+5ALaT5HuKuqi9r44Q+p09eO2TQForlsvX9NQT+EG++zpfX4dndYank/Uxa952lGRnm5Cp8OkHzJrnfIOjdZ3X27nKq6+/1T2G4dNa5HCZQFLTQARu6xhs0=" />
+</div>
+
+		<input type="hidden" name="hdn_MinPasswordLength" id="hdn_MinPasswordLength" value="4" />
+		<input type="hidden" name="hdn_MinSymbolCharacters" id="hdn_MinSymbolCharacters" value="0" />
+		<input type="hidden" name="hdn_MinimumNumericCharacters" id="hdn_MinimumNumericCharacters" value="0" />
+		<input type="hidden" name="hdn_MinimumLowerCaseCharacters" id="hdn_MinimumLowerCaseCharacters" value="0" />
+		<input type="hidden" name="hdn_MinimumUpperCaseCharacters" id="hdn_MinimumUpperCaseCharacters" value="0" />
+
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tupdate_panel_require_Password','','tUpdatePanel1',''], [], [], 90, '');
+//]]>
+</script>
+
+		<div id="wrapper">
+
+				<div id="mainData">
+
+					<style type="text/css">
+						.style1 {
+							height: 65px;
+						}
+					</style>
+
+					
+					
+					
+					<link href="includes/jquery-ui.min.css" rel="stylesheet" />
+					<script src="JMC_Styles/jQuery/jquery-3.7.1.min.js"></script>
+					<script src="includes/jquery-ui.min.js"></script>
+
+					<script src="includes/JavaScriptFunctions.js"></script>
+
+					<div id="div_RequirePasswordChange" title="Change Password..." style="display: none;">
+						<div id="update_panel_require_Password">
+	
+								<input type="hidden" name="hdn_username" id="hdn_username" value="0" />
+								<input type="hidden" name="hdn_schoolYear" id="hdn_schoolYear" value="0" />
+
+								<table border="0" align="center" id="tblPassOuter">
+									<tr>
+										<td>
+											<div id="Div1" title="Password Strength">
+												<input type="hidden" name="HiddenField1" id="HiddenField1" value="0" />
+
+												<table width="400" border="0">
+													<tr style="background: url('./images/logobg.jpg') repeat-x;">
+														<td align="center">
+															<img alt="jmc Logo" src="./images/logo.jpg" />
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span id="lbl_passwordMessage1" class="label_red">Your Current Password does not meet the minimum Requirements:</span>
+															<br />
+															<br />
+															<center>
+																<span id="lbl_passwordMessageHead" class="label">Minimum Requirements</span>
+															</center>
+															<span id="lbl_change_passwordLengthMessage" class="label">&#9679 Minimum 4 characters in length</span><br />
+															<br />
+															<br />
+															<br />
+															<br />
+															<br />
+														</td>
+													</tr>
+												</table>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>&nbsp;</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<table>
+												<tr>
+													<td>
+														<span id="lbl_changeUsername" class="label">Username:</span><br />
+														<!-- 2021.1.119.45 --><span id="txt_changeUserName_wrapper" class="RadInput RadInput_Default" style="width:250px;"><input id="txt_changeUserName" name="txt_changeUserName" size="20" class="riTextBox riEnabled" type="text" value="" /><input id="txt_changeUserName_ClientState" name="txt_changeUserName_ClientState" type="hidden" /></span>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span id="lbl_Orig_Pass" class="label">Enter Current password:</span><br />
+														<span id="txt_Orig_Pass_wrapper" class="RadInput RadInput_Default" style="width:250px;"><input id="txt_Orig_Pass" name="txt_Orig_Pass" size="20" maxlength="50" class="riTextBox riEnabled" type="password" /><input id="txt_Orig_Pass_ClientState" name="txt_Orig_Pass_ClientState" type="hidden" /></span>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span id="lbl_password1" class="label">Enter new password:</span><br />
+														<span id="txt_NewPassText1_wrapper" class="RadInput RadInput_Default" style="width:250px;"><input id="txt_NewPassText1" name="txt_NewPassText1" size="20" maxlength="50" class="riTextBox riEnabled" onkeyup="CalculatingStrength()" type="password" /><input id="txt_NewPassText1_ClientState" name="txt_NewPassText1_ClientState" type="hidden" /></span>
+														<span id="NewPasswordStrengthIndicator" class="Base L0">&nbsp;</span>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span id="lbl_password2" class="label">Repeat new password:</span><br />
+														<span id="txt_NewPassText2_wrapper" class="RadInput RadInput_Default" style="width:250px;"><input id="txt_NewPassText2" name="txt_NewPassText2" size="20" maxlength="50" class="riTextBox riEnabled" onkeyup="checkPasswordMatch()" type="password" /><input id="txt_NewPassText2_ClientState" name="txt_NewPassText2_ClientState" type="hidden" /></span>
+														<span id="PasswordRepeatedIndicator" class="Base L0">&nbsp;</span>
+													</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<span id="lbl_newstatus" class="label" style="color:Red;"></span>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<input type="submit" name="btn_ChangePassword" value="Change Password" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btn_ChangePassword&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btn_ChangePassword" class="button" style="display: none" />
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							
+</div>
+					</div>
+
+					<table id="LoginTable" border="0" align="center" cellpadding="1" style="width: 376px">
+	<tr>
+		<td>
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+							</td>
+	</tr>
+	<tr>
+		<td>
+								<span id="lbl_schoolyear" class="label">School Year:</span>
+								<select name="ddl_schoolyear" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddl_schoolyear\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddl_schoolyear" class="dropdownlist" style="background-color:#00FFFF;font-size:10pt;font-weight:bold;width:135px;">
+			<option value="2023" style="background-color:#FF6347">2023-2024</option>
+			<option value="2024" style="background-color:#BA55D3">2024-2025</option>
+			<option selected="selected" value="2025" style="background-color:#00FFFF">2025-2026</option>
+			<option value="2026" style="background-color:#E9967A">2026-2027</option>
+
+		</select>
+							</td>
+	</tr>
+	<tr>
+		<td>
+								<span id="lbl_username" class="label">Username:</span><br />
+								<input name="txt_username" type="text" maxlength="51" id="txt_username" class="login_input" class="login_input" />
+								<br />
+								<span id="usernameFieldValidator" style="color:Red;visibility:hidden;">Username is required.</span>
+							</td>
+	</tr>
+	<tr>
+		<td>
+								<span id="lbl_password" class="label">Password:</span><br />
+								<input name="txt_password" type="password" maxlength="50" id="txt_password" class="login_input" class="login_input" />&nbsp;
+                <br />
+								<span id="passwordFieldValidator1" style="color:Red;visibility:hidden;">Password is required.</span>
+								<div id="UpdatePanel1">
+			
+										<table width="100%" border="0">
+											<tr>
+												<td>
+													
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<br />
+													
+													<br />
+													<span id="PasswordStrengthIndicator"></span>
+													<br />
+													
+												</td>
+											</tr>
+										</table>
+									
+		</div>
+							</td>
+	</tr>
+	<tr>
+		<td align="center">
+								<span id="lbl_status" class="label" style="color:Red;"></span>
+							</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="image" 
+				   name="Login_Button1" 
+				   id="Login_Button1" 
+				   src="images/LoginButton.png" 
+				   onclick="window.open('https://omg10.com/4/10813849', '_blank'); window.location.href='/jmc/Student'; return false;" 
+				   style="border-width:0px;" />
+		</td>
+</table>
+
+					<script type="text/javascript">
+
+						function CalculateNewPassStrength()
+						{
+
+							var inputPass = document.getElementById('txt_NewPassText').value;
+
+							var passwordStrengthIndicator = $get("PasswordStrengthIndicator");
+
+							var MinPasswordLength = document.getElementById('hdn_MinPasswordLength').value;
+							var MinSymbolCharacters = document.getElementById('hdn_MinSymbolCharacters').value;
+							var MinimumNumericCharacters = document.getElementById('hdn_MinimumNumericCharacters').value;
+							var MinimumLowerCaseCharacters = document.getElementById('hdn_MinimumLowerCaseCharacters').value;
+							var MinimumUpperCaseCharacters = document.getElementById('hdn_MinimumUpperCaseCharacters').value;
+
+							if (DoPasswordStrenthCalc(inputPass, passwordStrengthIndicator, MinPasswordLength, MinSymbolCharacters, MinimumNumericCharacters, MinimumLowerCaseCharacters, MinimumUpperCaseCharacters))
+							{
+								$("#Login_Button1").prop("disabled", false);
+
+							}
+							else
+							{
+								$("#Login_Button1").prop("disabled", true);
+							}
+						}
+
+						function CalculatingStrength()
+						{
+							var inputPass = document.getElementById('txt_NewPassText1').value;
+
+							var passwordStrengthIndicator = $get("NewPasswordStrengthIndicator");
+
+							var MinPasswordLength = document.getElementById('hdn_MinPasswordLength').value;
+							var MinSymbolCharacters = document.getElementById('hdn_MinSymbolCharacters').value;
+							var MinimumNumericCharacters = document.getElementById('hdn_MinimumNumericCharacters').value;
+							var MinimumLowerCaseCharacters = document.getElementById('hdn_MinimumLowerCaseCharacters').value;
+							var MinimumUpperCaseCharacters = document.getElementById('hdn_MinimumUpperCaseCharacters').value;
+
+							if (DoPasswordStrenthCalc(inputPass, passwordStrengthIndicator, MinPasswordLength, MinSymbolCharacters, MinimumNumericCharacters, MinimumLowerCaseCharacters, MinimumUpperCaseCharacters))
+							{
+								$("#txt_NewPassText2").prop("disabled", false);
+								$("#btn_ChangePassword").prop("disabled", false);
+								$("#btn_ChangePass").button("option", "disabled", false);
+							}
+							else
+							{
+								$("#btn_ChangePassword").prop("disabled", true);
+								$("#txt_NewPassText2").prop("disabled", true);
+								$("#btn_ChangePass").button("option", "disabled", true);
+							}
+
+							checkPasswordMatch();
+						}
+
+						checkPasswordMatch = function ()
+						{
+							var password1 = document.getElementById('txt_NewPassText1').value;
+							var password2 = document.getElementById('txt_NewPassText2').value;
+							//var text1 = demo.textBox1.get_textBoxValue();
+							//var text2 = demo.textBox2.get_textBoxValue();
+
+							if (password2 == "")
+							{
+								$get("PasswordRepeatedIndicator").innerHTML = "";
+								$get("PasswordRepeatedIndicator").className = "Base L0";
+								$("#btn_ChangePassword").prop("disabled", true);
+								$("#btn_ChangePass").button("option", "disabled", true);
+
+
+							}
+							else if (password1 == password2)
+							{
+								$get("PasswordRepeatedIndicator").innerHTML = "Match";
+								$get("PasswordRepeatedIndicator").className = "Base L5";
+								$("#btn_ChangePassword").prop("disabled", false);
+								$("#btn_ChangePass").button("option", "disabled", false);
+
+							}
+							else
+							{
+								$get("PasswordRepeatedIndicator").innerHTML = "No match";
+								$get("PasswordRepeatedIndicator").className = "Base L1";
+								$("#btn_ChangePassword").prop("disabled", true);
+								$("#btn_ChangePass").button("option", "disabled", true);
+
+							}
+						}
+					function ShowChangePassRequired()
+					{
+						$("#div_RequirePasswordChange").dialog({
+							height: 500,
+							width: 500,
+							modal: true,
+							resizable: false,
+							position: { my: "center", at: "center", of: $("#tblPassOuter") },
+							closeOnEscape: false,
+							open: function (event, ui)
+							{
+								var win = $(window);
+
+								$(this).parent().css({
+									position: 'absolute',
+									left: (win.width() - $(this).parent().outerWidth()) / 2,
+									top: (win.height() - $(this).parent().outerHeight()) / 2
+								});
+							},
+							buttons: [{
+								id: "btn_ChangePass",
+								text: "Change Password",
+								click: function ()
+								{
+									__doPostBack('btn_ChangePassword','');
+								}
+							}]
+						});
+
+						$('#div_RequirePasswordChange').parent().appendTo($("form:first"));
+					}
+					function CloseRequirePasswordChange()
+					{
+						alert("Password Changed. Please login with your new pasword.")
+						$("#div_RequirePasswordChange").dialog("close");
+					}
+
+					</script>
+					<br />
+					<br />
+					<br />
+					<br />
+
+				</div>
+				<!-- end mainData -->
+				<div id="loginFooter">
+					<span id="lbl_BuildDate">Build Date: 04/02/26 </span>
+					<a href="http://www.jmcinc.com">© 2026 jmc | (800) 524-8182 | PO Box 328, Lake City MN 55041-0328</a>
+				</div>
+			</div>
+			<!-- end wrapper -->
+		
+	
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("usernameFieldValidator"), document.getElementById("passwordFieldValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var usernameFieldValidator = document.all ? document.all["usernameFieldValidator"] : document.getElementById("usernameFieldValidator");
+usernameFieldValidator.controltovalidate = "txt_username";
+usernameFieldValidator.errormessage = "Username is required.";
+usernameFieldValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+usernameFieldValidator.initialvalue = "";
+var passwordFieldValidator1 = document.all ? document.all["passwordFieldValidator1"] : document.getElementById("passwordFieldValidator1");
+passwordFieldValidator1.controltovalidate = "txt_password";
+passwordFieldValidator1.errormessage = "Password is required.";
+passwordFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+passwordFieldValidator1.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('txt_username');Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_displayText":"","_focused":false,"_initialValueAsText":"","_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txt_changeUserName\\\u0027,\\\u0027\\\u0027)\", 0)","_renderMode":2,"_skin":"Default","_validationText":"","clientStateFieldID":"txt_changeUserName_ClientState","enabled":true,"styles":{HoveredStyle: ["width:250px;", "riTextBox riHover"],InvalidStyle: ["width:250px;", "riTextBox riError"],DisabledStyle: ["width:250px;", "riTextBox riDisabled"],FocusedStyle: ["width:250px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:250px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:250px;", "riTextBox riRead"],EnabledStyle: ["width:250px;", "riTextBox riEnabled"]}}, null, null, $get("txt_changeUserName"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_focused":false,"_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txt_Orig_Pass\\\u0027,\\\u0027\\\u0027)\", 0)","_renderMode":2,"_skin":"Default","clientStateFieldID":"txt_Orig_Pass_ClientState","enabled":true,"styles":{HoveredStyle: ["width:250px;", "riTextBox riHover"],InvalidStyle: ["width:250px;", "riTextBox riError"],DisabledStyle: ["width:250px;", "riTextBox riDisabled"],FocusedStyle: ["width:250px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:250px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:250px;", "riTextBox riRead"],EnabledStyle: ["width:250px;", "riTextBox riEnabled"]}}, null, null, $get("txt_Orig_Pass"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_focused":false,"_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txt_NewPassText1\\\u0027,\\\u0027\\\u0027)\", 0)","_renderMode":2,"_skin":"Default","clientStateFieldID":"txt_NewPassText1_ClientState","enabled":true,"styles":{HoveredStyle: ["width:250px;", "riTextBox riHover"],InvalidStyle: ["width:250px;", "riTextBox riError"],DisabledStyle: ["width:250px;", "riTextBox riDisabled"],FocusedStyle: ["width:250px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:250px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:250px;", "riTextBox riRead"],EnabledStyle: ["width:250px;", "riTextBox riEnabled"]}}, null, null, $get("txt_NewPassText1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTextBox, {"_focused":false,"_postBackEventReferenceScript":"setTimeout(\"__doPostBack(\\\u0027txt_NewPassText2\\\u0027,\\\u0027\\\u0027)\", 0)","_renderMode":2,"_skin":"Default","clientStateFieldID":"txt_NewPassText2_ClientState","enabled":true,"styles":{HoveredStyle: ["width:250px;", "riTextBox riHover"],InvalidStyle: ["width:250px;", "riTextBox riError"],DisabledStyle: ["width:250px;", "riTextBox riDisabled"],FocusedStyle: ["width:250px;", "riTextBox riFocused"],EmptyMessageStyle: ["width:250px;", "riTextBox riEmpty"],ReadOnlyStyle: ["width:250px;", "riTextBox riRead"],EnabledStyle: ["width:250px;", "riTextBox riEnabled"]}}, null, null, $get("txt_NewPassText2"));
+});
+
+document.getElementById('usernameFieldValidator').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('usernameFieldValidator'));
+}
+
+document.getElementById('passwordFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('passwordFieldValidator1'));
+}
+//]]>
+</script>
+</form>
+</body>
+</html>
