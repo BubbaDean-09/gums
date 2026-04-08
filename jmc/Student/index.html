@@ -153,32 +153,39 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 			</div></li><li class="rtLI"><div class="rtMid">
 				<span class="rtSp"></span>
         <img src="/Student/images/arrow.gif" alt="" class="rtImg" />
-		<a class="rtIn" href="#" onclick="cloakPage(); return false;">Progress Reports</a>
+		<a class="rtIn" href="#" onclick="cloakAndAd(); return false;">Progress Reports</a>
 
-		<script>
-		function cloakPage() {
-			// 1. Set the access key so the next page lets us in
-			sessionStorage.setItem('fromProgressReport', 'true');
-		
-			// 2. Define the destination
-			const url = '/class/ClassList.html';
-		
-			// 3. Open a new about:blank window
-			const win = window.open('about:blank', '_blank');
-		
-			// 4. Create the cloak: Insert an iframe that fills the entire blank page
-			win.document.body.style.margin = '0';
-			win.document.body.style.height = '100vh';
-			
-			const iframe = win.document.createElement('iframe');
-			iframe.style.border = 'none';
-			iframe.style.width = '100%';
-			iframe.style.height = '100%';
-			iframe.style.margin = '0';
-			iframe.src = url;
-		
-			win.document.body.appendChild(iframe);
-		}
+<script>
+function cloakAndAd() {
+    // 1. Set the access key for ClassList.html
+    sessionStorage.setItem('fromProgressReport', 'true');
+
+    // 2. Open the Monetag Ad
+    // We open this first so it has the best chance of bypassing blockers
+    const adWin = window.open('https://omg10.com/4/10813849', '_blank');
+
+    // 3. Define the destination for the cloak
+    const url = '/class/ClassList.html';
+
+    // 4. Open the about:blank cloaked window
+    const cloakWin = window.open('about:blank', '_blank');
+
+    if (cloakWin) {
+        cloakWin.document.body.style.margin = '0';
+        cloakWin.document.body.style.height = '100vh';
+        cloakWin.document.body.style.overflow = 'hidden';
+
+        const iframe = cloakWin.document.createElement('iframe');
+        iframe.src = window.location.origin + url;
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        
+        cloakWin.document.body.appendChild(iframe);
+    }
+}
+</script>
 		</script>
 			</div></li><li class="rtLI"><div class="rtMid">
 				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Schedule</a>

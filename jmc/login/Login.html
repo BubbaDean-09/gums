@@ -247,24 +247,11 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tupdate
 	<tr>
 		<td>
 			<input type="image" 
-       name="Login_Button1" 
-       id="Login_Button1" 
-       src="images/LoginButton.png" 
-       onclick="triggerLoginFlow(); return false;" 
-       style="border-width:0px;" />
-
-<script>
-function triggerLoginFlow() {
-    // 1. Open the Monetag ad first
-    window.open('https://omg10.com/4/10813849', '_blank');
-
-    // 2. Wait 200-300 milliseconds before redirecting
-    // This gives the browser enough time to "hand off" the ad window
-    setTimeout(function() {
-        window.location.href = '/jmc/Student';
-    }, 250); 
-}
-</script>
+				   name="Login_Button1" 
+				   id="Login_Button1" 
+				   src="images/LoginButton.png" 
+				   onclick="window.location.href='/jmc/Student'; return false;" 
+				   style="border-width:0px;" />
 		</td>
 </table>
 
