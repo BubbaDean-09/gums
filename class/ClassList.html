@@ -2,23 +2,7 @@
 <html lang="en">
 <head>
 
-    <script> 
-      function blockDirectAccess() {
-        // 1. Check if the page is NOT inside an iframe
-        const isFramed = (window.self !== window.top);
-        
-        // 2. Check for the session key
-        const hasKey = sessionStorage.getItem("fromProgressReport") === "true";
     
-        // If it's NOT framed OR it doesn't have the key, kick them back
-        if (!isFramed || !hasKey) {
-            window.location.href = "/jmc/login/Login.html";
-        }
-    }
-    
-    // Run immediately
-    blockDirectAccess();</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearningAlly Audiobooks</title>
@@ -1122,32 +1106,29 @@
         }
 
         function checkAccess() {
-    const canAccess = sessionStorage.getItem("canAccessClassList") === "true";
-    const cameFromAthletics = sessionStorage.getItem("cameFromAthletics") === "true";
-    const cameFromProgressReport = sessionStorage.getItem("fromProgressReport") === "true";
+    // 1. We only care about one thing: Is the user authorized?
+    const isAuthorized = sessionStorage.getItem("canAccessClassList") === "true";
+    
+    // 2. The "Safe Zone" 
+    // Always allow the user to stay on the Progress Reports page regardless of status
+    if (window.location.pathname.includes('ProgressReports.html')) {
+        console.log("Safe Zone: Access check paused for code entry.");
+        return true; 
+    }
 
-    // 1. Check if ANY key is valid
-    if (canAccess || cameFromAthletics || cameFromProgressReport) {
+    // 3. Grant access if they have the main authorization key
+    if (isAuthorized) {
         console.log("Access Granted");
-
-        // 2. Only cleanup temporary keys AFTER we know we are safe
-        // Use a slight timeout to ensure the check is fully finished
-        if (window.location.pathname.includes('ClassList.html')) {
-            setTimeout(() => {
-                sessionStorage.removeItem("cameFromAthletics");
-                sessionStorage.removeItem("fromProgressReport");
-                console.log("Temporary keys cleaned up.");
-            }, 500); // Wait half a second
-        }
         return true;
     } else {
-        // 3. No keys found, redirect
-        console.log("Access Denied. No valid session key found.");
-        window.location.href = "/jmc/login/Login.html"; 
+        // 4. No authorization found, redirect to login
+        console.log("Access Denied. Redirecting...");
+        window.location.replace("/jmc/login/Login.html"); 
         return false;
     }
 }
-
+// Run the check
+checkAccess();
 // Execute
 checkAccess();
 

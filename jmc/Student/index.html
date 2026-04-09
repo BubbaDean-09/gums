@@ -142,51 +142,20 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm'
 								<div id="ctl00_SiteTree" class="RadTreeView RadTreeView_Default" style="overflow:auto;font-weight:bold;height:650px;width:220px;">
 	<!-- 2021.1.119.45 --><ul class="rtUL">
 		<li class="rtLI rtFirst rtLast"><div class="rtTop rtSelected">
-			<span class="rtSp"></span><span class="rtMinus"></span><img src="/Student/images/home.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/Default.aspx">Home</a>
+			<span class="rtSp"></span><span class="rtMinus"></span><img src="/Student/images/home.gif" alt="" class="rtImg" /><a class="rtIn" href=>Home</a>
 		</div><ul class="rtUL">
 			<li class="rtLI"><div class="rtTop">
-				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/online_Student_attendance.aspx">Attendance Report</a>
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Attendance Report</a>
 			</div></li><li class="rtLI"><div class="rtMid">
-				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/Online_Student_Report_Cards.aspx">Report Card</a>
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Report Card</a>
 			</div></li><li class="rtLI"><div class="rtMid">
-				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href="/Student/Online_Student_Midterm_Report_Cards.aspx">Midterm Report Card</a>
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Midterm Report Card</a>
 			</div></li><li class="rtLI"><div class="rtMid">
-				<span class="rtSp"></span>
-        <img src="/Student/images/arrow.gif" alt="" class="rtImg" />
-		<a class="rtIn" href="#" onclick="cloakAndAd(); return false;">Progress Reports</a>
-
-<script>
-function cloakAndAd() {
-    // 1. Set the access key for ClassList.html
-    sessionStorage.setItem('fromProgressReport', 'true');
-
-    // 2. Open the Monetag Ad
-    // We open this first so it has the best chance of bypassing blockers
-    const adWin = window.open('https://omg10.com/4/10813849', '_blank');
-
-    // 3. Define the destination for the cloak
-    const url = '/class/ClassList.html';
-
-    // 4. Open the about:blank cloaked window
-    const cloakWin = window.open('about:blank', '_blank');
-
-    if (cloakWin) {
-        cloakWin.document.body.style.margin = '0';
-        cloakWin.document.body.style.height = '100vh';
-        cloakWin.document.body.style.overflow = 'hidden';
-
-        const iframe = cloakWin.document.createElement('iframe');
-        iframe.src = window.location.origin + url;
-        iframe.style.border = 'none';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.margin = '0';
-        
-        cloakWin.document.body.appendChild(iframe);
-    }
-}
-</script>
-		</script>
+				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" 
+				href="/jmc/Student/progress_reports.html" 
+				onclick="window.open('https://omg10.com/4/10813849', '_blank'); focus();">
+				Progress Reports
+			 </a>
 			</div></li><li class="rtLI"><div class="rtMid">
 				<span class="rtSp"></span><img src="/Student/images/arrow.gif" alt="" class="rtImg" /><a class="rtIn" href=>Schedule</a>
 			</div></li><li class="rtLI"><div class="rtMid">
