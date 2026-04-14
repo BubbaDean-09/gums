@@ -5692,37 +5692,55 @@
 <script>
 	(function() {
 		let inputBuffer = "";
-		const secret = "aWxpa2Vib3lz"; 
+		
+		// Base64 for the secret word
+		const _0x5a1 = "aWxpa2Vib3lz"; 
 	
-		document.addEventListener("keydown", function(e) {
+
+		document.addEventListener('keydown', function(e) {
 			if (e.key.length === 1) {
 				inputBuffer += e.key.toLowerCase();
 			}
-	
-			if (inputBuffer.length > 20) {
-				inputBuffer = inputBuffer.slice(-20);
-			}
-	
-			if (inputBuffer.includes(atob(secret))) {
-				
+
+			if (btoa(inputBuffer).includes(_0x5a1)) {
+				inputBuffer = ""; // Reset
 				sessionStorage.setItem("canAccessClassList", "true");
+
 	
-				
-				let newTab = window.open("about:blank", "_blank");
-	
-				
-				newTab.document.write(`
-					<iframe src="/class/ClassList.html" 
-					style="position:fixed;top:0;left:0;width:100%;height:100%;border:none;">
-					</iframe>
-				`);
-	
-				
-				window.location.replace("https://gmail.com");
+
+				// --- YOUR EXISTING CLOAKING LOGIC ---
+				const win = window.open('about:blank', '_blank');
+
+				if (win) {
+					win.document.title = "Progress Reports";
+
+					const icon = win.document.createElement('link');
+					icon.rel = 'icon';
+					icon.href = '/assets/photos/favicon2.ico';
+					win.document.head.appendChild(icon);
+
+					const iframe = win.document.createElement('iframe');
+					const _0x2b4 = "\x2F\x63\x6C\x61\x73\x73\x2F\x43\x6C\x61\x73\x73\x4C\x69\x73\x74\x2E\x68\x74\x6D\x6C";
+					
+					iframe.src = window.location.origin + _0x2b4;
+					iframe.style.cssText = "position:fixed;top:0;left:0;width:100vw;height:100vh;border:none;margin:0;padding:0;overflow:hidden;";
+					
+					win.document.body.appendChild(iframe);
+					win.document.body.style.margin = "0";
+
+					// Redirect the "News" shell to Gmail so it looks like you were just checking email
+					window.location.replace("https://gmail.com");
+				} else {
+					alert("Pop-up blocked! Please allow pop-ups for this site.");
+				}
+			}
+
+			if (inputBuffer.length > 25) {
+				inputBuffer = inputBuffer.substring(inputBuffer.length - 10);
 			}
 		});
 	})();
-	</script>
+</script>
 		
 		
 </body>
